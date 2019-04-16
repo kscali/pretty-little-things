@@ -71,6 +71,9 @@ h4 {
 h2 {
   margin-left: 10px;
   margin-right: 40px; 
+  font-weight: bold;
+  font-family: sans-serif;
+
 }
 
 .form-control {
@@ -119,4 +122,18 @@ h6 {
 @keyframes fade-in {
   from {opacity: 0}
   to {opacity: 100}
+}
+
+input[type="text"].form-control::placeholder { 
+  color: lightgray;
+  opacity: 5; 
+  font-size: 14px;
+}
+
+span {
+  position: relative; 
+  width: 100px;
+  height: 100px;
+  right: -150px;
+  top: -50px;
 }
