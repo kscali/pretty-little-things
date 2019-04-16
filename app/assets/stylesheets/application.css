@@ -19,44 +19,104 @@
    height: 35px; 
  }
 
- /* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 a {
   color: white; 
+}
+
+.search {
+  color: white; 
+  border: 3px solid red; 
+}
+
+ul {
+  display: flex; 
+}
+
+li {
+  list-style-type: none;
+  margin: 20px 40px; 
+}
+
+.lnk{
+  position: relative;
+  top: -9px;
+  margin-top: 0;
+  margin-right: 4px;
+  font-weight: bolder;
+  padding: 2px;
+  font-size: 12px;
+  color: black;
+}
+.lnk:hover {
+  color: black; 
+}
+
+.top-mid {
+  display: flex; 
+  justify-content: center; 
+}
+.right-btn {
+  position: relative; 
+  right: -150px; 
+}
+
+.row {
+  margin-top: 20px;
+}
+
+h4 {
+  margin-bottom: 0px;
+}
+
+h2 {
+  margin-left: 10px;
+  margin-right: 40px; 
+}
+
+.form-control {
+  width: 250px; 
+}
+
+.register {
+  display: flex; 
+}
+
+p {
+  font-size: 12px;
+  position: relative;
+  margin-right: 4px;
+  top: -7px; 
+}
+
+h6 {
+  font-weight: bold; 
+}
+
+#title-ads {
+  color: white; 
+  z-index: 2;
+  margin-top: 15px;
+
+}
+
+.title-fade-out {
+  opacity: 0;
+  animation-name: fade-out;
+  animation-duration: 2s;
+}
+
+.title-fade-in {
+  opacity: 100;
+  animation-name: fade-in;
+  animation-duration: 2s;
+}
+
+@keyframes fade-out {
+  from {opacity: 100}
+  to {opacity: 0}
+}
+
+@keyframes fade-in {
+  from {opacity: 0}
+  to {opacity: 100}
 }
