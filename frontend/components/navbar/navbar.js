@@ -7,4 +7,18 @@ class Navbar extends React.Component {
      
     }
   }
+
+
+  render () {
+    return (
+      <div>
+        <div className="search">
+
+        </div>
+        <nav>
+          
+        </nav>
+      </div>
+    )
+  }
 }
