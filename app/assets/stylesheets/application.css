@@ -19,9 +19,9 @@
    height: 35px; 
  }
 
-a {
+/* a {
   color: white; 
-}
+} */
 
 .search {
   color: white; 
@@ -161,7 +161,7 @@ span {
 
 /* The Modal (background) */
 .modals {
-  display: visible; /* Hidden by default */
+  display: visible;/* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
@@ -288,7 +288,6 @@ hr {
 .title-logo:hover {
   color: black;
   text-decoration: none; 
-  cursor: default; 
 }
 
 .form-input {
@@ -340,3 +339,17 @@ hr {
   right: 80px;
   top: 20px;
 }
+
+div.alert-error {
+  font-size: 50px; 
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+}
+div.alert-error > h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }

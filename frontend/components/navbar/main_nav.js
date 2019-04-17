@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const MainNav = ({user, logout}) => {
+    
     const greeting = () => (
       <div className="greeting">
         <h6>Hi, {user.first_name}</h6>

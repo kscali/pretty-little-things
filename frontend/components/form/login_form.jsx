@@ -17,6 +17,7 @@ class LogInForm extends React.Component {
   componentDidMount() {
     let modal = document.getElementById("myModal");
     modal.style.height = "60%";
+    this.props.clearErrors(this.props.errors);
   }
 
   updateField(field) {
@@ -44,8 +45,10 @@ class LogInForm extends React.Component {
     const modal = document.getElementById('myModal');
     const main = document.getElementById('main-mod');
     modal.style.display = "none";
-    main.style.display = "none";
+    main.style.display = "none"; 
   }
+
+  
 
   demoLogin(e) {
     this.setState({ email: "admin", password: "123456"}, () => {
@@ -87,7 +90,7 @@ class LogInForm extends React.Component {
           </div> 
           <div className="errors1">{this.renderErrors()}</div>
         </form>
-        
+          
       </div>
     </div>
     )
