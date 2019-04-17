@@ -39,7 +39,8 @@ li {
 
 .lnk{
   position: relative;
-  top: -9px;
+  top: 20px;
+  right: 95px;
   margin-top: 0;
   margin-right: 4px;
   font-weight: bolder;
@@ -47,6 +48,15 @@ li {
   font-size: 12px;
   color: black;
 }
+
+p {
+  font-size: 12px;
+  position: relative;
+  margin-right: 4px;
+  top: 22px; 
+  right: 94px;
+}
+
 .lnk:hover {
   color: black; 
 }
@@ -84,13 +94,6 @@ h2 {
   display: flex; 
 }
 
-p {
-  font-size: 12px;
-  position: relative;
-  margin-right: 4px;
-  top: -7px; 
-}
-
 h6 {
   font-weight: bold; 
 }
@@ -99,6 +102,8 @@ h6 {
   color: white; 
   z-index: 2;
   margin-top: 15px;
+  position: relative; 
+  top: -8px; 
 
 }
 
@@ -124,8 +129,24 @@ h6 {
   to {opacity: 100}
 }
 
-input[type="text"].form-control::placeholder { 
-  color: lightgray;
+input {
+  color: gray; 
+}
+
+.login {
+  width: 100%; 
+  margin-bottom: 10px; 
+  padding: 12px; 
+}
+
+input[type="text"]::placeholder { 
+  color: gray;
+  opacity: 5; 
+  font-size: 14px;
+}
+
+input[type="password"]::placeholder { 
+  color: gray;
   opacity: 5; 
   font-size: 14px;
 }
@@ -136,4 +157,186 @@ span {
   height: 100px;
   right: -150px;
   top: -50px;
+}
+
+/* The Modal (background) */
+.modals {
+  display: visible; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-contents {
+  background-color: white;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%; /* Could be more or less, depending on screen size */
+  height: 83%;
+  margin-top: 120px; 
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+  left: 7px;
+  top: -10px;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form {
+  width: 100%; 
+}
+
+hr {
+  color: lightgray;
+}
+
+.required-info {
+  color: gray;
+  position: relative;
+  top: 10px;
+  left: 5px;
+}
+
+.rows {
+  display: flex;
+  position: relative; 
+  top: -15px;
+  width: 100%;
+}
+
+.cols > input {
+  display: block; 
+  width: 100%;
+  padding: 7px;
+  margin: 10px 20px 20;
+  position: relative;
+  top: 20px; 
+}
+
+.first {
+  width: 50%;
+  margin-right: 13px; 
+}
+
+.sec {
+  width: 50%;
+}
+
+.btm-input {
+  position: relative;
+  top: 325px;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  padding: 13px 20px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+#password {
+  margin-top: 15px; 
+}
+
+.heart {
+  width: 50px; 
+  height: 50px;
+  position: relative;
+  left: 150px; 
+  top: -40px; 
+}
+
+.greeting {
+  display: flex; 
+}
+
+.btn-nav {
+  margin-left: 5px; 
+}
+
+.greeting > h6 {
+  position: relative;
+  top: 5px; 
+  margin-right: 5px; 
+}
+
+.title-logo {
+  color: black;
+}
+
+.title-logo:hover {
+  color: black;
+  text-decoration: none; 
+  cursor: default; 
+}
+
+.form-input {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.login-btn {
+  background: black;
+  color: white; 
+  padding: 4px 15px;
+}
+
+.terms {
+  position: relative; 
+  top: 350px;
+  width: 90%;
+  left: 5px;
+}
+
+.nav-line {
+  position: relative;
+  top: -25px;
+}
+
+.errors {
+  color: gray;
+  position: relative;
+  right: 80px;
+  display: flex;
+}
+
+.errors > ul  {
+  flex-direction: column;
+  position: relative;
+  top: -45px; 
+}
+
+.errors > ul > li {
+  position: relative;
+  top: -45px; 
+  margin-bottom: 5px; 
+}
+
+.errors1 {
+  color: gray;
+  position: relative;
+  right: 80px;
+  top: 20px;
 }

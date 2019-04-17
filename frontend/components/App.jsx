@@ -2,9 +2,9 @@ import React from 'react';
 import SignupFormContainer from './form/sign_up_form_container';
 import LoginFormContainer from './form/login_form_container'
 import { Route } from 'react-router-dom';
-import GreetingContainer from './greeting_container';
-import MainNav from './navbar/main_nav';
+import MainNavContainer from './navbar/navbar_container';
 import Title from './title';
+import { AuthRoute, ProtectedRoute } from './../util/route_utils';
 
 class App extends React.Component {
   constructor(props) {
@@ -26,10 +26,9 @@ class App extends React.Component {
         </div>
       </div>
     </div>
-    <MainNav />
-    <GreetingContainer />
-    <Route path="/signup" component={SignupFormContainer} />
-    <Route path="/login" component={LoginFormContainer} />
+    <MainNavContainer />
+    <AuthRoute path="/signup" component={SignupFormContainer} />
+    <AuthRoute path="/login" component={LoginFormContainer} />
   </div>
    )
   } 
