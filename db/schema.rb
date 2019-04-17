@@ -10,10 +10,44 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_15_175342) do
+ActiveRecord::Schema.define(version: 2019_04_17_193815) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "brands", force: :cascade do |t|
+    t.string "name", null: false
+    t.integer "category_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_brands_on_name"
+  end
+
+  create_table "categories", force: :cascade do |t|
+    t.string "name", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_categories_on_name"
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string "name", null: false
+    t.text "color", default: [], null: false, array: true
+    t.string "size", null: false
+    t.float "price", null: false
+    t.string "type", null: false
+    t.integer "brand_id", null: false
+    t.text "what_it_is", null: false
+    t.text "what_it_does", null: false
+    t.text "what_else_you_need_to_know", null: false
+    t.text "how_to_use", default: [], null: false, array: true
+    t.text "ingredients", null: false
+    t.integer "category_id", null: false
+    t.text "image_url", default: [], null: false, array: true
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_products_on_name"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "first_name", null: false

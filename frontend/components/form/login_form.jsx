@@ -20,6 +20,13 @@ class LogInForm extends React.Component {
     this.props.clearErrors(this.props.errors);
   }
 
+  componentDidUpdate() {
+    const modal = document.getElementById('myModal');
+    const main = document.getElementById('main-mod');
+    modal.style.display = "block";
+    main.style.display = "block"; 
+  }
+
   updateField(field) {
     return e => this.setState({ [field]: e.target.value })
   }
@@ -49,9 +56,8 @@ class LogInForm extends React.Component {
   }
 
   
-
   demoLogin(e) {
-    this.setState({ email: "admin", password: "123456"}, () => {
+    this.setState({ email: "user@demo.com", password: "123456"}, () => {
       this.handleSubmit(e)
     })
   }

@@ -13,11 +13,12 @@ const MainNav = ({user, logout}) => {
     const signin = () => (
         <div className="register">
           <h6>Hi, Beautiful</h6>
-          <Link className="lnk" to="/login">Sign In</Link>
+        <Link className="lnk" to="/login">Sign In</Link>
           <p>or</p>
           <Link className="lnk" to="/signup">Register</Link>
         </div>
     )
+
     return (
       <div>
         <div className="container">
@@ -39,7 +40,12 @@ const MainNav = ({user, logout}) => {
         </div>
         <nav>
           <ul className="nav justify-content-center">
-            <li>SHOP</li>
+            <li className="dropdown">SHOP
+              <ul className="dropdown-content">
+                <li><Link to="/makeup">MAKEUP</Link></li>
+                <li><Link to="/skincare">SKIN CARE</Link></li>
+              </ul>
+            </li>
             <li>NEW</li>
             <li>BRANDS</li>
             <li>GIFTS</li>

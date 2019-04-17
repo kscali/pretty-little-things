@@ -31,7 +31,7 @@ class App extends React.Component {
       <Route exact path="/" />
       <AuthRoute path="/signup" component={SignupFormContainer} />
       <AuthRoute path="/login" component={LoginFormContainer} />
-       <Route render={() => (<div className="alert-error"><h1>404: Sorry, this page does not exist.</h1></div>)} />
+      <Route render={() => (<div className="alert-error"><h1>404: Sorry, this page does not exist.</h1></div>)} />
     </Switch>
   </div>
    )

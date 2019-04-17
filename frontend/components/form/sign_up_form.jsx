@@ -19,6 +19,13 @@ class SignUpForm extends React.Component {
     modal.style.height = "83%";
   }
 
+  componentDidUpdate() {
+    const modal = document.getElementById('myModal');
+    const main = document.getElementById('main-mod');
+    modal.style.display = "block";
+    main.style.display = "block";
+  }
+
   updateField(field) {
     return e => this.setState({[field]: e.target.value })
   }
@@ -47,10 +54,10 @@ class SignUpForm extends React.Component {
     main.style.display = "none";
   }
   
+  
   render() {
     return (
     <div id="main-mod" className="modals">
-
         <div id="myModal" className="modal-contents">
           <span onClick={this.closeModal} className="close">&times;</span>
           <form onSubmit={this.handleSubmit}>
@@ -93,12 +100,19 @@ class SignUpForm extends React.Component {
                   placeholder="Password (6 to 12 characters)*"
                 />
             </div>
-
+            <hr />
+            <img className="b-i" src="https://www.sephora.com/img/ufe/bi/logo-beauty-insider.svg" alt="beauty-insider" />
+            <div className="checks-box">
+              <input type="checkbox" name="" id=""/><strong>Yes, join the rewards program and earn points on every purchase.</strong>
+              <p>By joing you agree to <a href="#">Terms $ Conditions</a></p>
+            </div>  
+            
             <input className="btm-input" type="submit" value="Register" />
             <p className="terms">Pretty Little Things uses Google ReCaptcha 
             and user's are subject to Google's
             <a href="https://policies.google.com/privacy?hl=en"> privacy policy </a>
               & <a href="https://policies.google.com/terms?hl=en">terms.</a></p>
+           
           </form>
           <div className="errors">{this.renderErrors()}</div>
         </div>

@@ -3,7 +3,6 @@ import * as ApiUtil from "../util/session_api_util";
 export const RECEIVE_CURRENT_USER = "RECEIVE_CURRENT_USER";
 export const LOGOUT_CURRENT_USER = "LOGOUT_CURRENT_USER";
 export const RECEIVE_ERRORS = "RECEIVE_ERRORS";
-export const CLEAR_ERRORS = "CLEAR_ERRORS";
 export const CLEAR_LOGIN_ERRORS = "CLEAR_LOGIN_ERRORS"
 
 export const receiveCurrentUser = user => ({
@@ -17,11 +16,6 @@ export const logoutCurrentUser = () => ({
 
 export const receiveErrors = (errors) => ({
   type: RECEIVE_ERRORS,
-  errors
-})
-
-export const clearSignupErrors = (errors) => ({
-  type: CLEAR_ERRORS,
   errors
 })
 
@@ -45,13 +39,6 @@ export const signup = user => dispatch => (
   ApiUtil.signup(user).then(user => dispatch(receiveCurrentUser(user)),
     error => {
       dispatch(receiveErrors(error.responseJSON))
-    })
-)
-
-export const clearUpErrors = (user) => (
-  ApiUtil.signup(user).then(user => dispatch(receiveCurrentUser(user)),
-    errors => {
-      dispatch(clearsignUpErrors(errors.responseJSON))
     })
 )
 

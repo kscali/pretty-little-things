@@ -14,62 +14,6 @@
  *= require_self
  */
 
- .top {
-   background: black; 
-   height: 35px; 
- }
-
-/* a {
-  color: white; 
-} */
-
-.search {
-  color: white; 
-  border: 3px solid red; 
-}
-
-ul {
-  display: flex; 
-}
-
-li {
-  list-style-type: none;
-  margin: 20px 40px; 
-}
-
-.lnk{
-  position: relative;
-  top: 20px;
-  right: 95px;
-  margin-top: 0;
-  margin-right: 4px;
-  font-weight: bolder;
-  padding: 2px;
-  font-size: 12px;
-  color: black;
-}
-
-p {
-  font-size: 12px;
-  position: relative;
-  margin-right: 4px;
-  top: 22px; 
-  right: 94px;
-}
-
-.lnk:hover {
-  color: black; 
-}
-
-.top-mid {
-  display: flex; 
-  justify-content: center; 
-}
-.right-btn {
-  position: relative; 
-  right: -150px; 
-}
-
 .row {
   margin-top: 20px;
 }
@@ -83,7 +27,10 @@ h2 {
   margin-right: 40px; 
   font-weight: bold;
   font-family: sans-serif;
-
+  width: 100%;
+  letter-spacing: 3px;
+  position: relative;
+  right: 25px;
 }
 
 .form-control {
@@ -159,51 +106,6 @@ span {
   top: -50px;
 }
 
-/* The Modal (background) */
-.modals {
-  display: visible;/* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-contents {
-  background-color: white;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 25%; /* Could be more or less, depending on screen size */
-  height: 83%;
-  margin-top: 120px; 
-}
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  position: relative;
-  left: 7px;
-  top: -10px;
-  z-index: 1;
-  width: 20px;
-  height: 20px;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 form {
   width: 100%; 
 }
@@ -246,7 +148,7 @@ hr {
 
 .btm-input {
   position: relative;
-  top: 325px;
+  top: 5px;
   background: black;
   color: white;
   text-transform: uppercase;
@@ -267,6 +169,26 @@ hr {
   top: -40px; 
 }
 
+.b-i {
+  width: 200px;
+  height: 200px;
+  position: relative; 
+  top: -50px;
+  display: block;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px; 
+}
+.checks-box {
+  position: relative; 
+  top: -130px;
+}
+
+.checks-box > p {
+  position: relative;
+  left: 0px; 
+}
 .greeting {
   display: flex; 
 }
@@ -304,14 +226,9 @@ hr {
 
 .terms {
   position: relative; 
-  top: 350px;
+  
   width: 90%;
   left: 5px;
-}
-
-.nav-line {
-  position: relative;
-  top: -25px;
 }
 
 .errors {
@@ -324,13 +241,15 @@ hr {
 .errors > ul  {
   flex-direction: column;
   position: relative;
-  top: -45px; 
+  bottom: 230px;
 }
 
 .errors > ul > li {
   position: relative;
-  top: -45px; 
-  margin-bottom: 5px; 
+  margin-top: 5px; 
+  margin-bottom: 5px;
+  width: 100%; 
+  font-size: 13px; 
 }
 
 .errors1 {
@@ -353,3 +272,5 @@ div.alert-error > h1 {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%) }
+
+ 
