@@ -17,8 +17,8 @@
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 25%; /* Could be more or less, depending on screen size */
-  height: 83%;
+  width: 500px; /* Could be more or less, depending on screen size */
+  height: 800px;
   margin-top: 120px; 
 }
 

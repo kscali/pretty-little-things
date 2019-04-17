@@ -148,13 +148,20 @@ hr {
 
 .btm-input {
   position: relative;
-  top: 5px;
+  top: 155px;
   background: black;
   color: white;
   text-transform: uppercase;
   padding: 13px 20px;
   border-radius: 5px;
   margin-left: 5px;
+}
+
+.terms {
+  position: relative; 
+  top: 180px;
+  width: 90%;
+  left: 5px;
 }
 
 #password {
@@ -171,9 +178,9 @@ hr {
 
 .b-i {
   width: 200px;
-  height: 200px;
+  height: 80px;
   position: relative; 
-  top: -50px;
+  top: -20px;
   display: block;
 }
 
@@ -182,12 +189,13 @@ input[type="checkbox"] {
 }
 .checks-box {
   position: relative; 
-  top: -130px;
+  top: -40px;
 }
 
 .checks-box > p {
   position: relative;
   left: 0px; 
+  top: 2px;
 }
 .greeting {
   display: flex; 
@@ -224,18 +232,13 @@ input[type="checkbox"] {
   padding: 4px 15px;
 }
 
-.terms {
-  position: relative; 
-  
-  width: 90%;
-  left: 5px;
-}
-
 .errors {
   color: gray;
   position: relative;
   right: 80px;
   display: flex;
+  top: -100px;
+  height: 30px;
 }
 
 .errors > ul  {
@@ -257,6 +260,8 @@ input[type="checkbox"] {
   position: relative;
   right: 80px;
   top: 20px;
+  display: block;
+  width: 100%; 
 }
 
 div.alert-error {

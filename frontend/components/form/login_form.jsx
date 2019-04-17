@@ -21,9 +21,7 @@ class LogInForm extends React.Component {
   }
 
   componentDidUpdate() {
-    const modal = document.getElementById('myModal');
     const main = document.getElementById('main-mod');
-    modal.style.display = "block";
     main.style.display = "block"; 
   }
 
@@ -48,11 +46,12 @@ class LogInForm extends React.Component {
     this.props.login(this.state)
   }
 
-  closeModal() {
-    const modal = document.getElementById('myModal');
-    const main = document.getElementById('main-mod');
-    modal.style.display = "none";
-    main.style.display = "none"; 
+  closeModal(e) {
+    if (e.currentTarget === e.target) {
+      e.preventDefault();
+      const main = document.getElementById('main-mod');
+      main.style.display = "none"; 
+    }
   }
 
   
@@ -65,7 +64,7 @@ class LogInForm extends React.Component {
 
   render() {
     return (
-      <div id="main-mod" className="modals">
+      <div onClick={this.closeModal} id="main-mod" className="modals">
 
         <div id="myModal" className="modal-contents">
           <span onClick={this.closeModal} className="close">&times;</span>

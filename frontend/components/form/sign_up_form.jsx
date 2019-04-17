@@ -17,13 +17,14 @@ class SignUpForm extends React.Component {
   componentDidMount() {
     let modal = document.getElementById("myModal");
     modal.style.height = "83%";
+    this.props.clear(this.props.errors);
+
   }
 
   componentDidUpdate() {
-    const modal = document.getElementById('myModal');
     const main = document.getElementById('main-mod');
-    modal.style.display = "block";
     main.style.display = "block";
+    
   }
 
   updateField(field) {
@@ -47,19 +48,20 @@ class SignUpForm extends React.Component {
     );
   }
   
-  closeModal() {
-    const modal = document.getElementById('myModal');
-    const main = document.getElementById('main-mod');
-    modal.style.display = "none";
-    main.style.display = "none";
+  closeModal(e) {
+    if (e.target === e.currentTarget) {
+      const main = document.getElementById('main-mod');
+      main.style.display = "none";
+    }
   }
   
   
   render() {
     return (
-    <div id="main-mod" className="modals">
+    <div onClick={this.closeModal} id="main-mod" className="modals">
         <div id="myModal" className="modal-contents">
           <span onClick={this.closeModal} className="close">&times;</span>
+         
           <form onSubmit={this.handleSubmit}>
             <h6>Register with Pretty Little Things</h6>
             <hr/>
