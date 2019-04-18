@@ -67,7 +67,7 @@ class LogInForm extends React.Component {
       <div onClick={this.closeModal} id="main-mod" className="modals">
 
         <div id="myModal" className="modal-contents">
-          <span id="sp-btn" type="button" onClick={this.closeModal} className="close">&times;</span>
+          <span id="sp-btn" onClick={this.closeModal} className="close">&times;</span>
           <h5>Please sign into Pretty Little Things</h5>
           <hr />
           <form onSubmit={this.handleSubmit}>
