@@ -21,6 +21,13 @@ class SignUpForm extends React.Component {
 
   }
 
+  // onEnter(event) {
+  //   if (event.key === '13') {
+  //     console.log("hello");
+  //     this.handleSubmit();
+  //   }
+  // }
+
   componentDidUpdate() {
     const main = document.getElementById('main-mod');
     main.style.display = "block";
@@ -60,8 +67,8 @@ class SignUpForm extends React.Component {
     return (
     <div onClick={this.closeModal} id="main-mod" className="modals">
         <div id="myModal" className="modal-contents">
-          <span onClick={this.closeModal} className="close">&times;</span>
-         
+          <span id="sp-btn" type="button" onClick={this.closeModal} className="close">&times;</span>
+          
           <form onSubmit={this.handleSubmit}>
             <h6>Register with Pretty Little Things</h6>
             <hr/>
@@ -70,6 +77,7 @@ class SignUpForm extends React.Component {
             <div className="rows">
                <div className="first cols">
                 <input
+                  // onKeyUp={this.onEnter()}
                   onChange={this.updateField("first_name")}
                   type="text"
                   value={this.state.first_name}
@@ -78,6 +86,7 @@ class SignUpForm extends React.Component {
               </div>
               <div className="sec cols">
                 <input
+                  // onKeyUp={this.onEnter()}
                   onChange={this.updateField("last_name")}
                   type="text"
                   value={this.state.last_name}
@@ -87,6 +96,7 @@ class SignUpForm extends React.Component {
             </div>
               <div className="cols">
                 <input
+                  // onKeyUp={this.onEnter()}
                   onChange={this.updateField("email")}
                   type="text"
                   value={this.state.email}
@@ -110,6 +120,7 @@ class SignUpForm extends React.Component {
             </div>  
             
             <input className="btm-input" type="submit" value="Register" />
+            
             <p className="terms">Pretty Little Things uses Google ReCaptcha 
             and user's are subject to Google's
             <a href="https://policies.google.com/privacy?hl=en"> privacy policy </a>

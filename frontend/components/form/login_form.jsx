@@ -67,7 +67,7 @@ class LogInForm extends React.Component {
       <div onClick={this.closeModal} id="main-mod" className="modals">
 
         <div id="myModal" className="modal-contents">
-          <span onClick={this.closeModal} className="close">&times;</span>
+          <span id="sp-btn" type="button" onClick={this.closeModal} className="close">&times;</span>
           <h5>Please sign into Pretty Little Things</h5>
           <hr />
           <form onSubmit={this.handleSubmit}>
@@ -89,8 +89,8 @@ class LogInForm extends React.Component {
               placeholder="Password"
             />
           <div className="form-input">
-            <button onClick={this.closeModal}>Cancel</button>
-            <button onClick={this.demoLogin}>Demo Login</button>
+            <button type="button" onClick={this.closeModal}>Cancel</button>
+            <button type="button" onClick={this.demoLogin}>Demo Login</button>
             <input className="login-btn" type="submit" value="Continue" />
           </div> 
           <div className="errors1">{this.renderErrors()}</div>

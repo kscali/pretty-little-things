@@ -23,18 +23,24 @@
 }
 
 /* The Close Button */
-.close {
-  color: #aaa;
+span.close {
+  color: black;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  /* top: -8px; */
   position: relative;
   left: 7px;
-  top: -10px;
   z-index: 1;
   width: 20px;
   height: 20px;
 }
+
+#sp-btn {
+  top: -10px;
+  margin: 5px; 
+}
+
 
 .close:hover,
 .close:focus {
