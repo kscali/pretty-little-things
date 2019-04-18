@@ -15,8 +15,8 @@ class SignUpForm extends React.Component {
   }
 
   componentDidMount() {
-    let modal = document.getElementById("myModal");
-    modal.style.height = "83%";
+    // let modal = document.getElementById("myModal");
+    // modal.style.height = "83%";
     this.props.clear(this.props.errors);
 
   }

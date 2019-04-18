@@ -16,7 +16,7 @@ class LogInForm extends React.Component {
 
   componentDidMount() {
     let modal = document.getElementById("myModal");
-    modal.style.height = "60%";
+    modal.style.height = "500px"
     this.props.clearErrors(this.props.errors);
   }
 
