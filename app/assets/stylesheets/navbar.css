@@ -1,7 +1,93 @@
 .top {
    background: black; 
    height: 35px; 
+   position: relative; 
+   top: -20px; 
  }
+
+.ad {
+  display: block; 
+  margin: auto; 
+}
+
+.mid-nav {
+  position: relative; 
+  top: -20px; 
+}
+
+.right-top-nav {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;  
+}
+
+.right-top-nav > a {
+  margin-top: 8px; 
+  color: white; 
+  font-size: 12px;
+  height: 10px;
+}
+
+.last-a > p{
+  color: white; 
+  top: -25px;
+  right: -30px; 
+}
+
+.last-a:hover .flag-content {display: block;}
+
+#span {
+  position: relative;
+  margin-top: 8px; 
+  color: white; 
+  font-size: 12px;
+  top: -58px;
+  right: -55px;
+}
+
+.flag-content {
+  display: none;
+  position: absolute;
+  background-color:black;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+  top: 25px;
+  text-align: cneter;
+  left: 465px;
+}
+.flags {
+  position: relative;
+  left: -70px; 
+  top: -2px; 
+}
+
+.flag2 {
+  position: relative;
+  left: -70px; 
+  top: -32px; 
+}
+
+.flag-content > li > p {
+  position: relative;
+  left: -70px;
+  height: 10px;
+  width: 20px;
+  top: -20px; 
+  display: inline;
+}
+
+#engs {
+  position: relative;
+  margin-left: 20px; 
+}
+
+#france {
+  position: relative;
+  margin-left: 20px; 
+  top: -50px;
+}
+
 
 
 .search {
@@ -60,7 +146,7 @@ p {
 
 .nav-line {
   position: relative;
-  top: -58px;
+  top: -66px;
 }
 
    /* Navbar dropdown */
@@ -70,22 +156,30 @@ p {
 
 }
 
+/* .dropdown:hover {
+  border: 2px solid lightgray;
+  border-bottom: none; 
+  padding: 10px 10px 0 10px; 
+  z-index: 5;
+} */
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: white;
-  min-width: 160px;
+  min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  top: 25px;
+  top: 20px;
   text-align: left;
+  left: -15px;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 12px 20px;
   text-decoration: none;
   display: block;
 }
@@ -94,7 +188,6 @@ ul.dropdown-content > li {
  position: relative;
  font-size: 14px;
  padding-right: 10px;
- margin-left: 10px;
  left: -50px;
  width: 100%;
  margin: 0 0 0 10px;
@@ -106,3 +199,116 @@ ul.dropdown-content > li {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
+.new {
+  min-width: 800px;
+  left: -150px;
+  height: 400px; 
+}
+
+.new > li > a {
+  text-decoration: none; 
+}
+
+div.col > img {
+  float: left;
+  width: 25%; 
+}
+
+#comm  {
+  position: absolute; 
+  top: 20px; 
+  left: -600px;
+}
+
+.new-dd {
+  display: block; 
+  min-width: 30%;
+  text-align: left;
+  font-size: 12px;
+  left: -80px; 
+  top: -10px;
+}
+
+.new-dd li {
+  padding: 0px; 
+}
+
+img#new-img {
+  position: relative;
+  top: -400px;
+  left: 200px; 
+  width: 30%; 
+}
+
+#new-imgs > img {
+  position: relative;
+  margin: 2px 4px 2px 5px; 
+  left: 200px;
+  top: -402px;  
+  display: block;
+  width: 30%; 
+
+}
+img#second-img {
+  position: relative;
+  left: 20px;
+  top: -240px; 
+  margin-left: 5px;
+}
+
+.new2 {
+  min-width: 600px;
+  left: -150px;
+  height: 380px; 
+}
+
+/* brands drop down */
+
+.new3 {
+  min-width: 450px;
+  left: -150px;
+  height: 380px; 
+}
+
+img#abh {
+  position: relative;
+  width: 190px; 
+  left: 220px; 
+  top: -312px; 
+}
+
+/* gifts dropdown */
+
+.new-dd2 {
+  display: block; 
+  min-width: 30%;
+  text-align: left;
+  font-size: 12px;
+  left: -80px; 
+  top: -10px;
+}
+
+ul.new-dd2 > li {
+  margin: 5x 0 0 20px;
+  padding: 1px;
+}
+
+.new4 {
+  min-width: 510px;
+  left: -150px;
+  height: 540px; 
+}
+
+img#gift-f {
+  width: 250px;
+  position: relative;
+  top: -515px;
+  left: 225px;
+}
+
+img#quiz {
+  width: 250px;
+  position: relative;
+  top: -450px;
+  left: 205px;
+}

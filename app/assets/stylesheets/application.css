@@ -168,12 +168,14 @@ hr {
   margin-top: 15px; 
 }
 
-.heart {
-  width: 50px; 
-  height: 50px;
+#heart {
+  width: 34px; 
+  height: 29px;
   position: relative;
-  left: 150px; 
-  top: -40px; 
+  left: 170px; 
+  top: -30px; 
+  border-left: 1px solid lightgray;
+  padding-left: 5px;
 }
 
 .b-i {
