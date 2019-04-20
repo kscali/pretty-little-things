@@ -1,0 +1,58 @@
+.home-ad {
+  position: relative;
+  top: -101px; 
+}
+
+.sec-section {
+  text-align: center; 
+}
+
+.sec-section > h2 {
+  position: relative; 
+  display: inline-block; 
+  font-family: georgia; 
+  font-weight: normal; 
+  top: -70px;
+}
+
+/* carousel 1 */
+
+.slider {
+  /* line them up horizontally */
+  position: relative; 
+  display: flex;
+  text-align: center;
+  /* allow for scrolling */
+  overflow-x: auto;
+  top: -50px; 
+
+  /* make it smooth on iOS */
+  -webkit-overflow-scrolling: touch;
+}
+.slider > div {
+  /* make sure the width is honored */
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.slider > div > p {
+  width: 200px; 
+  position: absolute;
+  top: 75%;
+  left: 0;
+  padding: 5px; 
+  font-size: 14px;
+}
+
+.slider > div > a {
+  color: black; 
+}
+
+.dot {
+  left: 0px;
+  position: relative; 
+  top: -8px;
+  font-size: 16px;
+}

@@ -25,12 +25,15 @@ h4 {
 h2 {
   margin-left: 10px;
   margin-right: 40px; 
-  font-weight: bold;
+  font-weight: bolder;
   font-family: sans-serif;
   width: 100%;
-  letter-spacing: 3px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
   position: relative;
   right: 25px;
+  text-transform: uppercase;
+  font-size: 28px;
 }
 
 .form-control {
@@ -205,12 +208,15 @@ input[type="checkbox"] {
 
 .btn-nav {
   margin-left: 5px; 
+  position: relative;
+  left: -65px;
 }
 
 .greeting > h6 {
   position: relative;
   top: 5px; 
   margin-right: 5px; 
+  left: 25px;
 }
 
 .title-logo {

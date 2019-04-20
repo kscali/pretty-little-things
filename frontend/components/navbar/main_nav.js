@@ -5,8 +5,12 @@ const MainNav = ({user, logout}) => {
     
     const greeting = () => (
       <div className="greeting">
-        <h6>Hi, {user.first_name}</h6>
-       <button className="btn-nav" onClick={()=> logout()}>logout</button>
+        <h6 className="logout-dd" >
+          Hi, {user.first_name}  <span id="carat">&#x25bc;</span>
+        <ul className="logout-menu">
+          <li><button className="btn-nav" onClick={() => logout()}>logout</button></li>
+        </ul>
+        </h6>
       </div>
     )
 
@@ -40,14 +44,14 @@ const MainNav = ({user, logout}) => {
         </div>
         <nav>
           <ul className="nav justify-content-center">
-            <li className="dropdown">SHOP
-              <ul className="dropdown-content">
+            <li className="dropdown"><Link to="/products">SHOP ALL</Link>
+              {/* <ul className="dropdown-content">
                 <li><Link to="/makeup">MAKEUP</Link></li>
                 <li><Link to="/skincare">SKIN CARE</Link></li>
                 <li><Link to="/tools">TOOLS & BRUSHES</Link></li>
                 <li><Link to="/hair">FRAGRANCE</Link></li>
                 <li><Link to="/hair">BATH & BODY</Link></li>
-              </ul>
+              </ul> */}
             </li>
             <li className="dropdown">NEW
                <div className="new2 dropdown-content">

@@ -5,6 +5,12 @@ import { Route, Switch } from 'react-router-dom';
 import MainNavContainer from './navbar/navbar_container';
 import Title from './title';
 import { AuthRoute, ProtectedRoute } from './../util/route_utils';
+import Home from './Home';
+import Footer from './footer';
+import ProductsIndexContainer from './products/products_index_container';
+import ProductsDetailContainer from './products/product_detail_container';
+
+
 
 class App extends React.Component {
   constructor(props) {
@@ -43,11 +49,16 @@ class App extends React.Component {
     </div>
     <MainNavContainer />
     <Switch>
-      <Route exact path="/" />
+      <Route exact path="/" component={Home} />
+      <Route path="/products/:productId" component={ProductsDetailContainer} />
+      <Route exact path="/products" component={ProductsIndexContainer} />
       <AuthRoute path="/signup" component={SignupFormContainer} />
       <AuthRoute path="/login" component={LoginFormContainer} />
       <Route render={() => (<div className="alert-error"><h1>404: Sorry, this page does not exist.</h1></div>)} />
     </Switch>
+    <footer>
+      <Footer />
+    </footer>
   </div>
    )
   } 
