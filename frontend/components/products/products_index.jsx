@@ -6,7 +6,7 @@ import ProductDetailContainer from './product_detail_container';
 class ProductsIndex extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {}
+    
    }
 
   componentDidMount() {
@@ -14,21 +14,27 @@ class ProductsIndex extends React.Component {
   }
 
   render () {
-    let style = window.location.href.slice(24);
+    // let style = window.location.href.slice(24);
+    let products = this.props.products;
+    if (!products) return null; 
+    debugger
     return (
-      <section className="products">
+    <section className="products">
       <div className="container">
           <div className="sidenav">
             <ProductIndexItem />
           </div>
           <div className="main">
-            <div className="inner-side"></div>
-            {/* { style === "makeup" ? 
-              <div><Makeup /></div> : style === "skincare" ? 
-              <div><SkinCare /></div> : style === "tools" ?
-              <div><Tools /></div> : style === "fragrance" ? 
-              <div><Fragrance /></div> : <Bath />
-            } */}
+            <ul className="inner-side">
+              {this.props.products.map(product => {
+               return ( <li key={product.id}>
+                  <img src={product.image_url[0]} />
+                  <h6>{product.brand}</h6>
+                  <p>product.name</p>
+               </li>
+               )
+              })}
+            </ul>
           </div>
         </div>
        </section>
@@ -38,3 +44,11 @@ class ProductsIndex extends React.Component {
 }
 
 export default ProductsIndex; 
+
+
+/* { style === "makeup" ? 
+              <div><Makeup /></div> : style === "skincare" ? 
+              <div><SkinCare /></div> : style === "tools" ?
+              <div><Tools /></div> : style === "fragrance" ? 
+              <div><Fragrance /></div> : <Bath />
+            } */

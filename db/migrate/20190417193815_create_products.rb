@@ -14,7 +14,7 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       t.text :ingredients, null: false 
       t.integer :category_id, null: false, foreign_key: true 
       t.text :image_url, null: false, array: true, default: []
-
+      t.string :brand_name, null: false 
       t.timestamps
     end
   end
