@@ -78,11 +78,11 @@ const MainNav = ({user, logout}) => {
               <div className="new3 dropdown-content">
                 <div className="col">
                   <ul className="new-dd">
-                    <li><Link to="/makeup">MAKEUP</Link></li>
-                    <li><Link to="/skincare">SKIN CARE</Link></li>
-                    <li><Link to="/tools">TOOLS & BRUSHES</Link></li>
-                    <li><Link to="/hair">FRAGRANCE</Link></li>
-                    <li><Link to="/hair">BATH & BODY</Link></li>
+                    <li><Link to="/patrickta">PATRICK TA</Link></li>
+                    <li><Link to="/laneige">LANEIGE</Link></li>
+                    <li><Link to="/fresh">FRESH</Link></li>
+                    <li><Link to="/stila">STILA</Link></li>
+                    <li><Link to="/tarte">TARTE</Link></li>
                   </ul>
                 </div>
                 <div className="col">
@@ -131,10 +131,28 @@ const MainNav = ({user, logout}) => {
             </li>
             <li className="dropdown">COMMUNITY
               <div id="comm" className=" new dropdown-content">
-                <div className="col"><img src="https://www.sephora.com/contentimages/meganav/large/2019-03-15-meganav-community-groups-us-ca-d-slice.jpg"  alt="groups" /></div>
-                <div className="col"><img src="https://www.sephora.com/contentimages/meganav/large/2019-03-15-meganav-community-conversations-us-ca-d-slice.jpg" alt="convos" /></div>
-                <div className="col"><img src="https://www.sephora.com/contentimages/meganav/large/2019-03-15-meganav-community-gallery-us-ca-d-slice.jpg" alt="gallery" /></div>
-                <div className="col"><img src="https://www.sephora.com/contentimages/meganav/large/2019-03-15-meganav-community-events-us-ca-d-slice.jpg" alt="events" /></div>
+                <div className="comm-col">
+                  <div className="divs  col">
+                    <a href="https://community.sephora.com/t5/custom/page/page-id/GroupsLandingPage?icid2=meganav_community_groups_041519_image">
+                      <img id="img-1" src="https://www.sephora.com/contentimages/meganav/large/2019-03-15-meganav-community-groups-us-ca-d-slice.jpg"  alt="groups" />
+                    </a>
+                  </div>
+                  <div className="divs  col">
+                    <a href="https://community.sephora.com/?icid2=meganav_community_evergreen_conversations_041519_image">
+                      <img id="img-2" src="https://www.sephora.com/contentimages/meganav/large/2019-03-15-meganav-community-conversations-us-ca-d-slice.jpg" alt="convos" />
+                    </a>
+                  </div>
+                  <div className="divs col">
+                    <a href="https://www.sephora.com/community/gallery" >
+                      <img id="img-3" src="https://www.sephora.com/contentimages/meganav/large/2019-03-15-meganav-community-gallery-us-ca-d-slice.jpg" alt="gallery" />
+                    </a>
+                  </div>
+                  <div className="divs col">
+                    <a href="https://community.sephora.com/t5/Exclusive-Events/bd-p/events-tips?icid2=meganav_community_evergreen_events_d_0415_image">
+                      <img id="img-4" src="https://www.sephora.com/contentimages/meganav/large/2019-03-15-meganav-community-events-us-ca-d-slice.jpg" alt="events" />
+                    </a>
+                  </div>
+                </div>
               </div>
             </li>
           </ul>

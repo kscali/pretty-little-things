@@ -8,7 +8,6 @@ const productsReducer = (state = {}, action) => {
     case RECEIVE_PRODUCTS: 
       return merge({}, state, action.products)
     case RECEIVE_PRODUCT: 
-      debugger 
       return merge({}, state, { [action.product.id]: action.product })
     default: 
       return state; 

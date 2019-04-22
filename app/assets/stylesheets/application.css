@@ -277,14 +277,16 @@ div.alert-error {
   text-align: center;
   font-weight: bold;
   position: relative;
+  height: 500px; 
 }
 div.alert-error > h1 {
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%) }
+    transform: translate(-50%, -50%) 
+}
 
  
 

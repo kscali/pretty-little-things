@@ -5,7 +5,9 @@ const ProductIndexItem = () => {
   let style = window.location.href.slice(24);
   let makeup = () => (
     <div className="container">
-      
+      <ul>
+        <li><Link to='/face'>Face</Link></li>
+      </ul>
     </div>
   )
 
@@ -17,7 +19,16 @@ const ProductIndexItem = () => {
     //       <div><Tools /></div> : style === "fragrance" ?
     //         <div><Fragrance /></div> : <Bath />
     //       }
-    <div>Hello</div>
+    <div className="side-nav-menu">
+      <ul>
+        <li><Link to='/face'>Face</Link></li>
+        <li><Link to='/cheek'>Cheek</Link></li>
+        <li><Link to='/eye'>Eye</Link></li>
+        <li><Link to='/lip'>Lip</Link></li>
+        <li><Link to='/lip'>Brushes</Link></li>
+        <li><Link to='/lip'>Accessories</Link></li>
+      </ul>
+    </div>
   )
 
 }

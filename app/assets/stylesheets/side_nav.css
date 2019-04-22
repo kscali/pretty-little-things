@@ -5,23 +5,33 @@
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #111; /* Black */
+  border-right: 1px solid lightgray; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
+  margin-right: 20px;
+}
+
+.side-nav-menu > ul, .side-nav-menu > ul > li {
+   margin: 10px 0 0 0; 
+   padding: 0; 
+   font-weight: bold; 
+   display: block; 
 }
 
 /* The navigation menu links */
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 16px;
   color: #818181;
   display: block;
+  text-align: left; 
 }
+
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #f1f1f1;
+  text-decoration: underline;
 }
 
 /* Style page content */
@@ -50,4 +60,33 @@
 
 .nav > .dropdown > a {
  color: black; 
+}
+
+.products > .container {
+  display: flex; 
+}
+
+
+
+.inner-side {
+  width: 500px;
+  display: grid; 
+  grid-template-columns: auto auto auto auto;
+  text-align: center; 
+  position: relative;
+  left: -250px;
+  top: -10px;
+}
+
+.item-li {
+  width: 125px;
+  height: 75px;
+  text-align: center; 
+}
+
+.item-li > p {
+  position: relative; 
+  left: 10px; 
+  top: -5px; 
+  margin-bottom: 2px;
 }
