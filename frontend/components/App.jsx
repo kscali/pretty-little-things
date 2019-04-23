@@ -14,6 +14,8 @@ import FragranceContainer from './../components/categories/fragrance_container';
 import LipContainer from './../components/categories/lips_container';
 import FaceContainer from './../components/categories/face_container';
 import EyeContainer from './../components/categories/eyes_container';
+import SkinContainer from './../components/categories/skin_container';
+import HairContainer from './../components/categories/hair_container';
 
 
 class App extends React.Component {
@@ -60,8 +62,9 @@ class App extends React.Component {
       <Route exact path="/fragrance" component={FragranceContainer} />
       <Route exact path="/face" component={FaceContainer} />
       <Route exact path="/lip" component={LipContainer} />
-       <Route exact path="/eye" component={EyeContainer} />
-     
+      <Route exact path="/eye" component={EyeContainer} />
+      <Route exact path="/skin" component={SkinContainer} />
+      <Route exact path="/hair" component={HairContainer} />
       <AuthRoute path="/signup" component={SignupFormContainer} />
       <AuthRoute path="/login" component={LoginFormContainer} />
       <Route render={() => (<div className="alert-error"><h1>404: Sorry, this page does not exist.</h1></div>)} />

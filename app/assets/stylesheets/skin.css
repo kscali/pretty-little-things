@@ -1,0 +1,26 @@
+.skin {
+  text-align: center;
+  height: 600px;
+}
+
+.skin > h4 {
+  position: relative;
+  top: -80px;
+}
+
+.skin-li > a > p {
+  position: relative;
+  left: 0;
+  top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.skin-li > a > h6 {
+  margin-bottom: 3px;
+  margin-top: 5px;
+}
+
+.skin-li > a {
+  color: black;
+}

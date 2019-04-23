@@ -27,7 +27,6 @@ const ProductIndexItem = () => {
         <li><Link to='/skin'>Skin</Link></li>
         <li><Link to='/fragrance'>Fragrance</Link></li>
         <li><Link to='/hair'>Hair</Link></li>
-        <li><Link to='/brushes'>Brushes</Link></li>
         <li><Link to='/Accessories'>Accessories</Link></li>
       </ul>
     </div>
