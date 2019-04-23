@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom';
+import Home from './../Home';
 
 class LogInForm extends React.Component {
   constructor(props) {
@@ -64,6 +64,8 @@ class LogInForm extends React.Component {
 
   render() {
     return (
+      <div className="back-modal" >
+        <Home />
       <div onClick={this.closeModal} id="main-mod" className="modals">
 
         <div id="myModal" className="modal-contents">
@@ -95,7 +97,7 @@ class LogInForm extends React.Component {
           </div> 
           <div className="errors1">{this.renderErrors()}</div>
         </form>
-          
+        </div>  
       </div>
     </div>
     )

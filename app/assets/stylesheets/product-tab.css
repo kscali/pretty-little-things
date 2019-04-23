@@ -1,15 +1,14 @@
-/* .tab-header{
-  width: 200px;
+ .tab-header{
+  width: 400px;
   height: 100px;
   margin: 0 20px;
   display: flex;
-  justify-content: space-between;
   padding: 10px;
+  justify-content: space-between;
 }
 
 .tab-header > li{
-  width: 100px;
-  border-top: 1px solid lightgray;
+  width: 100%;
   border-left: 1px solid lightgray;
   border-right: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
@@ -17,7 +16,17 @@
   text-align: center;
   cursor: pointer;
   padding: 4px 10px;
-} */
+  margin: 5px 0px;
+  height: 40px;
+  font-size: 12px;
+  justify-content: space-evenly;
+  left: -10px;
+} 
+
+.li-title {
+  left: 0;
+  top: 5px;
+}
 
 /* .tab-header > li:first-child{
   border-left: 2px solid black;
@@ -27,13 +36,17 @@
   border-right: 2px solid black;
 } */
 
-/* .tab-header > li:hover{
- border-bottom: 2px solid black; 
+ .tab-header > li:hover{
+ /* border-bottom: 2px solid black;  */
  color: black; 
+ border-top: 1px solid lightgray;
+ text-decoration: underline;
+ 
 }
 
 .active{
   font-weight: bold;
+  border: 2px solid lightblue;
 }
 
 .tabs{
@@ -42,28 +55,34 @@
 }
 
 .tab-content{
-  font-weight: bold;
-  color: white;
-  height: 192px;
-  width: 600px;
+  height: 400px;
+  width: 650px;
   margin: 0 20px;
   border-left: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
   border-right: 1px solid lightgray;
+  border-top: 1px solid lightgray;
   display: flex;
   align-items: center;
   justify-content: center;
   background-image: url(https://hd.unsplash.com/photo-1445112098124-3e76dd67983c);
   background-size: cover;
+  top: -80px;
+  position: relative;
+  display: block;
 }
 
 .tab-content article{
-  text-align: center;
+  text-align: left;
 }
 
-body{
-  display: flex;
-  justify-content: space-around;
+.tab-content > article > p {
+  font-size: 14px;
+  margin-top: 3px;
+  margin: 0; 
+  position: relative;
+  left: 30px;
+  width: 90%;
 }
 
 .interactive{
@@ -73,5 +92,21 @@ body{
 
 .tabs-info {
   position: relative;
-  top: 300px; 
-} */
+  top: 100px; 
+  left: -25px;
+} 
+
+.wid {
+  font-size: 14px;
+  margin-top: 3px;
+  margin: 0; 
+  position: relative;
+  left: -30px;
+  top: 250px;
+  width: 400px;
+  display: block;
+}
+
+article {
+  margin-bottom: 10px;
+}

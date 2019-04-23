@@ -4,15 +4,15 @@ class Headers extends React.Component {
   render() {
     const selected = this.props.selectedPane;
     const headers = this.props.panes.map((pane, index) => {
-      const title = pane.title;
-      const klass = index === selected ? 'active' : '';
+    const title = pane.title;
+    const klass = index === selected ? 'active' : '';
 
       return (
         <li
           key={index}
           className={klass}
           onClick={() => this.props.onTabChosen(index)}>
-          {title}{' '}
+          <p className="li-title">{title}{' '}</p>
         </li>
       );
     });
@@ -39,8 +39,8 @@ export default class ProductInfo extends React.Component {
   }
 
   render() {
-    const pane = this.props.panes[this.state.selectedPane];
-
+    // const pane = this.props.panes[this.state.selectedPane];
+    //  debugger;
     return (
       <div className="tabs-info">
         <div className='tabs'>
@@ -51,11 +51,20 @@ export default class ProductInfo extends React.Component {
           </Headers>
           <div className='tab-content'>
             <article>
-              {pane.content}
+              <p><b>What It is:</b></p>
+              <p>{this.props.product.what_it_is}</p>
+            </article>
+            <article id="wid">
+              <p><b>What It does:</b></p>
+              <p>{this.props.product.what_it_does}</p>
+            </article>
+            <article id="weyntk">
+              <p><b>What else you need to know: :</b></p>
+              <p>{this.props.product.what_else_you_need_to_know}</p>
             </article>
           </div>
+
         </div>
-      </div>
-    );
+      </div>)
   }
 }

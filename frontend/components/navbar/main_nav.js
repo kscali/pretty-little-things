@@ -1,8 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SearchBar from './search_bar';
 
-const MainNav = ({user, logout}) => {
-    
+const MainNav = ({user, logout, products}) => {
+  
+  let names = products.map(product => {
+    return product.name; 
+  })
+  
     const greeting = () => (
       <div className="greeting">
         <h6 className="logout-dd" >
@@ -22,13 +27,14 @@ const MainNav = ({user, logout}) => {
           <Link className="lnk" to="/signup">Register</Link>
         </div>
     )
-
+  
     return (
       <div className="mid-nav">
         <div className="container">
           <div className="row">
             <div className="col">
-              <input className="form-control mx-sm-3" type="text" placeholder="&#x1F50D; Search" />
+              {/* <input className="form-control mx-sm-3" type="text" placeholder="&#x1F50D; Search" /> */}
+              <SearchBar names={names} />
             </div>
             <div className="col">
               <h2><Link className="title-logo" to="/">Pretty Little Things</Link></h2>
@@ -159,7 +165,9 @@ const MainNav = ({user, logout}) => {
         </nav>
         <hr className="nav-line" />
       </div>
+      
     )
+   
 }
 
 export default MainNav;

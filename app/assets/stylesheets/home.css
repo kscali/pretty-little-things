@@ -1,3 +1,8 @@
+.homepage {
+  height: 1600px;
+}
+
+
 .home-ad {
   position: relative;
   top: -101px; 
@@ -5,6 +10,22 @@
 
 .sec-section {
   text-align: center; 
+}
+
+.third-section {
+  text-align: center; 
+  position: relative;
+  top: 40px; 
+}
+
+.third-section > h2 {
+  font-family: Georgia;
+  font-weight: normal;
+}
+
+#third {
+  position: relative;
+  top: 50px;
 }
 
 .sec-section > h2 {
@@ -56,6 +77,21 @@
   top: -8px;
   font-size: 16px;
 }
+
+.gel {
+  left: 0;
+  top: -4px;
+  font-size: 14px;
+}
+
+.ad-images {
+ width: 100%;
+}
+
+.ad-images > img {
+ width: 100%;
+}
+
 
 
 

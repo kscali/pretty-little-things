@@ -1,4 +1,5 @@
 import React from 'react';
+import Home from './../Home';
 
 class SignUpForm extends React.Component {
   constructor(props) {
@@ -65,9 +66,11 @@ class SignUpForm extends React.Component {
   
   render() {
     return (
+      <div className="back-modal" >
+      <Home />
     <div onClick={this.closeModal} id="main-mod" className="modals">
         <div id="myModal" className="modal-contents">
-          <span id="sp-btn" type="button" onClick={this.closeModal} className="close">&times;</span>
+          <span id="sp-btn" onClick={this.closeModal} className="close">&times;</span>
           
           <form onSubmit={this.handleSubmit}>
             <h6>Register with Pretty Little Things</h6>
@@ -129,7 +132,7 @@ class SignUpForm extends React.Component {
           </form>
           <div className="errors">{this.renderErrors()}</div>
         </div>
-       
+      </div> 
     </div>
     )
   }

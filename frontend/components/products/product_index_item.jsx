@@ -25,8 +25,9 @@ const ProductIndexItem = () => {
         <li><Link to='/cheek'>Cheek</Link></li>
         <li><Link to='/eye'>Eye</Link></li>
         <li><Link to='/lip'>Lip</Link></li>
-        <li><Link to='/lip'>Brushes</Link></li>
-        <li><Link to='/lip'>Accessories</Link></li>
+        <li><Link to='/skin'>Skin</Link></li>
+        <li><Link to='/brushes'>Brushes</Link></li>
+        <li><Link to='/Accessories'>Accessories</Link></li>
       </ul>
     </div>
   )

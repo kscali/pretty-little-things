@@ -6,10 +6,6 @@
 #   movies = Movie.create!([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create!(name: 'Luke', movie: movies.first)
 
-Product.destroy_all
-Category.destroy_all 
-Brand.destroy_all
-User.destroy_all
 
 User.create!(first_name: "user", last_name: "demo", email: "user@demo.com", password: "123456")
 
@@ -60,7 +56,8 @@ Brand.create!(name: "Jack Black", category_id: 6)
 Brand.create!(name: "Yuni", category_id: 6)
 Brand.create!(name: "Kopari", category_id: 6)
 Brand.create!(name: "Rahua", category_id: 6)
-
+Brand.create!(name: "Anastasia", category_id: 1)
+Brand.create!(name: "Marc Jacobs", category_id: 5)
 
 Product.create!(
   name: 'Amazonian Clay 12-Hour Blush',
@@ -197,3 +194,176 @@ Product.create!(
   image_url: ["https://www.sephora.com/productimages/sku/s2188258-main-grid.jpg", "https://www.sephora.com/productimages/sku/s2188258-main-zoom.jpg"],
   brand_name: "BeautyBlender"
 )
+
+Product.create!(
+  name: 'DIPBROW gel',
+  color: [''],
+  size: 'Matte Finsih',
+  price: 18.00,
+  p_type: 'Eye',
+  brand_id: 35,
+  what_it_is: 'A highly-pigmented brow gel with a long-lasting, waterproof formula for creating fuller-looking, defined brows—like DIPBROW® Pomade in a gel form.',
+  what_it_does: "Create beautifully shaped brows that stay in place all day.",
+  what_else_you_need_to_know: 'This waterproof formula lasts up to 12 hours. The unique applicator allows color to be applied directly onto the brow hairs, as well as the skin, for a natural-looking finish. It’s available in 11 shades that match Anastasia Beverly Hills’ DIPBROW® Pomade assortment.', 
+  how_to_use: ['Brush DIPBROW® Gel from the arch and extend toward the tail.', "Fill from the front of the brow toward the arch using the remaining product on the wand.", "Brush in the direction as hair’s natural growth.", 'For fuller coverage, brush the gel through the brows a second time to create hair-like strokes.' ],
+  ingredients: "Isododecane, Talc, Trimethylsiloxysilicate, Dimethicone, Beeswax, Vp/Eicosene Copolymer, Caprylyl Methicone, Trihydroxystearin, Triethylhexanoin, Trisiloxane, Silica, Disteardimonium Hectorite, Hdi/Trimethylol Hexyllactone Crosspolymer, Propylene Carbonate, Pentaerythrityl Tetra‐Di‐T‐Butyl Hydroxyhydrocinnamate. May Contain (+/-): Manganese Violet (Ci 77742), Ultramarines (Ci 77007), Carmine (Ci 75470), Yellow 5 Lake (Ci 19140), Iron Oxides (Ci 77491, Ci 77492, Ci 77499), Titanium Dioxide (Ci 77891).",
+  category_id: 1,
+  image_url: ["https://www.sephora.com/productimages/sku/s2182079-main-grid.jpg", 'https://www.sephora.com/productimages/sku/s2182079-main-zoom.jpg' , 'https://www.sephora.com/productimages/sku/s2182111+sw.jpg'],
+  brand_name: "Anastasia"
+)
+
+Product.create!(
+  name: 'Body Lava',
+  color: ['Trophy Wife - lustrous hyper-metallic gold'],
+  size: 'Matte Finsih',
+  price: 59.00,
+  p_type: 'Skin',
+  brand_id: 5,
+  what_it_is: 'A shimmering body liquid to veil skin in a high-shine finish that feels as dewy as it looks—now in a new shade, plus the two original, bestselling shades.',
+  what_it_does: "Cruelty-free face and body illuminator",
+  what_else_you_need_to_know: 'Limited-edition Body Lava is back. This body luminizer leaves skin feeling dewy, and has light-diffusing micropearls with a sheer tint of color designed for all skin tones. It’s now available in the iconic shade Trophy Wife, plus the original two bestselling shades—Who Needs Clothes?! and Brown Sugar.', 
+  how_to_use: ['Blend onto clean, dry skin with the FENTY BEAUTY Face & Body Kabuki 160 (sold separately).', 'Apply to your body: Cheeks, arms, legs, shoulders, collarbone—anywhere you want to glisten.' ],
+  ingredients: "Hydrogenated Polyisobutene, Isododecane, Ethylene/Propylene/Styrene Copolymer, Calcium Sodium Borosilicate, Synthetic Fluorphlogopite, Silica, Fragrance, Butylene/Ethylene/Styrene Copolymer, Pentaerythrityl Tetra-Di-T-Butyl Hydroxyhydrocinnamate, Tin Oxide, Titanium Dioxide (Ci 77891), Iron Oxides (Ci 77491, Ci 77492).",
+  category_id: 1,
+  image_url: ['https://www.sephora.com/productimages/sku/s2206100-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s2206100-main-zoom.jpg' , 'https://www.sephora.com/productimages/sku/s2206100+sw.jpg'],
+  brand_name: "Fenty"
+)
+
+
+Product.create!(
+  name: 'Dewy Skin Cream',
+  color: [""],
+  size: ' 1.7 oz/ 50 mL',
+  price: 68.00,
+  p_type: 'Skin',
+  brand_id: 13,
+  what_it_is: 'A rich cream that feeds skin with plumping hydration and antioxidant-packed Japanese purple rice for a dewy, healthy glow.',
+  what_it_does: 'It is solution for dryness, pores, and dullness and uneven texture',
+  what_else_you_need_to_know: 'This cream intensely hydrates and seals in moisture, helping to replenish ceramides for a healthy bounce and instant luminosity. A fermentation of Japanese anti-aging superfoods—green tea, rice, and algae—helps skin to look its most beautiful at any age.',
+  how_to_use: ['Scoop a pearl-size amount of cream with the gold spoon.', 'Massage onto face, neck, and décolletage in upward strokes.', 'Use daily, morning and night.'],
+  ingredients: 'Water, Saccharomyces/Camellia Sinensis Leaf/Cladosiphon Okamuranus/Rice Ferment Filtrate*, Glycerin, Propanediol, Dimethicone, Squalane, Diisostearyl Malate, Behenyl Alcohol, Myristyl Myristate, Dipentaerythrityl Hexahydroxystearate, Bis-Diglyceryl Polyacyladipate-2, Tridecyl Trimellitate, Chondrus Crispus Extract, Betaphycus Gelatinum Extract, Eisenia Arborea Extract, Oryza Sativa (Rice) Bran Extract, Panax Ginseng Root Extract, Origanum Majorana Leaf Extract, Thymus Serpyllum Extract, Malva Sylvestris (Mallow) Flower Extract, Sodium Hyaluronate, Inositol, Gold, Sericin, Phytosteryl Macadamiate, Butylene Glycol, Beheneth-20, Sorbitan Tristearate, Disodium Edta, Dimethicone/Vinyl Dimethicone Crosspolymer, Sodium Acrylate/Acryloyldimethyltaurate/Dimethylacrylamide Crosspolymer, Caprylyl/Capryl Glucoside, Sorbitan Isostearate, Ethylhexylglycerin, Parfum/Fragrance, Alcohol, Phenoxyethanol, Mica (Ci 77019), Titanium Dioxide (Ci 77891), Tin Oxide (Ci 77861), Violet 2 (Ci 60725). *Hadasei-3.',
+  category_id: 2,
+  image_url: ["https://www.sephora.com/productimages/sku/s2181006-main-grid.jpg", "https://www.sephora.com/productimages/sku/s2181006-main-zoom.jpg"],
+  brand_name: "Tatcha" 
+  )
+
+  Product.create!(
+  name: 'Rose Sleeping Mask',
+  color: [""],
+  size: '1.18 oz/ 2 X 0.35 mL',
+  price: 50.00,
+  p_type: 'Skin',
+  brand_id: 30,
+  what_it_is: 'A two-step mask that delivers continuous hydration overnight, drenching skin with moisture and then locking it in for a supple, dewy look.',
+  what_it_does: 'Damask rose extract: Hydrates, smooths and supports the skin’s natural moisture barrier.',
+  what_else_you_need_to_know: 'This next-level sleeping mask is proven to give you the appearance of plumper, smoother skin after as little as one night of use. Start by replenishing moisture with a cooling gel essence powered by rosewater, damask rose extract, and hyaluronic acid. Then lock it in with a silky water-cream mask that uses time-release technology.',
+  how_to_use: ['After cleansing, apply the amber-colored gel essence to your face and let it absorb.', 'Immediately follow with the silky water-cream mask.', 'Leave on overnight.'],
+  ingredients: 'Water, Glycerin, Dicaprylyl Carbonate, Propanediol, Ammonium Acryloyldimethyltaurate/VPCopolymer, Dimethicone, PEG-60 Hydrogenated Castor Oil, Cucumis Sativus (Cucumber) FruitExtract, Oenothera Biennis (Evening Primrose) Root Extract, Rosa Damascena Flower Oil,Tocopheryl Acetate, Tocopherol, Butylene Glycol, Dimethicone/Vinyl Dimethicone Crosspolymer,Caprylyl Glycol, Polyacrylamide, C13-14 Isoparaffin, Caprylic/Capric Triglyceride, HydroxylatedLecithin, Trehalose, Urea, Laureth-7, Caramel, Serine, Betaine, Inositol, Taurine, Algin, BHT,Pentylene Glycol, Acacia Senegal Gum, Glyceryl Polyacrylate, Pullulan, SodiumHyaluronate, Citric Acid, Disodium Phosphate, Potassium Phosphate, Potassium Sorbate,Phenoxyethanol, Citronellol, Geraniol.',
+  category_id: 2,
+  image_url: ["https://www.sephora.com/productimages/sku/s2211167-main-grid.jpg", "https://www.sephora.com/productimages/sku/s2211167-main-zoom.jpg"],
+  brand_name: "Fresh" 
+  )
+
+  Product.create!(
+  name: 'Dior Lip Glow',
+  color: ['Pink Glow - light pink'],
+  size: '0.12 oz/ 3.52 g',
+  price: 34.00,
+  p_type: 'Lip',
+  brand_id: 26,
+  what_it_is: 'A sheer balm, with two brand-new finishes, that enhances your natural lip color while moisturizing and protecting lips.',
+  what_it_does: 'The must-have universal balm from Dior Backstage, is now unveiling two new finishes—Matte and Holographic—alongside the original Glow. Inspired by the expert techniques of the Dior Backstage, Lip Glow is the first color reviver balm by Dior, combining the comfort of a balm with a natural flush of custom color.',
+  what_else_you_need_to_know: 'A collection of makeup artist essentials, designed to suit all skin tones, used at the Dior runway shows, and inspired by the energy backstage.',
+  how_to_use: ['Wear it alone, below, or on top of lipstick.', 'Apply alone for a natural flush of color.', 'Wear as a lip balm or primer.', 'Layer on top of lipstick to change the effect.', 'Top with Lip Maximizer (sold separately) for even more radiant results.'],
+  ingredients: "Mango Butter: Ultra nourishing to soothe the lips.",
+  category_id: 1,
+  image_url: ['https://www.sephora.com/productimages/sku/s2123065-main-grid.jpg','https://www.sephora.com/productimages/sku/s2123065-main-zoom.jpg', 'https://www.sephora.com/productimages/sku/s1162650+sw.jpg' ],
+  brand_name: "Dior"
+)
+
+Product.create!(
+  name: 'Daisy',
+  color: [''],
+  size: '1.7 oz/ 50 mL',
+  price: 84.00,
+  p_type: 'Skin',
+  brand_id: 36,
+  what_it_is: "Charmingly simple with a signature quality, Daisy Marc Jacobs transports you to a place that’s optimistic, beautiful, and pure. The top of the fragrance is infused with succulent wild berries and soft white violets. At the heart, velvety jasmine warms to a dreamy dry-down of sensual sandalwood, for a romantic, lingering finish.",
+  what_it_does: "Irresistibly feminine, Daisy Marc Jacobs is the captivating creation of master perfumer Alberto Morillas.",
+  what_else_you_need_to_know: 'Whimsical white daisies abloom on its cap give the iconic Daisy bottle a retro-cool twist—as charming and unique as the woman who wears the fragrance.',
+  how_to_use: ["Spritz lightly anywhere you want fragrance."],
+  ingredients: 'Strawberry, Violet Leaves, Jasmine',
+  category_id: 5,
+  image_url: ['https://www.sephora.com/productimages/sku/s1029941-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s1029941-main-zoom.jpg'],
+  brand_name: "Marc Jacobs"
+)
+
+Product.create!(
+  name: 'Protective Primer',
+  color: [""],
+  size: '0.7 oz/ 20g',
+  price: 52.00,
+  p_type: 'Skin',
+  brand_id: 13,
+  what_it_is: 'A velvety priming balm of pressed silk that smooths and makes makeup last longer while keeping it out of skin, helping to prevent clogged pores and breakouts.',
+  what_it_does: 'This multitasking skin-protecting, makeup-perfecting primer is for face, eyes, and lips. Silk extracts feel nourishing on skin and diminish the look of pores, fines lines, and imperfections for the perfect canvas before makeup.',
+  what_else_you_need_to_know: 'This product is noncomedogenic, non-irritating, non-sensitizing, dermatologist tested, cruelty-free, and formulated without synthetic fragrances, mineral oil, sulfate detergents, urea, DEA, or TEA.',
+  how_to_use: ['Glide the spatula lightly across the top of balm.', 'A little goes a long way; use a rice-sized amount for the whole face.', 'With fingertips, dot the formula on your forehead, nose, chin, eyelids, and cheeks.', 'Gently massage the balm onto your face and allow the silk to melt into a second skin before applying foundation.'],
+  ingredients: 'Hadasei-3: A complex of three anti-aging nutrients reveal soft, youthful-looking skin.',
+  category_id: 2,
+  image_url: ["https://www.sephora.com/productimages/sku/s1970235-main-grid.jpg", "https://www.sephora.com/productimages/sku/s1970235-main-zoom.jpg"],
+  brand_name: "Tatcha" 
+  )
+
+  Product.create!(
+  name: 'Dewy Skin Mist',
+  color: [""],
+  size: '0.7 oz/ 20g',
+  price: 52.00,
+  p_type: 'Skin',
+  brand_id: 13,
+  what_it_is: 'A velvety priming balm of pressed silk that smooths and makes makeup last longer while keeping it out of skin, helping to prevent clogged pores and breakouts.',
+  what_it_does: 'This multitasking skin-protecting, makeup-perfecting primer is for face, eyes, and lips. Silk extracts feel nourishing on skin and diminish the look of pores, fines lines, and imperfections for the perfect canvas before makeup.',
+  what_else_you_need_to_know: 'This product is noncomedogenic, non-irritating, non-sensitizing, dermatologist tested, cruelty-free, and formulated without synthetic fragrances, mineral oil, sulfate detergents, urea, DEA, or TEA.',
+  how_to_use: ['Glide the spatula lightly across the top of balm.', 'A little goes a long way; use a rice-sized amount for the whole face.', 'With fingertips, dot the formula on your forehead, nose, chin, eyelids, and cheeks.', 'Gently massage the balm onto your face and allow the silk to melt into a second skin before applying foundation.'],
+  ingredients: 'Hadasei-3: A complex of three anti-aging nutrients reveal soft, youthful-looking skin.',
+  category_id: 2,
+  image_url: ["https://www.sephora.com/productimages/sku/s1742337-main-grid.jpg", ""],
+  brand_name: "Tatcha" 
+  )
+
+  Product.create!(
+  name: 'Nomade Eau de Parfum',
+  color: [''],
+  size: '1.7 oz/ 50 mL',
+  price: 105.00,
+  p_type: 'Fragrance',
+  brand_id: 25,
+  what_it_is: 'Nomade Eau de Parfum is the essence of a free-spirited and confident women, taking inspiration from her experiences and encounters throughout the world and asserting who she is.',
+  what_it_does: 'The intense mineral character of oakmoss is enveloped in the voluptuous softness of mirabelle plum. From this freshness emanates a bright floral note carried by freesia. Natural ingredients brought into focus by the perfumer Quentin Bisch, revealing accords as exhilarating as the feeling of escape they inspire.',
+  what_else_you_need_to_know: 'Nomade evokes a vision of escape and openness to the world. A perfume that captures the spirit of Chloé, with its distinctive assertiveness and freedom, staying true to the woman who wears it.',
+  how_to_use: ["Spritz lightly anywhere you want fragrance."],
+  ingredients: 'Alcohol Denat., Fragrance, Water, Ethylhexyl Methoxycinnamate, Limonene, Benzyl Salicylate, Linalool, Benzophenone-3, Ethylhexyl Salicylate, Butyl Methoxydibenzoylmethane, Coumarin, Alpha-Isomethyl Ionone, Citronellol, Bht, Eugenol, Citral, Alcohol, Propylene Glycol, Hexyl Cinnamal, Tris(Tetramethylhydroxypiperidinol) Citrate, Farnesol, Isoeugenol, Benzyl Alcohol, Geraniol, Acrylates/Octylacrylamide Copolymer, Hydrolyzed Jojoba Esters, Fd&C Red No. 4 (Ci 14700), Ext. D&C Violet No. 2 (Ci 60730), Fd&C Yellow No. 5 (Ci 19140).',
+  category_id: 5, 
+  image_url: ['https://www.sephora.com/productimages/sku/s2037380-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s2037380-main-zoom.jpg'],
+  brand_name: "Chloe"
+)
+
+Product.create!(
+  name: 'Daisy Dream',
+  color: [''],
+  size: '1.7 oz/ 50 mL',
+  price: 84.00,
+  p_type: 'Fragrance',
+  brand_id: 36,
+  what_it_is: 'Light and airy, Daisy Dream captivates with its delectably fruity and floral personality. From the first hints of blackberry, fresh grapefruit, and succulent pear, Daisy Dream draws you in with her easy charm and an irresistibly feminine mix of jasmine flower, lychee, and blue wisteria. The fragrance lingers on the skin, drying down to a dreamy finish of white woods, musk, and an elusive hint of coconut water.',
+  what_it_does: 'The fragrance lingers on the skin, drying down to a dreamy finish of white woods, musk, and an elusive hint of coconut water.',
+  what_else_you_need_to_know: 'Strewn with delicate daisies on its shoulders and cap, the clear-glass bottle reveals a sky-blue fragrance—the color of a dream.',
+  ingredients: 'Blackberry, Jasmine Flower, White Woods',
+  how_to_use: ["Spritz lightly anywhere you want fragrance."],
+  category_id: 5,
+  image_url: ['https://www.sephora.com/productimages/sku/s1632751-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s1632751-main-zoom.jpg'],
+  brand_name: "Marc Jacobs"
+)
+
+

@@ -2,7 +2,7 @@
 .modals {
   display: block;/* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 0; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -20,6 +20,7 @@
   width: 500px; /* Could be more or less, depending on screen size */
   height: 800px;
   margin-top: 120px; 
+  z-index: 5;
 }
 
 /* The Close Button */
@@ -47,4 +48,8 @@ span.close {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.back-modal {
+  height: 1600px; 
 }

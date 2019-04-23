@@ -49,10 +49,6 @@
 
 /* main */
 
-.inner-side {
-  height: 800px;
-}
-
 .products {
   position: relative;
   top: -80px; 
@@ -69,6 +65,7 @@
 
 
 .inner-side {
+  height: 1300px;
   width: 500px;
   display: grid; 
   grid-template-columns: auto auto auto auto;
@@ -84,9 +81,20 @@
   text-align: center; 
 }
 
-.item-li > p {
+.item-li > a {
+  text-align: center; 
+  color: black; 
+}
+
+.item-li > a >  p {
   position: relative; 
   left: 10px; 
   top: -5px; 
   margin-bottom: 2px;
+}
+
+.gel {
+  left: 0;
+  top: -4px;
+  font-size: 14px;
 }

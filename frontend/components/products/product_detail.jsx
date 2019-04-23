@@ -1,5 +1,8 @@
 import React from 'react';
 import ProductInfo from './product-info';
+// import Details from './details';
+// import Ingredients from './ingredients';
+// import HowToUse from './how_to_use';
 
 class ProductDetail extends React.Component {
 
@@ -14,15 +17,17 @@ class ProductDetail extends React.Component {
   }
 
   render() {
-    const panes = [
-      {title: "Details"},
-      {title: "How To Use"},
-      {title: "Ingredients"}
-    ]
+    // debugger;
 
     let product = this.props.product;
-  
     if (!product) return null; 
+
+    const panes = [
+      {title: "Details"},
+      {title: "How To Use"} ,
+      {title: "Ingredients"}
+    ]
+  
     let product_img = this.props.product.image_url;
     
     return (

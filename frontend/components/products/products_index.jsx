@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 import ProductIndexItem from './product_index_item';
 import ProductDetailContainer from './product_detail_container';
 
@@ -29,10 +29,12 @@ class ProductsIndex extends React.Component {
             <ul className="inner-side">
               {this.props.products.map(product => {
                return ( <li className="item-li" key={product.id}>
-                  <img src={product.image_url[0]} />
-                  <h6>{product.brand_name}</h6>
-                  <p>{product.name}</p>
-                 <p><b>${product.price}</b></p>
+                 <Link to={`/products/${product.id}`}>
+                    <img src={product.image_url[0]} />
+                    <h6>{product.brand_name}</h6>
+                    <p>{product.name}</p>
+                    <p><b>${product.price}</b></p>
+                 </Link>
                </li>
                )
               })}
