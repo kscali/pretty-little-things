@@ -1,0 +1,26 @@
+.face {
+  text-align: center;
+  height: 600px;
+}
+
+.face > h4 {
+  position: relative;
+  top: -80px;
+}
+
+.face-li > a > p {
+  position: relative;
+  left: 0;
+  top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.face-li > a > h6 {
+  margin-bottom: 3px;
+  margin-top: 5px;
+}
+
+.face-li > a {
+  color: black;
+}

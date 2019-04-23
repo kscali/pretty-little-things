@@ -10,7 +10,10 @@ import Footer from './footer';
 import ProductsIndexContainer from './products/products_index_container';
 import ProductsDetailContainer from './products/product_detail_container';
 import BrandsContainer from './brands/brands_container';
-
+import FragranceContainer from './../components/categories/fragrance_container';
+import LipContainer from './../components/categories/lips_container';
+import FaceContainer from './../components/categories/face_container';
+import EyeContainer from './../components/categories/eyes_container';
 
 
 class App extends React.Component {
@@ -54,6 +57,11 @@ class App extends React.Component {
       <Route path="/products/:productId" component={ProductsDetailContainer} />
       <Route exact path="/products" component={ProductsIndexContainer} />
       <Route exact path="/brands" component={BrandsContainer} />
+      <Route exact path="/fragrance" component={FragranceContainer} />
+      <Route exact path="/face" component={FaceContainer} />
+      <Route exact path="/lip" component={LipContainer} />
+       <Route exact path="/eye" component={EyeContainer} />
+     
       <AuthRoute path="/signup" component={SignupFormContainer} />
       <AuthRoute path="/login" component={LoginFormContainer} />
       <Route render={() => (<div className="alert-error"><h1>404: Sorry, this page does not exist.</h1></div>)} />

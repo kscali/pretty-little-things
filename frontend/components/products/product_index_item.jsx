@@ -22,10 +22,11 @@ const ProductIndexItem = () => {
     <div className="side-nav-menu">
       <ul>
         <li><Link to='/face'>Face</Link></li>
-        <li><Link to='/cheek'>Cheek</Link></li>
         <li><Link to='/eye'>Eye</Link></li>
         <li><Link to='/lip'>Lip</Link></li>
         <li><Link to='/skin'>Skin</Link></li>
+        <li><Link to='/fragrance'>Fragrance</Link></li>
+        <li><Link to='/hair'>Hair</Link></li>
         <li><Link to='/brushes'>Brushes</Link></li>
         <li><Link to='/Accessories'>Accessories</Link></li>
       </ul>
