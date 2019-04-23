@@ -173,7 +173,7 @@ p {
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 2;
-  top: 20px;
+  top: 30px;
   text-align: left;
   left: -15px;
   opacity: 100;
@@ -194,6 +194,11 @@ ul.dropdown-content > li {
  left: -50px;
  width: 100%;
  margin: 0 0 0 10px;
+ 
+}
+
+ul.dropdown-content > li > a {
+  padding: 5px 20px;
 }
 
 /* Change color of dropdown links on hover */
@@ -219,7 +224,7 @@ div.col > img {
 
 #comm  {
   position: absolute; 
-  top: 20px; 
+  top: 30px; 
   left: -600px;
   /* display: flex;  */
 }
@@ -315,7 +320,7 @@ img#abh {
   position: relative;
   width: 190px; 
   left: 220px; 
-  top: -312px; 
+  top: -380px; 
 }
 
 /* gifts dropdown */

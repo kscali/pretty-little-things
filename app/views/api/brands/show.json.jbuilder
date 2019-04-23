@@ -1,3 +1,2 @@
-json.brand do 
-  json.extract! @brand, :name, :category_id 
-end
+
+  json.extract! @brand, :id ,:name, :category_id 

@@ -89,6 +89,7 @@ const MainNav = ({user, logout, products}) => {
                     <li><Link to="/fresh">FRESH</Link></li>
                     <li><Link to="/stila">STILA</Link></li>
                     <li><Link to="/tarte">TARTE</Link></li>
+                    <li><Link to="/all">VIEW ALL</Link></li>
                   </ul>
                 </div>
                 <div className="col">

@@ -9,6 +9,7 @@ import Home from './Home';
 import Footer from './footer';
 import ProductsIndexContainer from './products/products_index_container';
 import ProductsDetailContainer from './products/product_detail_container';
+import BrandsContainer from './brands/brands_container';
 
 
 
@@ -52,6 +53,7 @@ class App extends React.Component {
       <Route exact path="/" component={Home} />
       <Route path="/products/:productId" component={ProductsDetailContainer} />
       <Route exact path="/products" component={ProductsIndexContainer} />
+      <Route exact path="/brands" component={BrandsContainer} />
       <AuthRoute path="/signup" component={SignupFormContainer} />
       <AuthRoute path="/login" component={LoginFormContainer} />
       <Route render={() => (<div className="alert-error"><h1>404: Sorry, this page does not exist.</h1></div>)} />

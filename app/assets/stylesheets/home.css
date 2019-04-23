@@ -1,5 +1,5 @@
 .homepage {
-  height: 1600px;
+  height: 1800px;
 }
 
 
@@ -88,10 +88,27 @@
  width: 100%;
 }
 
-.ad-images > img {
+.ad-images > a > img {
  width: 100%;
 }
 
+.fourth-sec > h2 {
+  position: relative;
+  top: 100px;
+  left: 800px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+}
+
+.last-sec {
+  position: relative;
+  top: 150px;
+  left: 30px;
+}
+
+.last-sec > a {
+  margin-right: 50px;
+}
 
 
 
