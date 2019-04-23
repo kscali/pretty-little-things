@@ -62,8 +62,9 @@ class ProductDetail extends React.Component {
                 </div>
               </div>
             <div className="product-info container">
+              <p className="p-color">COLOR: {product.color[0] === "" ? "N/A" : product.color[0]}</p>
               <p>SIZE: {product.size}</p>
-              <img src={product.image_url[3] ? product.image_url[3] : null} />
+              <img src={product.image_url[2] ? product.image_url[2] : null} />
             </div>
             <div>
               <ProductInfo product={product} panes={panes} />

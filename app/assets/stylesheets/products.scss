@@ -20,7 +20,7 @@
 .p-details-1 {
   text-align: left; 
   padding: 0;
-  left: 20px;
+  left: 10px;
 }
 
 .p-details-1 > p {
@@ -93,3 +93,9 @@ select {
   text-transform: uppercase;
 }
 
+p.p-color {
+  font-size: 14px; 
+  left: -23px;
+  top: 35px;
+  text-transform: uppercase;
+}

@@ -198,7 +198,7 @@ Product.create!(
 
 Product.create!(
   name: 'DIPBROW gel',
-  color: [''],
+  color: ['Dark Brown'],
   size: 'Matte Finsih',
   price: 18.00,
   p_type: 'Eye',
