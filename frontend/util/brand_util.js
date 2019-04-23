@@ -8,6 +8,6 @@ export const fetchBrands = () => (
 export const fetchBrand = (id) => (
   $.ajax({
     method: "GET",
-    url: `/api/brand/${id}`
+    url: `/api/brands/${id}`
   })
 )

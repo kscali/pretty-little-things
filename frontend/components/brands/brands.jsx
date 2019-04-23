@@ -6,7 +6,11 @@ class Brands extends React.Component {
   }
 
   render() {
-    <div>
+    debugger; 
+    let brands = this.props.brands; 
+    if (!brands) return null; 
+    
+    return ( <div>
       <h5>All Brands</h5>
       <ul>
         {this.props.brands.map(brand => (
@@ -14,6 +18,7 @@ class Brands extends React.Component {
         ))}
       </ul>
     </div>
+    )
   }
 }
 

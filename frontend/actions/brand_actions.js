@@ -3,7 +3,7 @@ import * as ApiUtil from '../util/brand_util';
 export const RECEIVE_BRANDS = "RECEIVE_BRANDS";
 export const RECEIVE_BRAND = "RECEIVE_BRAND";
 
-export const receivebrands = brands => ({
+export const receiveBrands = brands => ({
   type: RECEIVE_BRANDS,
   brands
 })

@@ -1,5 +1,5 @@
-import { fetchBrands } from './../../actions/brand_actions';
 import { connect } from 'react-redux';
+import { fetchBrands } from './../../actions/brand_actions';
 import Brands from './brands';
 
 const mstp = state => ({
