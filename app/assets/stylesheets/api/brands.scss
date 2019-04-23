@@ -1,3 +1,32 @@
 // Place all the styles related to the api/brands controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.brands-div {
+  height: 900px;
+  text-align: center;
+}
+
+.brands-div > h4 {
+  position: relative;
+  top: -80px;
+}
+
+.brands-list > a {
+  color: black; 
+}
+
+.brands-div > ul {
+  margin: 0 auto; 
+  text-align: center;
+}
+
+.brands-list {
+ display: inline-block;
+ vertical-align: top;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}

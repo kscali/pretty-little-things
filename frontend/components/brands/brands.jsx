@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class Brands extends React.Component {
   componentDidMount() {
@@ -6,15 +7,15 @@ class Brands extends React.Component {
   }
 
   render() {
-    debugger; 
     let brands = this.props.brands; 
     if (!brands) return null; 
-    
-    return ( <div>
-      <h5>All Brands</h5>
-      <ul>
-        {this.props.brands.map(brand => (
-          <li key={brand.id}>brand.name</li>
+    return ( <div className="brands-div container">
+      <h4>All Brands</h4>
+      <ul className="grid-container">
+        {this.props.brands.map((brand, i) => (
+           <li className="grid-item brands-list" key={i}>
+             <Link to={`/brands/${brand.id}`}>{brand.name}</Link>
+           </li>
         ))}
       </ul>
     </div>
