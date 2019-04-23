@@ -2,23 +2,8 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 
 const ProductIndexItem = () => {
-  let style = window.location.href.slice(24);
-  let makeup = () => (
-    <div className="container">
-      <ul>
-        <li><Link to='/face'>Face</Link></li>
-      </ul>
-    </div>
-  )
 
-  
-  return (
-    // { style === "makeup" ?
-    //   <div><Makeup /></div> : style === "skincare" ?
-    //     <div><SkinCare /></div> : style === "tools" ?
-    //       <div><Tools /></div> : style === "fragrance" ?
-    //         <div><Fragrance /></div> : <Bath />
-    //       }
+   return (
     <div className="side-nav-menu">
       <ul>
         <li><Link to='/face'>Face</Link></li>

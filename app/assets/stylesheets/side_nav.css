@@ -52,6 +52,7 @@
 .products {
   position: relative;
   top: -80px; 
+  height: 2400px;
 }
 
 .nav > .dropdown > a {
@@ -65,7 +66,7 @@
 
 
 .inner-side {
-  height: 1300px;
+  height: 2400px;
   width: 500px;
   display: grid; 
   grid-template-columns: auto auto auto auto;
@@ -91,6 +92,10 @@
   left: 10px; 
   top: -5px; 
   margin-bottom: 2px;
+}
+
+.item-li > a >  img {
+ image-rendering: pixelated;
 }
 
 .gel {

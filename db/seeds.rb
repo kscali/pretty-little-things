@@ -24,7 +24,7 @@ Brand.create!(name: "Fenty Beauty by Rihanna", category_id: 1)
 Brand.create!(name: "Tarte", category_id: 1)
 Brand.create!(name: "Stila", category_id: 1)
 
-Brand.create!(name: "Dermologia", category_id: 2)
+Brand.create!(name: "Dermologica", category_id: 2)
 Brand.create!(name: "Laneige", category_id: 2)
 Brand.create!(name: "Estee Lauder", category_id: 2)
 Brand.create!(name: "La Mer", category_id: 2)
@@ -58,6 +58,7 @@ Brand.create!(name: "Kopari", category_id: 6)
 Brand.create!(name: "Rahua", category_id: 6)
 Brand.create!(name: "Anastasia", category_id: 1)
 Brand.create!(name: "Marc Jacobs", category_id: 5)
+Brand.create!(name: "Dyson", category_id: 4)
 
 Product.create!(
   name: 'Amazonian Clay 12-Hour Blush',
@@ -359,11 +360,426 @@ Product.create!(
   what_it_is: 'Light and airy, Daisy Dream captivates with its delectably fruity and floral personality. From the first hints of blackberry, fresh grapefruit, and succulent pear, Daisy Dream draws you in with her easy charm and an irresistibly feminine mix of jasmine flower, lychee, and blue wisteria. The fragrance lingers on the skin, drying down to a dreamy finish of white woods, musk, and an elusive hint of coconut water.',
   what_it_does: 'The fragrance lingers on the skin, drying down to a dreamy finish of white woods, musk, and an elusive hint of coconut water.',
   what_else_you_need_to_know: 'Strewn with delicate daisies on its shoulders and cap, the clear-glass bottle reveals a sky-blue fragrance—the color of a dream.',
-  ingredients: 'Blackberry, Jasmine Flower, White Woods',
   how_to_use: ["Spritz lightly anywhere you want fragrance."],
+  ingredients: 'Blackberry, Jasmine Flower, White Woods',
   category_id: 5,
   image_url: ['https://www.sephora.com/productimages/sku/s1632751-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s1632751-main-zoom.jpg'],
   brand_name: "Marc Jacobs"
 )
+
+Product.create!(
+  name: 'WrinkleResist24 Eye Cream',
+  color: [''],
+  size: '0.51 oz / 15 mL',
+  price: 60.00,
+  p_type: 'Eye',
+  brand_id: 12,
+  what_it_is: 'A rich, fast-absorbing eye cream that visibly smooths and firms lids, crow’s feet, and under eye wrinkles.',
+  what_it_does: 'This number one best-selling eye cream developed in Japan targets five types of wrinkles that appear around the delicate eye area, including lid creases, crow’s feet, and fine lines caused by puffiness. The breakthrough WrinkleResist24 technology—formulated with chlorella, mukurossi, and gambir extracts—visibly smooths and restores, while burnet extract visibly firms. Hydroxyproline supports collagen production and super bio-hyaluronic acid N instantly refreshes tired eyes by plumping the appearance skin with much-needed moisture minus any greasy residue.',
+  what_else_you_need_to_know: 'This product is dermatologist and ophthalmologist tested.',
+  how_to_use: ['Apply every morning and night as the final step of your skincare regimen.'],
+  ingredients: 'Water, Hydrogenated Polydecene, Mineral Oil (Paraffinum Liquidum), Glycerin, Petrolatum, Butylene Glycol, Paraffin, Polyglyceryl-2 Diisostearate, Squalane, Glyceryl Oleate, Sodium Glutamate, Sodium Pca, Dipropylene Glycol, Beeswax (Cera Alba), Microcrystalline Wax (Cera Microcristallina), Polyethylene, Methylparaben, Phytosteryl/Octyldodecyl Lauroyl Glutamate, Fragrance (Parfum), Trisodium Edta, Tocopheryl Acetate, Alcohol, Tocopherol, Iron Oxides (Ci 77492), Butylphenyl Methylpropional, Sapindus Mukurossi Peel Extract (Sapindus Mukurossi), Limonene, Linalool, Citronellol, Alpha-Isomethyl Ionone, Geraniol, Uncaria Gambir Extract (Uncaria Gambir), Benzyl Benzoate, Hexyl Cinnamal, Sanguisorba Officinalis Root Extract, Sodium Acetylated Hyaluronate, Hydroxyproline, Iron Oxides (Ci 77491), Chlorella Vulgaris Extract, Bht.',
+  category_id: 2,
+  image_url: ['https://www.sephora.com/productimages/sku/s1408202-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s1408202-main-zoom.jpg'],
+  brand_name: "Shisheido"
+ )
+
+ Product.create!(
+  name: 'Airwrap™ Styler',
+  color: [''],
+  size: 'n/a',
+  price: 549.00,
+  p_type: 'Accessory',
+  brand_id: 37,
+  what_it_is: 'A styler that is engineered for multiple hair types and styles, featuring Coanda air styling and propelled by the Dyson digital motor so users can curl, wave, smooth, and dry with no extreme heat.',
+  what_it_does: 'Attracts and wraps hair, using only air.',
+  what_else_you_need_to_know: 'Two-year warranty – on parts and labor.',
+  how_to_use: ['How to create waves and shape:', 'Begin with wet hair.', 'Attach Pre-styling dryer.', 'Dry to damp using Pre-styling dryer.', 'Attach the Round volumizing brush.', 'Select medium power and high heat.', 'Smooth the brush through to the ends of your hair.', 'Roll hair up from the ends to the roots.', 'Hold until your hair is dry.', 'Push the cold shot to set the curl.', 'Release the curl.', 'Repeat throughout your hair.'],
+  ingredients: 'n/a',
+  category_id: 4,
+  image_url: ['https://www.sephora.com/productimages/sku/s2162493-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s2162493-main-zoom.jpg'],
+  brand_name: "Dyson"
+  )
+
+  Product.create!(
+  name: 'Moroccanoil Treatment',
+  color: [''],
+  size: '1.7 oz/ 50 mL',
+  price: 34.00,
+  p_type: 'Hair',
+  brand_id: 17,
+  what_it_is: 'A versatile, argan oil-infused hair styler in a light formulation that can be used for conditioning, styling, and finishing.',
+  what_it_does: 'Moroccanoil® Treatment detangles, speeds up drying time, and boosts shine. Featuring the iconic Moroccanoil scent, this treatment is non-greasy and fast-absorbing, and it improves your hair’s manageability and creates a softer texture.',
+  what_else_you_need_to_know: 'This product is free of mineral oil.',
+  how_to_use: ['Apply a small amount to damp hair from mid-length to ends as the foundation for all styling to prepare the hair for blow-drying. Blow-dry or style as usual.'],
+  ingredients: 'Cyclomethicone, Dimethicone, Argania Spinosa (Argan) Kernel Oil, Fragrance, Linum Usitatissimum (Linseed) Seed Extract, CI 26100 (Red 17), CI 47000 (Yellow 11).',
+  category_id: 3,
+  image_url: ['https://www.sephora.com/productimages/sku/s1869478-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s1869478-main-zoom.jpg'],
+  brand_name: "Moroccanoil"
+  )
+
+  Product.create!(
+  name: 'Color Shampoo',
+  color: [''],
+  size: '8.5 oz/ 250 mL',
+  price: 26.00,
+  p_type: 'Hair',
+  brand_id: 17,
+  what_it_is: 'A gentle shampoo that provides continuous repair benefits with each and every use, enabling hair to better retain color.',
+  what_it_does: 'Continuously repairs on both a chemical and physical level using COLORLINK™ technology.',
+  what_else_you_need_to_know: 'Part of the Moroccanoil® Color Complete Collection, this gentle, sulfate-free shampoo helps prevent haircolor loss by continuously repairing hair on both a physical and chemical level. The full regimen starts in the salon with the Moroccanoil ChromaTech Service.',
+  how_to_use: ['Massage through wet hair and scalp. Because Color Continue Shampoo is a low-pH cleanser, foaming will be minimal.', 'Rinse thoroughly and repeat if needed. Follow with Moroccanoil® Color Continue Conditioner.'],
+  ingredients: 'Water, Sodium Cocoamphoacetate, Sodium Cocoyl Isethionate, Cocamidopropyl Betaine, Sodium Methyl Cocoyl Taurate, Cocamidopropyl Hydroxysultaine, Sodium Chloride, Decyl Glucoside, Acrylates/Aminoacrylates/C10-30 Alkyl Peg-20 Itaconate Copolymer, Lauryl Glucoside, Ppg-26-Buteth-26, Citric Acid, Parfum/Fragrance, Polyquaternium-113, Argania Spinosa (Argan) Kernel Oil, Carrageenan, Peg-40 Hydrogenated Castor Oil, Xanthan Gum, Glycerin, Silicone Quaternium-22, Hydroxyacetophenone, Caprylyl Glycol, Hydroxypropyl Gluconamide, Hydroxypropylammonium Gluconate, Dipropylene Glycol, Polyglyceryl-3 Caprate, Caprylic/Capric Triglyceride, Propylene Glycol, Trideceth-50, Algin, Coco-Glucoside, Palmitamidopropyltrimonium Chloride, Sorbitan Oleate, Chitosan, Guar Hydroxypropyltrimonium Chloride, Tartaric Acid, C12-13 Pareth-9, Sodium Lauroyl Lactylate, Ceramide Np, Ceramide Ap, Phytosphingosine, Cholesterol, Carbomer, Ethylhexylglycerin, Ceramide Eop, Benzyl Alcohol, Potassium Sorbate, Sodium Benzoate, Chlorphenesin, Phenoxyethanol, Alpha-Isomethyl Ionone, Linalool.',
+  category_id: 3,
+  image_url: ['https://www.sephora.com/productimages/sku/s2070290-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s2070290-main-zoom.jpg'],
+  brand_name: "Moroccanoil"
+  )
+
+  Product.create!(
+  name: 'Color Conditioner',
+  color: [''],
+  size: '8.5 oz/ 250 mL',
+  price: 27.00,
+  p_type: 'Hair',
+  brand_id: 17,
+  what_it_is: 'A sulfate-free conditioner that supports hair’s natural repair processes, helping to prevent color loss.',
+  what_it_does: 'Supports hair’s natural repair processes.',
+  what_else_you_need_to_know: 'Part of the Moroccanoil® Color Complete Collection, this nourishing, sulfate-free conditioner uses COLORLINK™ technology to support hair’s natural repair processes, on both a physical and chemical level, helping it to retain color.',
+  how_to_use: ['After shampooing, gently squeeze excess water from hair and apply conditioner from mid-length to ends.', 'Leave on for one to two minutes.'],
+  ingredients: 'Water, Cetearyl Alcohol, Amodimethicone, Prunus Armeniaca (Apricot) Kernel Oil, Stearyl Alcohol, Citric Acid, Linoleamidopropyl Dimethylamine Dimer Dilinoleate, Hydroxypropyl Gluconamide, Hydroxypropylammonium Gluconate, Behenamidopropyl Dimethylamine, Fragrance, Polyquaternium-113, Argania Spinosa (Argan) Kernel Oil, Carrageenan, Quaternium-91, Cetrimonium Methosulfate, Hydroxyacetophenone, Stearamidopropyl Ethyldimonium Ethosulfate, Guar Hydroxypropyltrimonium Chloride, Dilinoleic Acid, Linoleamidopropyl Ethyldimonium Ethosulfate, Linoleamidopropyl PG-Dimonium Chloride Phosphate Dimethicone, Caprylyl Glycol, Dimethyl Lauramine, Acrylates/Aminoacrylates/C10-30 Alkyl Peg-20 Itaconate Copolymer, C12-13 Pareth-9, Caprylic/Capric Triglyceride, Propylene Glycol, Glycerin, Tribehenin, Dimethyl Lauramine Isostearate, Algin, Tartaric Acid, Chitosan, Coco-Glucoside, Sorbitan Oleate, Xanthan Gum, Trideceth-50, Isopropyl Alcohol, Sodium Lauroyl Lactylate, Ceramide NP, Ceramide AP, Phytosphingosine, Cholesterol, Carbomer, Ethylhexylglycerin, Ceramide EOP, Cetrimonium Chloride, Dehydroacetic Acid, Benzyl Alcohol, Sodium Benzoate, Chlorphenesin, Potassium Sorbate, Phenoxyethanol, Alpha-Isomethyl Ionone, Linalool.',
+  category_id: 3,
+  image_url: ['https://www.sephora.com/productimages/sku/s2070282-main-grid.jpg', ''],
+  brand_name: "Moroccanoil"
+  )
+
+  Product.create!(
+  name: 'Rouge Dior Lipstick',
+  color: ['999 Matte - red'],
+  size: '0.12 oz/ 3.4g',
+  price: 37.00,
+  p_type: 'Lip',
+  brand_id: 26,
+  what_it_is: 'A collection of couture, satin-to-matte lipsticks with highly pigmented finishes with lasting comfort.',
+  what_it_does: 'Get 16 hours of comfort and elegant lip color—without streaking or drying out lips—with Rouge Dior Lipstick. This lasting lipstick features a myriad of colors in iconic reds, vibrant corals, alluring pinks, romantic rosewoods, and bold, unexpected mattes. It’s enriched with hydrating mango butter and aroelat samphira for its revitalizing action and hyaluronic acid spheres for their filling properties, while Decox creates a volumizing effect.',
+  what_else_you_need_to_know: ' "I created this Rouge Dior collection so women can choose and change shades to express themselves."—Peter Philips, Creative and Image Director of Dior Make-up.',
+  how_to_use: ['Start by lining the lips with Dior Contour.', 'For perfectly even results, then apply lipstick with the Backstage Lip Brush working from the center of the lips outwards.', 'For a bolder finish, apply the lipstick directly on the lips.'],
+  ingredients: "n/a",
+  category_id: 1,
+  image_url: ['https://www.sephora.com/productimages/sku/s1853548-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s1853548-main-zoom.jpg', 'https://www.sephora.com/productimages/sku/s1853548+sw.jpg' ],
+  brand_name: "Dior"
+)
+
+ Product.create!(
+  name: 'Rouge Dior Liquid',
+  color: ['527 Reckless Matte - orangey beige'],
+  size: '0.20 oz/ 6 mL',
+  price: 37.00,
+  p_type: 'Lip',
+  brand_id: 26,
+  what_it_is: 'A long-wear liquid lipstick with an innovative single-dose applicator wand.',
+  what_it_does: 'Rouge Dior Liquid saturates lips with comfort and coverage, delivering up to 12 hours of wear. The luxurious formula is an expert blend of mineral wax, ultra-fine powders, and oils that gives strength to the color, while delivering a perfect glide over the lips and a long-wearing result. With a reservoir applicator that takes up and deposits just the right amount of product, its fine tip is the perfect tool for outlining the lips with precision. All three finishes—matte, metal, and satin—deliver intense, long-wearing color.',
+  what_else_you_need_to_know: '"The idea was to create a Rouge Dior liquid lipstick in astonishing matte, satin, and metal finishes, and to develop a range of shades to suit any skin tone."—Peter Philips, Creative and Image Director for Dior Makeup.',
+  how_to_use: ['Prepare lips with Dior Lip Sugar Scrub (sold separately).', 'Saturate entire lip with Rouge Liquid angled precision wand.', 'From matte to satin to metallic, layer finishes for a customized effect.'],
+  ingredients: "n/a",
+  category_id: 1,
+  image_url: ['https://www.sephora.com/productimages/sku/s1968577-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s1968577-main-zoom.jpg', 'https://www.sephora.com/productimages/sku/s1968577+sw.jpg'],
+  brand_name: "Dior"
+)
+
+ Product.create!(
+  name: 'Major Glow Lip Shine',
+  color: ["She's An Influencer - pink pearl"],
+  size: '0.23 oz/ 7 mL',
+  price: 22.00,
+  p_type: 'Lip',
+  brand_id: 1,
+  what_it_is: 'A universally-flattering, high-shine lip gloss with the cushion and slip of a lip balm for zero stickiness, all shine.',
+  what_it_does: 'Advanced Gel System: Creates a glass-like finish that clings to the lips and prevents feathering.',
+  what_else_you_need_to_know: 'An advanced gel system with suspended pearl creates the look of volume and fullness, while moisturizing oils and vitamin E envelop lips in comfort.',
+  how_to_use: ['Apply generously onto lips, as desired.'],
+  ingredients: "n/a",
+  category_id: 1,
+  image_url: ['https://www.sephora.com/productimages/sku/s2221307-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s2221315-main-zoom.jpg', 'https://www.sephora.com/productimages/sku/s2221315+sw.jpg'],
+  brand_name: "Patrick Ta"
+)
+
+ Product.create!(
+  name: 'Blush',
+  color: ["Orgasm - peachy pink with shimmer"],
+  size: '0.16 oz/ 4.8 g',
+  price: 30.00,
+  p_type: 'Face',
+  brand_id: 4,
+  what_it_is: 'What it is: An award-winning, pressed powder blush that delivers healthy-looking color to flatter any skin tone.',
+  what_it_does: 'Silky, superfine micronized powder pigments in matte and shimmering shades ensure a seamless application.',
+  what_else_you_need_to_know: ' These soft, buildable shades deliver a wide range of effects, from ulta-sheer to powerful pops of color. Each iconic shade features a subtle pink undertone for a natural-looking blush.',
+  how_to_use: ['Use #20 Blush Brush (sold separately) and apply to the apples of the cheeks.', 'Sweep the excess across the hairline, bridge of the nose, and chin.'],
+  ingredients: "Talc, Octyldodecyl Stearate, Octyldodecyl Stearoyl Stearate, Zinc Stearate, Tin Oxide, Caprylyl Glycol, Phenoxyethanol, [+/- (May Contain): Iron Oxides (Ci 77491), Iron Oxides (Ci 77492), Iron Oxides (Ci 77499), Manganese Violet (Ci 77742), Mica, Red 28 Lake (Ci 45410), Red 30 Lake (Ci 73360), Red 33 Lake (Ci 17200), Red 34 Lake (Ci 15880), Red 7 Lake (Ci 15850), Titanium Dioxide (Ci 77891), Yellow 5 Lake (Ci 19140)].",
+  category_id: 1,
+  image_url: ['https://www.sephora.com/productimages/sku/s248930-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s248930-main-zoom.jpg', 'https://www.sephora.com/productimages/sku/s248930+sw.jpg'],
+  brand_name: "Nars"
+)
+
+ Product.create!(
+  name: 'Lip Gloss',
+  color: ["Super Orgasm - peachy pink w/ gold glitter"],
+  size: '0.18 oz/ 6 mL',
+  price: 24.00,
+  p_type: 'Lip',
+  brand_id: 4,
+  what_it_is: 'A moisturizing lip gloss for subtle, everyday glamour, enriched with nourishing ingredients for long-lasting, comfortable wear and a luminous shine.',
+  what_it_does: 'Boasting sophisticated shine and stunning color, NARS Lip Gloss lavishes lips for subtle everyday glamour in a full spectrum of shades. The formula is enriched with nourishing ingredients for long-lasting, smooth, comfortable wear and a luminous shine. Potent sea lavender helps protect against the signs of aging and helps keep lips soft and supple while hydrating and smoothing the appearance of fine lines. The doe-foot applicator glides smoothly across lips with comfort and precision, leaving deep shine and shimmering color for comfortable non-sticky wear.',
+  what_else_you_need_to_know: '"Lips are as sexy as it gets."—François Nars, Founder and Creative Director of NARS Cosmetics ',
+  how_to_use: ['Apply to the center of the top and bottom lips for a sophisticated, light-reflecting effect to make lips appear fuller.'],
+  ingredients: "Polybutene, Octyldodecanol, Hydrogenated Polyisobutene, Caprylic/Capric Triglyceride, Cera Alba, Olus, Bis-Diglyceryl Polyacyladipate-2, Hydrogenated Polycyclopentadiene, Isododecane, Phenoxyethanol, Ozokerite, Trihydroxystearin, Dipalmitoyl Hydroxyproline (Dipalmitoyl Hydroxyproline), Limonium Gerberi (Limonium Gerberi Extract), [+/- (May Contain): Mica, Ci 77891 (Titanium Dioxide), Ci 77491 (Iron Oxides), Ci 77492 (Iron Oxides), Ci 77499 (Iron Oxides), Ci 15850 (Red 7 Lake), Ci 19140 (Yellow 5 Lake)].",
+  category_id: 1,
+  image_url: ['https://www.sephora.com/productimages/sku/s1596402-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s1596402-main-zoom.jpg', 'https://www.sephora.com/productimages/sku/s1596402+sw.jpg'],
+  brand_name: "Nars"
+)
+
+Product.create!(
+  name: 'Highlighting Powder',
+  color: ["Fort De France - champagne"],
+  size: '0.49 oz/ 13.9',
+  price: 38.00,
+  p_type: 'Face',
+  brand_id: 4,
+  what_it_is: 'A silky, lightweight highlighting powder in six scintillating shades that melt into skin for a dewy finish.',
+  what_it_does: 'No glitter. Just glow. Highlighting hits a new high with NARS’s Highlighting Powder. This uncompromising innovation delivers next-level luminosity with Seamless Glow Technology—a blend of sheer powders and pearls to create second-skin luster that blends effortlessly. Its satin-soft, micro-spherical powder layers evenly and weightlessly, fusing onto all skin tones. Ultra-refined and soft-to-the-touch, new Highlighting Powder accentuates skin with buildable radiance and a seductive, dewy finish. Your features will go from delicately lit to strobed at the speed of light.',
+  what_else_you_need_to_know: 'The Highlighting Powder collection was inspired by the beauty of sun-drenched islands and exotic sights. Luminous shades ranging from white-hot to rich bronze put every skin tone on the map. Transport your mind. Transform your skin. Bask in the radiance.',
+  how_to_use: ['Use a dome-style brush to dust Highlighting Powder along the cheekbone and blend toward the hairline with emphasis on the high point of the cheek.'],
+  ingredients: "Talc, Polymethylsilsesquioxane, Octyldodecyl Stearoyl Stearate, Dimethicone, Zinc Stearate, Dimethiconol Stearate, Tocopherol, Ascorbyl Palmitate, Lecithin, Glyceryl Stearate, Glyceryl Oleate, Polybutene, Tin Oxide, Hexylene Glycol, Citric Acid, Caprylyl Glycol, Phenoxyethanol, [+/- (May Contain): Iron Oxides (Ci 77491), Iron Oxides (Ci 77492), Iron Oxides (Ci 77499), Mica, Red 7 Lake (Ci 15850), Titanium Dioxide (Ci 77891), Yellow 5 Lake (Ci 19140)].",
+  category_id: 1,
+  image_url: ['https://www.sephora.com/productimages/sku/s2058642-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s2058642-main-zoom.jpg', 'https://www.sephora.com/productimages/sku/s2058642+sw.jpg'],
+  brand_name: "Nars"
+)
+
+Product.create!(
+  name: 'Blush Duo Mini',
+  color: ["Hot Sand/ Orgasm"],
+  size: '0.08 oz/ 2.5 g',
+  price: 24.00,
+  p_type: 'Face',
+  brand_id: 4,
+  what_it_is: 'A mini, limited-edition blush duo that delivers a healthy-looking, golden shimmer and a radiant flush of color.',
+  what_it_does: 'Heighten the glow with this mini duo of award-winning Orgasm Blush paired with a radiant blush. Together, they help achieve the ultimate in sunkissed radiance through a dynamic duo of signature cheek shades. Orgasm, the industry’s most iconic blush, is a peachy pink that’s infused with golden shimmer—delivering a universally flattering flush of color. Wear them alone or layer them together for instant radiance.',
+  what_else_you_need_to_know: '"Blush is one of my favorite products. I think it\'s because my mother used to be so fond of it. She would never leave the house without it. If she didn\'t have blush on, she would pinch her cheeks. It always made her feel better."—Francôis Nars',
+  how_to_use: ['Use the deep tone under the cheekbone, blending up toward the apple so that the color hugs the cheek.', 'Use the brighter or lighter tone directly on the apple, blending it into the contour color.'],
+  ingredients: "n/a",
+  category_id: 1,
+  image_url: ['https://www.sephora.com/productimages/sku/s1935501-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s1935501-main-zoom.jpg', 'https://www.sephora.com/productimages/sku/s1935501+sw.jpg'],
+  brand_name: "Nars"
+)
+
+Product.create!(
+  name: 'Hardwired Single Eyeshadow',
+  color: ["Stud - soft pewter bronze"],
+  size: '0.04 oz/ 1.1 g',
+  price: 22.00,
+  p_type: 'Eye',
+  brand_id: 4,
+  what_it_is: 'A metallic eyeshadow single that delivers high pigment and high shine.',
+  what_it_does: 'Amplify eyes with Hardwired Eyeshadow—a rich and radiant lineup of precious-metal-inspired shades that combine high-pigment with high-shine. Ultrafine blends of shimmer, glitter, and pearl reflect light for eye-catching effects. It glides on smoothly and evenly, layers and intensifies effortlessly, and lasts through the night.',
+  what_else_you_need_to_know: 'Micronized powder provides improved wear and feel. The formula can be used as an eyeshadow or liner, applied wet or dry. The long-wearing, crease-resistant colors can be applied sheer or layered for more dramatic effects.',
+  how_to_use: ['Use an eyeshadow brush to pat color onto lid.', 'Dampen brush for an intensified effect.'],
+  ingredients: "n/a",
+  category_id: 1,
+  image_url: ['https://www.sephora.com/productimages/sku/s2090413-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s2090413-main-zoom.jpg', 'https://www.sephora.com/productimages/sku/s2090413+sw.jpg'],
+  brand_name: "Nars"
+)
+
+Product.create!(
+  name: 'Eyeliner Stylo',
+  color: ["Carpates - black"],
+  size: '0.02 oz/ 0.7 mL',
+  price: 28.00,
+  p_type: 'Eye',
+  brand_id: 4,
+  what_it_is: 'A felt-tip liquid eyeliner pen.',
+  what_it_does: 'This super-fine tip pen allows for precise application and versatility in line width for a variety of looks. The rich, highly pigmented color glides on smoothly and effortlessly for intense payoff that dries down quickly and stays put without smudging for up to 24 hours.',
+  what_else_you_need_to_know: 'This product is ophthalmologist tested.The non-staining formula does not flake after application and can be easily removed.',
+  how_to_use: ['Avoid creating a heavy line on upper and lower lash line.'],
+  ingredients: "Water, Alcohol, Butylene Glycol, Styrene/Acrylates Copolymer , Acrylates/Octylacrylamide Copolymer, Beheneth-30, Phenoxyethanol, Pentylene Glycol, Caprylyl Glycol, 1,2-Hexanediol, Ethylhexylglycerin, Sodium Hydroxide, Disodium Edta, Sodium Dehydroacetate, Xanthan Gum, [+/- (May Contain): Ci 77891 (Titanium Dioxide), Ci 77491 (Iron Oxides), Ci 77492 (Iron Oxides), Ci 77499 (Iron Oxides), Ci 77266 (Black 2), Ci 77510 (Ferric Ammonium Ferrocyanide)].",
+  category_id: 1,
+  image_url: ['https://www.sephora.com/productimages/sku/s1433945-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s1433945-main-zoom.jpg', 'https://www.sephora.com/productimages/sku/s1433945+sw.jpg'],
+  brand_name: "Nars"
+)
+
+Product.create!(
+  name: 'Triple Sec 3-in-1',
+  color: [""],
+  size: '4.2 oz',
+  price: 26.00,
+  p_type: 'Hair',
+  brand_id: 14,
+  what_it_is: 'An airy dry spray that provides instant texture, volume, and body. ',
+  what_it_does: 'Adds texture.',
+  what_else_you_need_to_know: 'On second or third day hair, use Triple Sec for allover body, Detox Dry Shampoo at the roots to absorb oils, and Detox Dry Conditioner at the ends to hydrate.',
+  how_to_use: ['For use on dry hair.'],
+  ingredients: "Crystal Clear Microporous Minerals: Add matte texture, create separation for fuller styles, and absorb light oils.",
+  category_id: 3,
+  image_url: ['https://www.sephora.com/productimages/sku/s1638212-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s1638212-main-zoom.jpg'],
+  brand_name: "Drybar"
+)
+
+Product.create!(
+  name: 'Sake Bomb Shampoo',
+  color: [""],
+  size: '8.5 oz',
+  price: 24.00,
+  p_type: 'Hair',
+  brand_id: 14,
+  what_it_is: 'A luxurious formula that cleanses and hydrates dry strands, leaving them looking softer and shinier.',
+  what_it_does: 'Keratin: A highly moisturizing protein; reinforces the structure of the hair and helps prevent damage.',
+  what_else_you_need_to_know: 'Sake Bomb Shampoo features Drybar\'s Original scent with notes of jasmine, sandalwood, and Madagascar vanilla.',
+  how_to_use: ['Massage a generous dollop into wet hair from roots to ends.'],
+  ingredients: "Water, Disodium Laureth Sulfosuccinate, Sodium Lauroyl Sarcosinate, Cocoamide MEA, Cocamidopropyl Hydroxysultaine, Sodium Lauryl Sulfateacetate, Acrylates Copolymer- 4, PEG-120 Methyl Glucose Dioleate, Keratin, Hydrolyzed Keratin, Citrus Junos Peel Extract, Prunus Insititia Seed Oil, Rhodiola Rosea Root Extract, Caesalpinia Spinosa Gum, Cocamidopropyl Betaine, Nasturtium Officinale Extract, Rice Oil Glycereth-8 Esters, Helianthus Annuus (Sunflower) Seed Extract, Hydrogenated Coco-Glycerides, Panthenol, Dimethicone, Octyldodecanol, Amodimethicone, Cyclopentasiloxane, Glycol Distearate, Divinyldimethicone/Dimethicone Copolymer, Glycerin, Silicone Quaternium-22, Laureth-23, Laureth-4, Cetrimonium Chloride, Trideceth-12, Ethylhexylglycerin, Tocopheryl Acetate, Behentrimonium Chloride, Sodium Chloride, Sodium Sulfate, Fragrance, Polyquaternium-10, Potassium Sorbate, Quaternium-95, Dimethiconol, Dipropylene Glycol, Polyglyceryl- 3 Caprate, Cystine Bis-PG-Propyl Silanetriol, Propanediol, Octocrylene, C12-13 Pareth-23, C12-13 Pareth- 3, Hydrolyzed Vegetable Protein PG-Propyl Silanetriol, Butyl Methoxydibenzoylmethane, Phenoxyethanol, Citric Acid, Chlorphenesin, Potassium Hydroxide, Disodium EDTA, BHT, Methylisothiazolinone, Inulin Lauryl Carbamate, Caprylic/Capric Triglyceride, Sucrose Laurate, Sodium Benzoate, Benzoic Acid, Dehydroacetic Acid, Polyaminopropyl Biguanide, Eugenol, Limonene, Linalool, Alpha-Isomethyl Ionone.",
+  category_id: 3,
+  image_url: ['https://www.sephora.com/productimages/sku/s1585330-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s1585330-main-zoom.jpg'],
+  brand_name: "Drybar"
+)
+
+ Product.create!(
+  name: 'Roses De Chloé',
+  color: [''],
+  size: '2.5 oz/ 75 mL',
+  price: 125.00,
+  p_type: 'Fragrance',
+  brand_id: 25,
+  what_it_is: 'Bergamot, Damascena Rose Essence, Amber Musk.',
+  what_it_does: 'The fragrance comes in a modern, delicately pleated bottle adorned with a hand-tied pink ribbon. ',
+  what_else_you_need_to_know: 'Freedom, lightness and femininity: these are the principles on which Chloé was founded in Paris more than 60 years ago. Today Chloé’s vision of romantic, effortless chic lives in ready-to-wear, accessories, and fragrances.',
+  how_to_use: ["Spritz lightly anywhere you want fragrance."],
+  ingredients: 'Alcohol Denat., Fragrance, Water, Ethylhexyl Methoxycinnamate, Benzophenone-3, Ethylhexyl Salicylate, Hexyl Cinnamal, Hydroxycitronellal, Butyl Methoxydibenzoylmethane, Citronellol, Linalool, Butylphenyl Methylpropional, Limonene, Geraniol, Alpha-Isomethyl Ionone, Propylene Glycol, Hydroxyisohexyl 3-Cyclohexene Carboxaldehyde, Citral, Amyl Cinnamal, Cinnamyl Alcohol, Bht, Acrylates/Octylacrylamide Copolymer, Hydrolyzed Jojoba Esters, Fd&C Yellow No. 6 (Ci 15985), Fd&C Red No. 4 (Ci 14700), Ext. D&C Violet No. 2 (Ci 60730), Fd&C Blue No. 1 (Ci 42090).',
+  category_id: 5, 
+  image_url: ['https://www.sephora.com/productimages/sku/s1580448-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s1580448-main-hero-300.jpg'],
+  brand_name: "Chloe"
+)
+
+Product.create!(
+  name: 'Chloé Rollerball',
+  color: [''],
+  size: '.33 oz/ 10 mL',
+  price: 30.00,
+  p_type: 'Fragrance',
+  brand_id: 25,
+  what_it_is: 'Chloé Eau de Parfum captures the creative, confident individuality of the Chloé woman. A fresh and feminine fragrance suited to a free spirit with an utterly innate sense of chic.',
+  what_it_does: 'The scent takes the classic rose and ingeniously translates it into a vibrant perfume, intimate and sensual. Chloé Eau de Parfum begins with a combination of floral powdery notes: hints of peony, lychee, and springtime freesia. The airy, flirtatious head notes drift away to reveal the richer and more sensual side of the rose. The distinctive character of this unique rose is accompanied by magnolia and lily of the valley, as well as subtle intimations of warm amber and elegant cedarwood.',
+  what_else_you_need_to_know: 'Freedom, lightness and femininity: these are the principles on which Chloé was founded in Paris more than 60 years ago. Today Chloé’s vision of romantic, effortless chic lives in ready-to-wear, accessories, and fragrances.',
+  how_to_use: ["Spritz lightly anywhere you want fragrance."],
+  ingredients: 'Alcohol Denat., Fragrance, Water, Butylphenyl Methylpropional, Ethylhexyl Methoxycinnamate, Acrylates/Octylacrylamide Copolymer, Alpha-Isomethyl Ionone, Benzophenone-3, Benzyl Salicylate, Bht, Butyl Methoxydibenzoylmethane, Citronellol, Ethylhexyl Salicylate, Geraniol, Hexyl Cinnamal, Hydrolyzed Jojoba Esters, Hydroxycitronellal, Hydroxyisohexyl 3-Cyclohexene Carboxaldehyde, Limonene, Linalool, Fd&C Red No. 4 (Ci 14700), Fd&C Yellow No. 5 (Ci 19140).',
+  category_id: 5, 
+  image_url: ['https://www.sephora.com/productimages/sku/s1284025-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s1284025-main-hero-300.jpg'],
+  brand_name: "Chloe"
+)
+
+Product.create!(
+  name: 'Crème de la Mer',
+  color: [''],
+  size: '.5 oz/ 15 mL',
+  price: 85.00,
+  p_type: 'Skin',
+  brand_id: 11,
+  what_it_is: 'An ultra-rich moisturizing cream that creates an instant dewy finish.',
+  what_it_does: 'This highly coveted moisturizer is known for its power to hydrate and improve dryness in as little as three days. Miracle Broth™ helps skin appear softer, nourished, soothed, and energized, while the powerful antioxidant lime tea protects against stress and pollution for a healthy-looking glow. Skin looks radiant and naturally balanced as imperfections fade.',
+  what_else_you_need_to_know: 'The iconic opal jar is hand-filled within eight hours of the Crème’s creation.',
+  how_to_use: ["To activate the Miracle Broth™, warm between your fingers until it becomes translucent to the eye.", 'Press gently onto cleansed face and neck, morning and night.'],
+  ingredients: 'Algae (Seaweed) Extract, Mineral Oil, Petrolatum, Glycerin, Isohexadecane, Microcrystalline Wax, Lanolin Alcohol, Citrus Aurantifolia (Lime) Extract, Sesamum Indicum (Sesame) Seed Oil, Eucalyptus Globulus (Eucalyptus) Leaf Oil, Sesamum Indicum (Sesame) Seed Powder, Medicago Sativa (Alfalfa) Seed Powder, Helianthus Annuus (Sunflower) Seedcake, Prunus Amygdalus Dulcis (Sweet Almond) Seed Meal, Sodium Gluconate, Copper Gluconate, Calcium Gluconate, Magnesium Gluconate, Zinc Gluconate, Magnesium Sulfate, Paraffin, Tocopheryl Succinate, Niacin, Water, Beta-Carotene, Decyl Oleate, Aluminum Distearate, Octyldodecanol, Citric Acid, Cyanocobalamin, Magnesium Stearate, Panthenol, Limonene, Geraniol, Linalool, Hydroxycitronellal, Citronellol, Benzyl Salicylate, Citral, Sodium Benzoate, Alcohol Denat., Fragrance.',
+  category_id: 2, 
+  image_url: ['https://www.sephora.com/productimages/sku/s1932193-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s1932193-main-hero-300.jpg'],
+  brand_name: "La Mer"
+)
+
+Product.create!(
+  name: 'The Renewal Oil',
+  color: [''],
+  size: '1 oz/ 30 mL',
+  price: 245.00,
+  p_type: 'Skin',
+  brand_id: 11,
+  what_it_is: 'A multitasking, dual-phase oil that hydrates and supports healthy skin and hair from head to toe.',
+  what_it_does: 'This cult favorite offers endless possibilities as it floods skin, hair, or nails with hydration and beauty benefits. Soft and ultra-smooth, skin glows with translucency and head-turning radiance. This oil also helps to support natural collagen production, which helps soften the look of emerging lines and wrinkles and visibly firms. Fast-absorbing and lightweight enough for daytime use. Its silky texture melts into the skin and is just the right weight for layering.',
+  what_else_you_need_to_know: 'Miracle Broth™ is at the heart of La Mer and is infused into every treatment in the collection. This elixir is formulated with hand-harvested sea kelp and other nutrients and minerals unlocked via a natural fermentation process. Surging with vital energies, it supports the five facets of natural healing: moisture, regeneration, soothing, smoothing, and radiance—which help to bring skin back to its healthiest state.',
+  how_to_use: ['Sweep three to five drops over face, neck, and any other dry areas, morning and evening.'],
+  ingredients: 'Limnanthes Alba (Meadowfoam) Seed Oil, Dimethicone, Caprylic/Capric Triglyceride, Water, Trisiloxane, Prunus Amygdalus Dulcis (Sweet Almond) Oil, Simmondsia Chinensis (Jojoba) Seed Oil, Polydecene, Hydrogenated Polydecene, Butylene Glycol, Propanediol, Glycerin, Algae (Seaweed) Extract, Brassica Campestris (Rapeseed) Seed Oil, Helianthus Annuus (Sunflower) Seed Oil, Sesamum Indicum (Sesame) Seed Oil, Eucalyptus Globulus (Eucalyptus) Leaf Oil, Camelina Sativa Seed Oil, Oxycoccus Palustris (Cranberry) Seed Oil, Olea Europaea (Olive) Fruit Oil, Hippophae Rhamnoides Oil, Medicago Sativa (Alfalfa) Seed Powder, Helianthus Annuus (Sunflower) Seedcake, Prunus Amygdalus Dulcis (Sweet Almond) Seed Meal, Sodium Gluconate, Copper Gluconate, Calcium Gluconate, Magnesium Gluconate, Zinc Gluconate, Tocopheryl Succinate, Niacin, Sesamum Indicum (Sesame) Seed Powder, Laminaria Ochroleuca Extract, Laminaria Saccharina Extract, Hydrolyzed Algin, Sea Salt/Maris Sal/Sel Marin, Chlorella Vulgaris Extract, Salicornia Herbacea Extract, Sigesbeckia Orientalis (St. Paul\'S Wort) Extract, Laminaria Digitata Extract, Rosmarinus Officinalis (Rosemary) Leaf Extract, Magnolia Officinalis Bark Extract, Yeast Extract/Faex/Extrait De Levure, Crithmum Maritimum Extract, Commiphora Mukul Resin Extract, Citrus Aurantifolia (Lime) Peel Extract, Molasses Extract/Saccharum Officinarum/Extrait De Melasse, Sucrose, Acetyl Hexapeptide-8, Acetyl Glucosamine, Caffeine, Tocopheryl Acetate, Phenyl Trimethicone, Sodium Chloride, Tetrahexyldecyl Ascorbate, Alcohol Denat., Fragrance, Hexyl Cinnamal, Linalool, Amyl Cinnamal, Geraniol, Limonene, Citral, Benzyl Benzoate, Coumarin, Citronellol, Bht, Phenoxyethanol, Yellow 5 (Ci 19140), Yellow 6 (Ci 15985)',
+  category_id: 2, 
+  image_url: ['https://www.sephora.com/productimages/sku/s1932649-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s1932649-main-hero-300.jpg'],
+  brand_name: "La Mer"
+)
+
+Product.create!(
+  name: 'S CARAT',
+  color: [''],
+  size: 'one size',
+  price: 160.00,
+  p_type: 'Accessory',
+  brand_id: 20,
+  what_it_is: 'A facial roller designed to fit the finer contours of your face to help tighten and tone the look of skin around your eyes, lips, and forehead.',
+  what_it_does: 'For Those Concerned With Loss of Firmness and Elasticity, Fine Lines and Wrinkles, and Dullness and Uneven Texture Skin. ',
+  what_else_you_need_to_know: 'Equipped with two platinum multi-angular rollers and a soothing microcurrent generated by a solar panel, the ReFa S CARAT replicates the gentle point kneading action of an esthetician’s fingers to help tighten and tone the appearance of skin that tends to slacken around the eyes, lips, and forehead.',
+  how_to_use: ['Roll in both directions along the lines of your eyes, lips, and forehead.'],
+  ingredients: 'n/a',
+  category_id: 4, 
+  image_url: ['https://www.sephora.com/productimages/sku/s2209518-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s2209526-main-hero-300.jpg'],
+  brand_name: "Refa"
+)
+
+Product.create!(
+  name: 'CARAT',
+  color: [''],
+  size: 'one size',
+  price: 290.00,
+  p_type: 'Accessory',
+  brand_id: 20,
+  what_it_is: 'A platinum, waterproof, multi-angular massage roller for the face and body that helps visibly firm, tone, and contour tired, puffy, and sagging skin.',
+  what_it_does: 'For Those Concerned With Loss of Firmness and Elasticity, Fine Lines and Wrinkles, and Dullness and Uneven Texture Skin. ',
+  what_else_you_need_to_know: 'Rediscover your radiance from head to toe. Equipped with two 360° multi-angular rollers and a solar panel that generates a soothing microcurrent, the ReFa CARAT helps visibly tighten, tone, and contour the appearance of skin all over your face and body.',
+  how_to_use: ['Roll in both directions along the lines of your eyes, lips, and forehead.'],
+  ingredients: 'n/a',
+  category_id: 4, 
+  image_url: ['https://www.sephora.com/productimages/sku/s2209500-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s2209500-main-hero-300.jpg'],
+  brand_name: "Refa"
+)
+
+Product.create!(
+  name: 'Firming Massaging Head',
+  color: [''],
+  size: 'one size',
+  price: 59.00,
+  p_type: 'Accessory',
+  brand_id: 18,
+  what_it_is: 'An advanced anti-aging brush head for face, neck, and décolleté that targets 15 signs of aging.',
+  what_it_does: 'This Uplift Firming Massage Head with patented sound technology targets loss of firmness on the face, neck, and décolleté.',
+  what_else_you_need_to_know: ' In as little as three minutes, 27,000 micro-lifting massages visibly relax your features and target 15 signs of aging for a youthful appearance. Turn your superior Smart Profile facial cleansing device into a powerful anti-aging tool.',
+  how_to_use: ['For anti-aging massage: follow smart mode timer with gentle massaging motion starting with forehead (30 seconds), cheeks (30 seconds each), jawline (30 seconds), neck (30 seconds), and décolleté (30 seconds).'],
+  ingredients: 'n/a',
+  category_id: 4, 
+  image_url: ['https://www.sephora.com/productimages/sku/s1927151-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s1927151-main-hero-300.jpg'],
+  brand_name: "Clarisonic"
+)
+
+Product.create!(
+  name: 'Mia Prima Brush',
+  color: ['white'],
+  size: 'one size',
+  price: 99.00,
+  p_type: 'Accessory',
+  brand_id: 18,
+  what_it_is: 'A facial cleansing brush that removes long-wear makeup and improves the appearance of pores.',
+  what_it_does: 'One mode, one button, one minute for fast and simple skin cleansing. Mia Prima Sonic Facial Cleansing Brush minimizes the appearance of pores and allows skincare products that follow to absorb better.',
+  what_else_you_need_to_know: 'If you have concerns about enlarged pores, acne treatment, or extra sensitive facial cleansing, Clarisonic offers additional replacement brush heads that are tailored to different skin concerns. The Clarisonic Sonic Foundation Brush Head for flawless makeup application and blending is compatible with Mia Prima (sold separately).',
+  how_to_use: ['For anti-aging massage: follow smart mode timer with gentle massaging motion starting with forehead (30 seconds), cheeks (30 seconds each), jawline (30 seconds), neck (30 seconds), and décolleté (30 seconds).'],
+  ingredients: 'n/a',
+  category_id: 4, 
+  image_url: ['https://www.sephora.com/productimages/sku/s2109635-main-grid.jpg', 'https://www.sephora.com/productimages/sku/s2109635-main-hero-300.jpg'],
+  brand_name: "Clarisonic"
+)
+
+
+
+
+
+
+
 
 
