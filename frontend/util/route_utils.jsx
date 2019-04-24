@@ -23,4 +23,4 @@ const Protected = ({ loggedIn, path, component: Component }) => (
 )
 
 export const AuthRoute = withRouter(connect(mstp)(Auth));
-export const ProtectedRoute = withRouter(connect(mstp)(ProtectedRoute));
+export const ProtectedRoute = withRouter(connect(mstp)(Protected));

@@ -13,7 +13,9 @@ class Cart extends React.Component {
   }
 
   render() {
-    return <div>Hello</div>
+    return (
+      <div>Hello</div>
+    )
   }
 }
 

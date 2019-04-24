@@ -33,7 +33,6 @@ const MainNav = ({user, logout, products, fetchProducts}) => {
         <div className="container">
           <div className="row">
             <div className="col">
-              {/* <input className="form-control mx-sm-3" type="text" placeholder="&#x1F50D; Search" /> */}
               <SearchBar names={names} products={products} fetchProducts={fetchProducts} />
             </div>
             <div className="col">
@@ -42,22 +41,18 @@ const MainNav = ({user, logout, products, fetchProducts}) => {
             <div className="col">
               { user ? greeting() : signin() }
               <img id="heart" src="http://www.lovejframe.com/uploads/3/0/9/8/30981033/s906654426785960500_p287_i28_w598.png" alt="black-heart" />
-               <span>
-                
+               <span className="basket">
+                <Link to='/cart_items'>
+                  <img src="https://previews.123rf.com/images/tkacchuk/tkacchuk1411/tkacchuk141100038/34157112-basket-simple-icon-on-white-background-.jpg" alt="basket" width="70" height="70" />
+                </Link>
                </span>
             </div>
           </div>
         </div>
         <nav>
           <ul className="nav justify-content-center">
-            <li className="dropdown"><Link to="/products">SHOP ALL</Link>
-              {/* <ul className="dropdown-content">
-                <li><Link to="/makeup">MAKEUP</Link></li>
-                <li><Link to="/skincare">SKIN CARE</Link></li>
-                <li><Link to="/tools">TOOLS & BRUSHES</Link></li>
-                <li><Link to="/hair">FRAGRANCE</Link></li>
-                <li><Link to="/hair">BATH & BODY</Link></li>
-              </ul> */}
+            <li className="dropdown">
+              <Link to="/products">SHOP ALL</Link>
             </li>
             <li className="dropdown">NEW
                <div className="new2 dropdown-content">

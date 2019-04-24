@@ -1,5 +1,6 @@
 import React from 'react';
 import Home from './../Home';
+import { Link } from 'react-router-dom';
 
 class SignUpForm extends React.Component {
   constructor(props) {
@@ -123,7 +124,8 @@ class SignUpForm extends React.Component {
             </div>  
             
             <input className="btm-input" type="submit" value="Register" />
-            
+            <Link className="sign-in-link" to="/login">Sign In</Link>
+           
             <p className="terms">Pretty Little Things uses Google ReCaptcha 
             and user's are subject to Google's
             <a href="https://policies.google.com/privacy?hl=en"> privacy policy </a>

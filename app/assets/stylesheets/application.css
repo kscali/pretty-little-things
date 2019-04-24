@@ -162,6 +162,29 @@ hr {
   margin-left: 5px;
 }
 
+.sign-in-link {
+  color: black;
+  position: relative;
+  top: 150px;
+  left: 40px;
+}
+
+.sign-in-link:hover {
+  color: blue;
+}
+
+.signup-link {
+  color: black;
+  position: relative;
+  top: 8px;
+  left: 185px;
+}
+
+.signup-link:hover {
+  color: blue;
+}
+
+
 .terms {
   position: relative; 
   top: 180px;
@@ -174,14 +197,20 @@ hr {
 }
 
 #heart {
-  width: 34px; 
-  height: 29px;
+  width: 50px; 
+  height: 40px;
   position: relative;
   left: 170px; 
   top: -30px; 
   border-left: 1px solid lightgray;
-  padding-left: 5px;
+  padding-left: 10px;
 }
+
+.basket {
+   position: relative;
+   left: 180px;
+   top: -48px;
+ }
 
 .b-i {
   width: 200px;
@@ -291,4 +320,3 @@ div.alert-error > h1 {
 }
 
  
-

@@ -8,7 +8,7 @@ import {
 
 import Cart from './cart';
 import { fetchProducts } from './../../actions/product_actions';
-import { fetchBrands } from './../../actions/brand_actions';
+// import { fetchBrands } from './../../actions/brand_actions';
 
 const mstp = state => {
   let cartItems = Object.values(state.entities.cart);
