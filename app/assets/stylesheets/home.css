@@ -95,7 +95,7 @@
 .fourth-sec > h2 {
   position: relative;
   top: 100px;
-  left: 800px;
+  text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: normal;
 }

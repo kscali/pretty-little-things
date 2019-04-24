@@ -115,7 +115,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="fourth-sec">
+      <div className="fourth-sec container">
         <h2>Spot it. Shop it.</h2>
       </div>
       <div className="container">
