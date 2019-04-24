@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SearchBar from './search_bar';
 
-const MainNav = ({user, logout, products}) => {
+const MainNav = ({user, logout, products, fetchProducts}) => {
   
   let names = products.map(product => {
     return product.name; 
@@ -27,14 +27,14 @@ const MainNav = ({user, logout, products}) => {
           <Link className="lnk" to="/signup">Register</Link>
         </div>
     )
-  
+    
     return (
       <div className="mid-nav">
         <div className="container">
           <div className="row">
             <div className="col">
               {/* <input className="form-control mx-sm-3" type="text" placeholder="&#x1F50D; Search" /> */}
-              <SearchBar names={names} />
+              <SearchBar names={names} products={products} fetchProducts={fetchProducts} />
             </div>
             <div className="col">
               <h2><Link className="title-logo" to="/">Pretty Little Things</Link></h2>

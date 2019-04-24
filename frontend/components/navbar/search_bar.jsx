@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Redirect } from 'react-router-dom';
 
  class SearchBar extends React.Component {
   constructor(props) {
@@ -12,10 +12,9 @@ import React from 'react';
     this.getProduct = this.getProduct.bind(this);
   }
 
-  // componentDidMount() {
-  //   debugger;
-  //   this.props.fetchProducts();
-  // }
+  componentDidMount() {
+   this.props.fetchProducts()
+  }
 
   handleInput(event) {
     let ul = document.getElementById('input-names');
@@ -26,9 +25,16 @@ import React from 'react';
 
   getProduct(e) {
     let ul = document.getElementById('input-names');
+    let input = this.state.inputVal;
     if (e.key === "Enter") {
-      this.setState({inputVal: ""});
-       ul.style.display = 'none';
+      ul.style.display = 'none';
+      this.setState({ inputVal: "" });
+      this.props.products.forEach(product => {
+        if (input === product.name) {
+          return <Redirect to={`/products/${product.id}`} />
+        }
+      })
+      
     }
   }
   
