@@ -16,7 +16,7 @@ import FaceContainer from './../components/categories/face_container';
 import EyeContainer from './../components/categories/eyes_container';
 import SkinContainer from './../components/categories/skin_container';
 import HairContainer from './../components/categories/hair_container';
-
+import CartContainer from './../components/cart/cart_container';
 
 class App extends React.Component {
   constructor(props) {
@@ -55,6 +55,7 @@ class App extends React.Component {
     </div>
     <MainNavContainer />
     <Switch>
+      <ProtectedRoute path="/cart_items" component={CartContainer} />
       <Route exact path="/" component={Home} />
       <Route path="/products/:productId" component={ProductsDetailContainer} />
       <Route exact path="/products" component={ProductsIndexContainer} />
