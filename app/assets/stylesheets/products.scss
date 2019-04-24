@@ -14,7 +14,7 @@
 
 .details-2 {
   position: relative;
-  left: -100px; 
+  left: 0px; 
 }
 
 .p-details-1 {
@@ -40,7 +40,7 @@
 
 .p-details-2 {
   position: relative;
-  left: 90px; 
+  left: 10px; 
   width: 300px;
   padding: 0;
 }
@@ -60,7 +60,7 @@
 
 .p-details-3 {
   position: relative;
-  left: 100px;
+  left: 0px;
 }
 
 .product-checkbox {
@@ -98,4 +98,19 @@ p.p-color {
   left: -23px;
   top: 35px;
   text-transform: uppercase;
+}
+
+.product-info > img {
+  border: 3px solid transparent;
+  
+}
+
+.product-info > img:hover {
+  border: 3px solid black;
+  
+}
+
+.product-info {
+  position: relative;
+  top: 50px;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export default class SearchBar extends React.Component {
+ class SearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -11,6 +11,11 @@ export default class SearchBar extends React.Component {
     this.handleInput = this.handleInput.bind(this);
     this.getProduct = this.getProduct.bind(this);
   }
+
+  // componentDidMount() {
+  //   debugger;
+  //   this.props.fetchProducts();
+  // }
 
   handleInput(event) {
     let ul = document.getElementById('input-names');
@@ -75,3 +80,5 @@ export default class SearchBar extends React.Component {
     );
   }
 };
+
+export default SearchBar;

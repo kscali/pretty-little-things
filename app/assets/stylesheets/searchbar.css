@@ -20,5 +20,7 @@
 #input-names > li {
   width: 100%;
   margin: 10px 0px;
+  position: relative;
+  left: -20px;
 }
 

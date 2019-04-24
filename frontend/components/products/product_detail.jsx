@@ -1,8 +1,5 @@
 import React from 'react';
 import ProductInfo from './product-info';
-// import Details from './details';
-// import Ingredients from './ingredients';
-// import HowToUse from './how_to_use';
 
 class ProductDetail extends React.Component {
 
@@ -16,17 +13,18 @@ class ProductDetail extends React.Component {
     }
   }
 
+  setBorder(e) {
+    if (e.target.style.border === "3px solid black") {
+      e.target.style.border = "3px solid transparent"
+    } else {
+      e.target.style.border = "3px solid black"
+    }
+  }
+
   render() {
-    // debugger;
 
     let product = this.props.product;
     if (!product) return null; 
-
-    const panes = [
-      {title: "Details"},
-      {title: "How To Use"} ,
-      {title: "Ingredients"}
-    ]
   
     let product_img = this.props.product.image_url;
     
@@ -64,10 +62,10 @@ class ProductDetail extends React.Component {
             <div className="product-info container">
               <p className="p-color">COLOR: {product.color[0] === "" ? "N/A" : product.color[0]}</p>
               <p>SIZE: {product.size}</p>
-              <img src={product.image_url[2] ? product.image_url[2] : null} />
+                <img onClick={this.setBorder} src={product.image_url[2] ? product.image_url[2] : null} />
             </div>
             <div>
-              <ProductInfo product={product} panes={panes} />
+              <ProductInfo product={product} />
             </div>
           </div>
           </div>
