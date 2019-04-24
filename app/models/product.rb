@@ -6,4 +6,6 @@ class Product < ApplicationRecord
 
   belongs_to :category, foreign_key: :category_id, class_name: :Category 
   belongs_to :brand, foreign_key: :brand_id, class_name: :Brand 
+  
+  has_many :cart_items
 end

@@ -1,0 +1,1 @@
+json.extract! @basket_item, :id, :user_id, :product_it, :quantity

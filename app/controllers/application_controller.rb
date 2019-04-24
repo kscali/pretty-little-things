@@ -1,8 +1,8 @@
 class ApplicationController < ActionController::Base
-  # protect_from_forgery with: :exception
-  skip_before_action :verify_authenticity_token
+  protect_from_forgery with: :exception
+  # skip_before_action :verify_authenticity_token
 
-  helper_method :current_user, :logged_in?
+  helper_method :current_user, :logged_in?, :require_signed_in!
 
   private 
   def current_user
@@ -26,7 +26,7 @@ class ApplicationController < ActionController::Base
 
   def require_signed_in!
     unless logged_in? 
-      render json: ["Invalid email/password"], status: 401
+      render json: ["Please Sign In"], status: 401
     end
   end
 end
