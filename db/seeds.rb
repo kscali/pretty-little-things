@@ -7,7 +7,7 @@
 #   Character.create!(name: 'Luke', movie: movies.first)
 
 
-User.create!(first_name: "user", last_name: "demo", email: "user@demo.com", password: "123456")
+
 
 Category.create!(name: "MAKEUP" )
 Category.create!(name: "SKINCARE" )
