@@ -12,9 +12,9 @@
   background: white; 
   z-index: 2;
   position: absolute;
-  top: 30px;
+  top: 38px;
   left: 0px;
-  width: 175px;
+  width: 275px;
 }
 
 #input-names > li {
@@ -24,3 +24,7 @@
   left: -20px;
 }
 
+input.search-input {
+  width: 275px;
+  padding: 5px; 
+}

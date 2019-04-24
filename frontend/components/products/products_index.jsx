@@ -1,8 +1,6 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
 import ProductIndexItem from './product_index_item';
-import ProductDetailContainer from './product_detail_container';
-
+import AllProducts from './allproducts';
 
 
 class ProductsIndex extends React.Component {
@@ -26,19 +24,7 @@ class ProductsIndex extends React.Component {
             <ProductIndexItem />
           </div>
           <div className="main">
-            <ul className="inner-side">
-              {this.props.products.map(product => {
-               return ( <li className="item-li" key={product.id}>
-                 <Link to={`/products/${product.id}`}>
-                    <img src={product.image_url[0]} />
-                    <h6>{product.brand_name}</h6>
-                    <p>{product.name}</p>
-                    <p><b>${product.price}</b></p>
-                 </Link>
-               </li>
-               )
-              })}
-            </ul>
+            <AllProducts products={products} />
           </div>
         </div>
        </section>
@@ -49,10 +35,3 @@ class ProductsIndex extends React.Component {
 
 export default ProductsIndex; 
 
-
-/* { style === "makeup" ? 
-              <div><Makeup /></div> : style === "skincare" ? 
-              <div><SkinCare /></div> : style === "tools" ?
-              <div><Tools /></div> : style === "fragrance" ? 
-              <div><Fragrance /></div> : <Bath />
-            } */
