@@ -375,13 +375,20 @@ span#carat {
   background-color: white;
   width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 1000;
   top: 16.5px;
   text-align: left;
   left: -10px;
+  height: 30px;
 
 }
 
  .logout-dd:hover .logout-menu {
   display: block; 
+}
+
+.icon-container {
+  position: relative;
+  top: 40px;
+  left: -200px;
 }

@@ -42,10 +42,6 @@ h2 {
   width: 250px; 
 }
 
-.register {
-  display: flex; 
-}
-
 h6 {
   font-weight: bold; 
 }
@@ -201,7 +197,7 @@ hr {
   height: 40px;
   position: relative;
   left: 170px; 
-  top: -30px; 
+  top: -50px; 
   border-left: 1px solid lightgray;
   padding-left: 10px;
 }
@@ -209,7 +205,7 @@ hr {
 .basket {
    position: relative;
    left: 180px;
-   top: -48px;
+   top: -55px;
  }
 
 .b-i {
@@ -233,14 +229,32 @@ input[type="checkbox"] {
   left: 0px; 
   top: 2px;
 }
+
+.register {
+  display: flex; 
+  position: relative;
+  left: 20px;
+}
+
 .greeting {
   display: flex; 
+  height: 45px;
+  position: relative;
+  left: 0px;
 }
 
 .btn-nav {
-  margin-left: 5px; 
   position: relative;
-  left: -65px;
+  left: -55px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  top: -15px;
+  background: transparent;
+}
+
+.btn-nav:hover {
+  text-decoration: underline;
 }
 
 .greeting > h6 {
@@ -248,6 +262,12 @@ input[type="checkbox"] {
   top: 5px; 
   margin-right: 5px; 
   left: 25px;
+}
+
+.title-logo-header {
+  width: 360px;
+  position: relative;
+  left: 40px;
 }
 
 .title-logo {

@@ -36,16 +36,18 @@ const MainNav = ({user, logout, products, fetchProducts}) => {
               <SearchBar names={names} products={products} fetchProducts={fetchProducts} />
             </div>
             <div className="col">
-              <h2><Link className="title-logo" to="/">Pretty Little Things</Link></h2>
+              <h2 className="title-logo-header"><Link className="title-logo" to="/">Pretty Little Things</Link></h2>
             </div>
             <div className="col">
               { user ? greeting() : signin() }
+            </div>
+            <div className="icon-container">
               <img id="heart" src="http://www.lovejframe.com/uploads/3/0/9/8/30981033/s906654426785960500_p287_i28_w598.png" alt="black-heart" />
-               <span className="basket">
+              <span className="basket">
                 <Link to='/cart_items'>
                   <img src="https://previews.123rf.com/images/tkacchuk/tkacchuk1411/tkacchuk141100038/34157112-basket-simple-icon-on-white-background-.jpg" alt="basket" width="70" height="70" />
                 </Link>
-               </span>
+              </span>
             </div>
           </div>
         </div>
