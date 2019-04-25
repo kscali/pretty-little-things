@@ -32,7 +32,7 @@ class Api::CartItemsController < ApplicationController
     if @cart_item.update(cart_item_params)
       render :index 
     else
-      render :json: ["There was an error processing the request"], status: 422
+      render json: ["There was an error processing the request"], status: 422
     end 
   end
 

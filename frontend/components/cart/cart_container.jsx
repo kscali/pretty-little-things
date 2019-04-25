@@ -11,11 +11,12 @@ import { fetchProducts } from './../../actions/product_actions';
 // import { fetchBrands } from './../../actions/brand_actions';
 
 const mstp = state => {
+  
   let cartItems = Object.values(state.entities.cart);
-  let products = state.entites.products
-  let unwantedItems = state.entites.cart
+  let products = state.entities.products
+  let unwantedItems = state.entities.cart;
 
-  return { cartItems, products, unwantedItems }
+  return ({ cartItems, products, unwantedItems })
 }
 
 const mdtp = dispatch => ({

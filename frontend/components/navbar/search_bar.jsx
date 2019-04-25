@@ -1,7 +1,7 @@
 import React from 'react';
-import { Redirect, Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
- class SearchBar extends React.Component {
+class SearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -13,13 +13,13 @@ import { Redirect, Link } from 'react-router-dom';
   }
 
   componentDidMount() {
-   this.props.fetchProducts()
+    this.props.fetchProducts()
   }
 
   handleInput(event) {
     let ul = document.getElementById('input-names');
     if (this.inputVal === "") ul.style.display = 'none';
-    if (this.inputVal !== "" ) ul.style.display = 'block';
+    if (this.inputVal !== "") ul.style.display = 'block';
     this.setState({ inputVal: event.currentTarget.value });
   }
 
@@ -27,18 +27,19 @@ import { Redirect, Link } from 'react-router-dom';
     let ul = document.getElementById('input-names');
     let input = this.state.inputVal;
     if (e.key === "Enter") {
-      e.preventDefault();
       ul.style.display = 'none';
       this.setState({ inputVal: "" });
-      this.props.products.forEach(product => {
+      for (let i = 0; i < this.props.products.length; i++) {
+        const product = this.props.products[i];
         if (input === product.name) {
-          return <Redirect to={`/products/${product.id}`} />
+          this.props.history.push(`/products/${product.id}`)
+          return;
         }
-      })
-      
+      }
     }
   }
-  
+
+
   matches() {
     const matches = [];
     if (this.state.inputVal.length === 0) {
@@ -62,6 +63,18 @@ import { Redirect, Link } from 'react-router-dom';
   selectName(event) {
     const name = event.currentTarget.innerText;
     this.setState({ inputVal: name });
+    let ul = document.getElementById('input-names');
+    for (let i = 0; i < this.props.products.length; i++) {
+      const product = this.props.products[i];
+      const name = event.currentTarget.innerText;
+      this.setState({ inputVal: name });
+
+      if (this.state.inputVal === product.name) {
+        this.props.history.push(`/products/${product.id}`)
+        return;
+      }
+      setTimeout(() => { ul.style.display = 'none'; }, 800)
+    }
   }
 
   render() {
@@ -70,17 +83,6 @@ import { Redirect, Link } from 'react-router-dom';
         <li key={i} onClick={this.selectName}>{result}</li>
       );
     });
-
-  //   const results = this.matches().map((result, i) => {
-  //     this.props.products.forEach(product => {
-  //       if (result === product.name) {
-  //         return (
-  //           <li key={i} onClick={this.selectName}><Link to={`/products/${product.id}`}>{result}</Link></li>
-  //         );
-  //       }
-  //     })
-  //  });
-
     return (
       <div>
         <div className='auto'>
@@ -90,8 +92,8 @@ import { Redirect, Link } from 'react-router-dom';
             onKeyPress={this.getProduct}
             value={this.state.inputVal}
             placeholder="&#x1F50D; Search" />
-           <ul id="input-names" className="matches">
-             {results}
+          <ul id="input-names" className="matches">
+            {results}
           </ul>
         </div>
       </div>
@@ -99,4 +101,4 @@ import { Redirect, Link } from 'react-router-dom';
   }
 };
 
-export default SearchBar;
+export default withRouter(SearchBar);

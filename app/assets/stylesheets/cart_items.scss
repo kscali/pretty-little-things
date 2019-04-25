@@ -1,3 +1,198 @@
 // Place all the styles related to the CartItems controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.main-basket {
+  height: 900px;
+  position: relative;
+  top: -60px;
+}
+
+.main-basket > div > a {
+  color: black;
+  position: relative;
+  left: 820px;
+  top: -10px;
+}
+
+.full-box {
+  display: flex;
+  margin-left: -16px;
+  margin-right: -16px;
+  flex-flow: row wrap;
+}
+
+.divider {
+  display: block;
+  color: black;
+  margin-bottom: 12px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  width: 590px;
+  position: relative;
+  top: 0px;
+  left: 600px;
+  height: 5px;
+  margin-bottom: 0;
+}
+
+.basket-list {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  top: 20px;
+}
+
+.basket-list-items {
+  background: rgb(244, 244, 244);;
+  width: 590px;
+  height: 250px;
+  left: 10px;
+  position: relative;
+}
+
+.basket-list-items > h6 {
+ margin-top: 5px;
+ margin-bottom: 0;
+ position: relative;
+ top: 10px;
+ left: 20px;
+}
+
+.inner-item {
+  background: white;
+  height: 200px;
+  width: 575px;
+  position: relative;
+  top: 20px;
+  left: 8px;
+}
+
+.right-side {
+  width: 340px;
+  height: 560px;
+  border: 1px solid lightgray;
+  margin-left: 50px;
+}
+
+.left-side {
+  display: flex;
+  position: relative;
+  left: -600px;
+}
+
+div.caro {
+  top: 200px;
+  height: 200px
+}
+
+h5.h {
+  position: relative;
+  top: 80px;
+}
+
+div#rec-for-u.slider {
+  width: 600px;
+  position: relative;
+  top: 100px;
+}
+
+.mini-divider {
+  display: block;
+  color: lightgray;
+  margin-bottom: 12px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  height: 1px;
+  width: 295px;
+  position: relative;
+  left: -10px;
+}
+
+.right-side > .container > div {
+  display: block;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.right-side > .container > h6 {
+  font-size: 18px;
+  left: -10px;
+  position: relative;
+}
+
+.right-side > .container  {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.right-side > .container > div > span {
+ position: relative;
+ left: -10px; 
+ top: 0;
+ margin-right: 20px;
+ height: 30px;
+ width: 100%;
+}
+
+.right-side > .container > div {
+  margin-bottom: 15px;
+}
+
+.right-side > .container > div > b {
+  position: relative;
+  margin-right: 25px;
+}
+
+.total > span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.total {
+  position: relative;
+  top: 10px;
+}
+
+.ckout-input {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 295px;
+  position: relative;
+  left: -10px;
+}
+
+.ckout {
+  display: block;
+  width: 290px;
+  align-content: center;
+  padding: 10px;
+  color: white;
+  background: rgb(236, 4, 15);
+  font-size: 14px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  margin-bottom: 15px;
+  position: relative;
+  left: -10px;
+}
+
+.ckout:hover {
+  border: 2px solid black;
+  background: #cc0000;
+}
+
+.paypal {
+  height: 70px;
+  width: 240px;
+}
+
+.pp {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  height: 70px;
+  width: 290px;
+  position: relative;
+  left: -10px;
+}
