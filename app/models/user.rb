@@ -3,6 +3,8 @@ class User < ApplicationRecord
   validates :password, length: { minimum: 6 }, allow_nil: true 
   validates :email, presence: true, uniqueness: true 
 
+  has_many :cart_items, foreign_key: :user_id, class_name: :CartItem
+
   attr_reader :password 
   after_initialize :ensure_session_token
 

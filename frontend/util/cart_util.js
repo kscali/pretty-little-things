@@ -12,11 +12,11 @@ export const fetchCartItem = (id) => (
   })
 );
                               
-export const createCartItem = (cart_item) => (
+export const createCartItem = (cartItem) => (
   $.ajax({
     method: "POST",
     url: '/api/cart_items',
-    data: { cart_item }
+    data: { cart_item: cartItem }
   })
 );
 

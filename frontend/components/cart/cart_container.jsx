@@ -8,7 +8,6 @@ import {
 
 import Cart from './cart';
 import { fetchProducts, fetchProduct } from './../../actions/product_actions';
-// import { fetchBrands } from './../../actions/brand_actions';
 
 const mstp = state => {
   

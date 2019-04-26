@@ -17,6 +17,8 @@ class ProductDetail extends React.Component {
   componentDidMount() {
     this.props.fetchProduct(this.props.match.params.productId);
     this.props.fetchCartItems();
+    
+    setTimeout(() => { this.setState({ product_id: this.props.product.id })}, 1000 );
   }
 
   componentDidUpdate(prevProps) {
@@ -43,11 +45,17 @@ class ProductDetail extends React.Component {
 
 
   addCart(e) {
-    this.props.createCartItem(this.state);
+    e.preventDefault();
+   let p = document.getElementById("item-alert");
+    p.classList.add("item-show");
+   setTimeout(() => {
+      p.classList.remove("item-show");
+    }, 500);
+
+   this.props.createCartItem(this.state);
   }
 
   render() {
-    debugger;
     let product = this.props.product;
     if (!product) return null; 
   
@@ -81,7 +89,8 @@ class ProductDetail extends React.Component {
                     <option value="3">3</option>
                     <option value="4">4</option>
                   </select>
-                  <button onClick={this.addCart} className="basket-btn">ADD TO BASKET</button>
+                  <button id="cart-btn" onClick={this.addCart} className="basket-btn">ADD TO BASKET</button>
+                  <div className="item-border"><p id="item-alert" className="item-border item-alert">Item added to basket</p></div>
                 </div>
               </div>
             <div className="product-info container">

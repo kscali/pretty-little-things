@@ -5,61 +5,68 @@ import CartItem from './cart_item';
 class Cart extends React.Component {
   constructor(props){
   super(props);
-    
-  this.freeShipping = this.freeShipping.bind(this);
+  
+  this.getQuantity = this.getQuantity.bind(this);
   }
 
   componentDidMount() {
     this.props.fetchProducts();
     this.props.fetchCartItems();
-    setTimeout(() => this.freeShipping(), 5000);
   }
 
   shipping() {
+    let that = this;
     let totalAmount = 0;
     this.props.cartItems.forEach(item => {
-      let product = this.props.products[item.product_id - 1]
+      let product = this.props.products[item.product_id - 1];
+      // if (product === undefined ) debugger;
+      that;
       totalAmount += item.quantity * product.price;
     })
     return totalAmount;
-    
   }
 
-  freeShipping() {
-    let total = this.shipping();
-    let p = document.getElementById("shipping");
-    let sh = document.getElementById("shipHandle");
-    if (total < 50) {
-      p.innerText = `You have $${50 - this.state.totalAmount} left for free shipping`;
-      sh.innerText = '$5.99';
-    } else {
-      p.innerText = "Shipping is Free";
-      sh.innerText = 'FREE';
-    }
+  getQuantity() {
+    let quantity = 0;
+    this.props.cartItems.forEach(item => {
+      quantity += item.quantity;
+    });
+    return quantity;
   }
-
-
 
   render() {
-    let quantity = this.props.cartItems.length;
+    let quantity = this.getQuantity();
     let total = this.shipping();
+    let shipping;
+    let price;
+    if (total > 50 ) {
+      shipping = "You qualify for free shipping."
+      price = "FREE";
+    } else if (total > 0 ) {
+      shipping = `You have $${ 50 - total } left for free shipping`;
+      price = "5.99";
+    } else {
+      shipping = "Order $50 or more to qualify for free shipping";
+      price = "5.99";
+    }
+    
     return (
       <div className="main-basket container">
         <div>
           <h4>My Basket</h4>
-          <p id="shipping">Order $50 or more to qualify for free shipping</p>
+          <p id="shipping">{shipping}</p>
           <Link to="/products">Continue Shopping ></Link>
         </div>
         <div className="full-box">
           <div className="left-side">
             <div className="divider"></div>
-            <div className="basket-list">
-               <div className="basket-list-items">
-                <h6>Items in basket ({quantity}) </h6>
+              <div className="basket-list">
+                <div className="basket-list-items">
+                  <h6>Items in basket ({quantity}) </h6>
                
-                <div className="inner-item">
-                  <CartItem props={this.props} />
-                </div>
+                  <div className="inner-item">
+                    <CartItem props={this.props} />
+                  </div>
                
                 <h5 className="h">Recommended for You</h5>
                 <div className="caro">
@@ -119,7 +126,7 @@ class Cart extends React.Component {
                </div>
                 <div>
                   <span>Shipping & Handling</span>
-                  <p id="shipHandle"><b>TBD</b></p> 
+                  <p id="shipHandle"><b>{ total === 0 ? "TBD" : price }</b></p> 
                 </div>
                 <div>
                   <span>Tax</span>
@@ -128,10 +135,10 @@ class Cart extends React.Component {
                 <div className="mini-divider"></div>
                 <div className="total">
                   <span>Estimated total</span>
-                  <b>${total > 50 ? total : total + 5.99 }</b>
+                  <b>${total > 50 ? total : total === 0 ? 0 : total + 5.99 }</b>
                 </div>
                 <div className="mini-divider"></div>
-                <input className="ckout-input" type="text" placeholder="Promo or reward code" />
+                  <input className="ckout-input" type="text" placeholder="Promo or reward code" />
                 <div className="mini-divider"></div>
                 <button className="ckout">CHECKOUT</button>
                 <div className="pp">
