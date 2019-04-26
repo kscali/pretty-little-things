@@ -44,10 +44,10 @@ class Cart extends React.Component {
       price = "FREE";
     } else if (total > 0 ) {
       shipping = `You have $${ 50 - total } left for free shipping`;
-      price = "5.99";
+      price = "TBD";
     } else {
       shipping = "Order $50 or more to qualify for free shipping";
-      price = "5.99";
+      price = "TBD";
     }
     
     return (
@@ -126,7 +126,7 @@ class Cart extends React.Component {
                </div>
                 <div>
                   <span>Shipping & Handling</span>
-                  <p id="shipHandle"><b>{ total === 0 ? "TBD" : price }</b></p> 
+                  <p id="shipHandle">{ price }</p> 
                 </div>
                 <div>
                   <span>Tax</span>
@@ -135,7 +135,7 @@ class Cart extends React.Component {
                 <div className="mini-divider"></div>
                 <div className="total">
                   <span>Estimated total</span>
-                  <b>${total > 50 ? total : total === 0 ? 0 : total + 5.99 }</b>
+                  <b>${total > 50 ? total : total === 0 ? 0 : total }</b>
                 </div>
                 <div className="mini-divider"></div>
                   <input className="ckout-input" type="text" placeholder="Promo or reward code" />
