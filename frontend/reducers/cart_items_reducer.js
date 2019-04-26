@@ -12,14 +12,14 @@ const cartReducer = (state = {}, action) => {
   let newState;
   switch(action.type) {
     case RECEIVE_CURRENT_USER: 
-      if (!action.user.items) {
+      if (!action.user.cart_items) {
         return {};
       } else {
-        return action.user.items
+        return action.user.cart_items
       }
     case RECEIVE_CART_ITEMS: 
       newState = merge({}, state, action.items);
-      return action.items;
+      return newState;
     case LOGOUT_CURRENT_USER: 
       return {};
     case REMOVE_CART_ITEM:

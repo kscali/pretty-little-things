@@ -2,9 +2,21 @@ import React from 'react';
 import ProductInfo from './product-info';
 
 class ProductDetail extends React.Component {
+  constructor(props) {
+    super(props);
+   
+    this.state = {
+      product_id: '',
+      quantity: 1
+    }
+
+    this.setProduct = this.setProduct.bind(this);
+    this.addCart = this.addCart.bind(this);
+  }
 
   componentDidMount() {
     this.props.fetchProduct(this.props.match.params.productId);
+    this.props.fetchCartItems();
   }
 
   componentDidUpdate(prevProps) {
@@ -21,8 +33,21 @@ class ProductDetail extends React.Component {
     }
   }
 
-  render() {
+  setProduct() {
+    let product = this.props.product;
+    let quantity = +document.getElementById("selector").value;
+    this.setState({ 
+      product_id: product.id,
+      quantity })
+  }
 
+
+  addCart(e) {
+    this.props.createCartItem(this.state);
+  }
+
+  render() {
+    debugger;
     let product = this.props.product;
     if (!product) return null; 
   
@@ -50,13 +75,13 @@ class ProductDetail extends React.Component {
                   <form className="product-checkbox">
                     <input type="checkbox" />Yes, I want <b>FREE 2-Day Shipping</b>
                   </form>
-                  <select>
-                    <option value="one">1</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                    <option value="four">4</option>
+                  <select onChange={this.setProduct} id="selector">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
                   </select>
-                  <button className="basket-btn">ADD TO BASKET</button>
+                  <button onClick={this.addCart} className="basket-btn">ADD TO BASKET</button>
                 </div>
               </div>
             <div className="product-info container">

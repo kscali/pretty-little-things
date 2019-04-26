@@ -6,9 +6,11 @@ class Api::CartItemsController < ApplicationController
   end
 
   def create
+    
     @cart_items = CartItem.where(user_id: current_user.id)
+   
     @cart_item = CartItem.find_by(user_id: current_user.id, product_id: cart_item_params[:product_id])
-  
+    
     if !current_user
       render json: ["Please Sign In"], status: 422
     else 
@@ -28,7 +30,7 @@ class Api::CartItemsController < ApplicationController
   def update 
     @cart_items = CartItem.where(user_id: current_user.id)
     @cart_item = CartItem.find(params[:id])
-
+    
     if @cart_item.update(cart_item_params)
       render :index 
     else
@@ -51,6 +53,6 @@ class Api::CartItemsController < ApplicationController
 
   private 
   def cart_item_params 
-    params.require(:cart_items).permit(:product_id, :quantity)
+    params.require(:cart_item).permit(:product_id, :quantity)
   end
 end

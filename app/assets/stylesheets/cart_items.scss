@@ -41,12 +41,14 @@
   height: 600px;
   position: relative;
   top: 20px;
+  overflow: hidden;
+
 }
 
 .basket-list-items {
   background: rgb(244, 244, 244);;
   width: 590px;
-  height: 250px;
+  height: auto;
   left: 10px;
   position: relative;
 }
@@ -61,11 +63,12 @@
 
 .inner-item {
   background: white;
-  height: 200px;
+  height: auto;
   width: 575px;
   position: relative;
   top: 20px;
   left: 8px;
+ 
 }
 
 .right-side {
@@ -195,4 +198,50 @@ div#rec-for-u.slider {
   width: 290px;
   position: relative;
   left: -10px;
+}
+
+p#shipping {
+  font-weight: bold; 
+  position: relative;
+  left: 0px;
+  margin-bottom: 0;
+}
+
+p#shipHandle {
+  font-weight: bold;
+  font-size: 16px;
+  left: -15px;
+  top: 0px;
+}
+
+
+.items-list > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.items-list > ul > li {
+
+}
+
+.items-list > ul > li > div {
+  display: flex;
+  clear: both;
+  justify-content: space-evenly;
+}
+
+.items-list {
+  height: auto;
+  position: relative;
+  top: 25px;
+}
+
+.div-li > img {
+  position: relative;
+  left: -50px;
+}
+
+.div-li > div {
+  position: relative;
+  left: 30px;
 }

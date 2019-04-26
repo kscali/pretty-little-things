@@ -1,22 +1,53 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import CartItem from './cart_item';
 
 class Cart extends React.Component {
   constructor(props){
   super(props);
-
+    
+  this.freeShipping = this.freeShipping.bind(this);
   }
 
   componentDidMount() {
     this.props.fetchProducts();
     this.props.fetchCartItems();
+    setTimeout(() => this.freeShipping(), 5000);
   }
 
+  shipping() {
+    let totalAmount = 0;
+    this.props.cartItems.forEach(item => {
+      let product = this.props.products[item.product_id - 1]
+      totalAmount += item.quantity * product.price;
+    })
+    return totalAmount;
+    
+  }
+
+  freeShipping() {
+    let total = this.shipping();
+    let p = document.getElementById("shipping");
+    let sh = document.getElementById("shipHandle");
+    if (total < 50) {
+      p.innerText = `You have $${50 - this.state.totalAmount} left for free shipping`;
+      sh.innerText = '$5.99';
+    } else {
+      p.innerText = "Shipping is Free";
+      sh.innerText = 'FREE';
+    }
+  }
+
+
+
   render() {
+    let quantity = this.props.cartItems.length;
+    let total = this.shipping();
     return (
       <div className="main-basket container">
         <div>
           <h4>My Basket</h4>
+          <p id="shipping">Order $50 or more to qualify for free shipping</p>
           <Link to="/products">Continue Shopping ></Link>
         </div>
         <div className="full-box">
@@ -24,10 +55,12 @@ class Cart extends React.Component {
             <div className="divider"></div>
             <div className="basket-list">
                <div className="basket-list-items">
-                <h6>Items in basket (1) </h6>
+                <h6>Items in basket ({quantity}) </h6>
+               
                 <div className="inner-item">
-
+                  <CartItem props={this.props} />
                 </div>
+               
                 <h5 className="h">Recommended for You</h5>
                 <div className="caro">
                   <div id="rec-for-u" className=" slider">
@@ -82,11 +115,11 @@ class Cart extends React.Component {
                 <h6>Order Summary</h6>
                 <div>
                   <span>Merchandise subtotal</span>
-                  <b>price</b>
+                  <b>${total}</b>
                </div>
                 <div>
                   <span>Shipping & Handling</span>
-                  <b>TBD</b>
+                  <p id="shipHandle"><b>TBD</b></p> 
                 </div>
                 <div>
                   <span>Tax</span>
@@ -95,7 +128,7 @@ class Cart extends React.Component {
                 <div className="mini-divider"></div>
                 <div className="total">
                   <span>Estimated total</span>
-                  <b>TBD</b>
+                  <b>${total > 50 ? total : total + 5.99 }</b>
                 </div>
                 <div className="mini-divider"></div>
                 <input className="ckout-input" type="text" placeholder="Promo or reward code" />
