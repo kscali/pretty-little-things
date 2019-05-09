@@ -28,7 +28,7 @@ class Carousel extends React.Component {
     if (random > 10) {
       return products.slice(0, random);
     } else {
-      return products.splice(5, 10);
+      return products.slice(random, 20);
     }
   }
 

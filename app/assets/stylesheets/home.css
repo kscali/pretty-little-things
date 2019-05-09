@@ -37,38 +37,34 @@
 
 /* carousel 1 */
 
-/* .slider {
-  
+.slider {
   position: relative;
   display: flex;
   text-align: center;
-  
+
   overflow-x: auto;
   top: -50px;
 
-  
   -webkit-overflow-scrolling: touch;
-} */
-/* .slider > div {
-  
+}
+.slider > div {
   flex-shrink: 0;
   width: 200px;
   height: 200px;
   position: relative;
-} */
+}
 
-/* .slider > div > p {
+.slider > div > p {
   width: 200px;
   position: absolute;
   top: 75%;
   left: 0;
   padding: 5px;
   font-size: 14px;
-} */
-
-/* .slider > div > a {
+}
+.slider > div > a {
   color: black;
-} */
+}
 
 .dot {
   left: 0px;
@@ -86,8 +82,7 @@
 .ad-images {
   width: 100%;
 }
-
-.ad-images > a > img {
+*/ */ .ad-images > a > img {
   width: 100%;
 }
 
@@ -127,11 +122,11 @@
   padding-top: 1px;
 }
 
-/* .price {
+/ .price {
   top: 0;
   right: 0;
   position: relative;
-} */
+}
 
 .carousel-container {
   margin-top: 100px;

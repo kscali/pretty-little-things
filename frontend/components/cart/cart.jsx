@@ -1,12 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import CartItem from './cart_item';
+import React from "react";
+import { Link } from "react-router-dom";
+import CartItem from "./cart_item";
 
 class Cart extends React.Component {
-  constructor(props){
-  super(props);
-  
-  this.getQuantity = this.getQuantity.bind(this);
+  constructor(props) {
+    super(props);
+
+    this.getQuantity = this.getQuantity.bind(this);
   }
 
   componentDidMount() {
@@ -22,7 +22,7 @@ class Cart extends React.Component {
       // if (product === undefined ) debugger;
       that;
       totalAmount += item.quantity * product.price;
-    })
+    });
     return totalAmount;
   }
 
@@ -39,17 +39,17 @@ class Cart extends React.Component {
     let total = this.shipping();
     let shipping;
     let price;
-    if (total > 50 ) {
-      shipping = "You qualify for free shipping."
+    if (total > 50) {
+      shipping = "You qualify for free shipping.";
       price = "FREE";
-    } else if (total > 0 ) {
-      shipping = `You have $${ 50 - total } left for free shipping`;
+    } else if (total > 0) {
+      shipping = `You have $${50 - total} left for free shipping`;
       price = "TBD";
     } else {
       shipping = "Order $50 or more to qualify for free shipping";
       price = "TBD";
     }
-    
+
     return (
       <div className="main-basket container">
         <div>
@@ -59,15 +59,15 @@ class Cart extends React.Component {
         </div>
         <div className="full-box">
           <div className="left-side">
-            <div className="divider"></div>
-              <div className="basket-list">
-                <div className="basket-list-items">
-                  <h6>Items in basket ({quantity}) </h6>
-               
-                  <div className="inner-item">
-                    <CartItem props={this.props} />
-                  </div>
-               
+            <div className="divider" />
+            <div className="basket-list">
+              <div className="basket-list-items">
+                <h6>Items in basket ({quantity}) </h6>
+
+                <div className="inner-item">
+                  <CartItem props={this.props} />
+                </div>
+
                 <h5 className="h">Recommended for You</h5>
                 <div className="caro">
                   <div id="rec-for-u" className=" slider">
@@ -123,27 +123,37 @@ class Cart extends React.Component {
                 <div>
                   <span>Merchandise subtotal</span>
                   <b>${total}</b>
-               </div>
+                </div>
                 <div>
                   <span>Shipping & Handling</span>
-                  <p id="shipHandle">{ price }</p> 
+                  <p id="shipHandle">{price}</p>
                 </div>
                 <div>
                   <span>Tax</span>
                   <b>TBD</b>
                 </div>
-                <div className="mini-divider"></div>
+                <div className="mini-divider" />
                 <div className="total">
                   <span>Estimated total</span>
-                  <b>${total > 50 ? total : total === 0 ? 0 : total }</b>
+                  <b>${total > 50 ? total : total === 0 ? 0 : total}</b>
                 </div>
-                <div className="mini-divider"></div>
-                  <input className="ckout-input" type="text" placeholder="Promo or reward code" />
-                <div className="mini-divider"></div>
+                <div className="mini-divider" />
+                <input
+                  className="ckout-input"
+                  type="text"
+                  placeholder="Promo or reward code"
+                />
+                <div className="mini-divider" />
                 <button className="ckout">CHECKOUT</button>
                 <div className="pp">
                   <a href="https://www.paypal.com/us/home">
-                    <img className="paypal" src="https://d12m9erqbesehq.cloudfront.net/wp-content/uploads/2016/10/27151552/paypal-express-checkout-logo-300x125.png" alt="paypal" width="225" height="80" />
+                    <img
+                      className="paypal"
+                      src="https://d12m9erqbesehq.cloudfront.net/wp-content/uploads/2016/10/27151552/paypal-express-checkout-logo-300x125.png"
+                      alt="paypal"
+                      width="225"
+                      height="80"
+                    />
                   </a>
                 </div>
               </div>
@@ -151,8 +161,8 @@ class Cart extends React.Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Cart; 
+export default Cart;
