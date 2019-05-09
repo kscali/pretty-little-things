@@ -1,21 +1,20 @@
 .homepage {
-  height: 1800px;
+  height: 1900px;
 }
-
 
 .home-ad {
   position: relative;
-  top: -101px; 
+  top: -101px;
 }
 
 .sec-section {
-  text-align: center; 
+  text-align: center;
 }
 
 .third-section {
-  text-align: center; 
+  text-align: center;
   position: relative;
-  top: 40px; 
+  top: 40px;
 }
 
 .third-section > h2 {
@@ -29,51 +28,51 @@
 }
 
 .sec-section > h2 {
-  position: relative; 
-  display: inline-block; 
-  font-family: georgia; 
-  font-weight: normal; 
+  position: relative;
+  display: inline-block;
+  font-family: georgia;
+  font-weight: normal;
   top: -70px;
 }
 
 /* carousel 1 */
 
-.slider {
-  /* line them up horizontally */
-  position: relative; 
+/* .slider {
+  
+  position: relative;
   display: flex;
   text-align: center;
-  /* allow for scrolling */
+  
   overflow-x: auto;
-  top: -50px; 
+  top: -50px;
 
-  /* make it smooth on iOS */
+  
   -webkit-overflow-scrolling: touch;
-}
-.slider > div {
-  /* make sure the width is honored */
+} */
+/* .slider > div {
+  
   flex-shrink: 0;
   width: 200px;
   height: 200px;
   position: relative;
-}
+} */
 
-.slider > div > p {
-  width: 200px; 
+/* .slider > div > p {
+  width: 200px;
   position: absolute;
   top: 75%;
   left: 0;
-  padding: 5px; 
+  padding: 5px;
   font-size: 14px;
-}
+} */
 
-.slider > div > a {
-  color: black; 
-}
+/* .slider > div > a {
+  color: black;
+} */
 
 .dot {
   left: 0px;
-  position: relative; 
+  position: relative;
   top: -8px;
   font-size: 16px;
 }
@@ -85,18 +84,18 @@
 }
 
 .ad-images {
- width: 100%;
+  width: 100%;
 }
 
 .ad-images > a > img {
- width: 100%;
+  width: 100%;
 }
 
 .fourth-sec > h2 {
   position: relative;
   top: 100px;
   text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: normal;
 }
 
@@ -110,5 +109,35 @@
   margin-right: 50px;
 }
 
+.carousel-img {
+  width: 170px;
+}
+.products-div > a {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
 
+.slick-next,
+.slick-prev {
+  background: gray;
+  border-radius: 50px;
+  z-index: 1;
+  padding-top: 1px;
+}
 
+/* .price {
+  top: 0;
+  right: 0;
+  position: relative;
+} */
+
+.carousel-container {
+  margin-top: 100px;
+}
+
+.last-section {
+  position: relative;
+  top: -100px;
+}
