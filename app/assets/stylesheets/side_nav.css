@@ -1,6 +1,6 @@
 /* The sidebar menu */
 .sidenav {
-  height: 800px; 
+  height: 800px;
   width: 200px; /* Set the width of the sidebar */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -11,11 +11,12 @@
   margin-right: 20px;
 }
 
-.side-nav-menu > ul, .side-nav-menu > ul > li {
-   margin: 10px 0 0 0; 
-   padding: 0; 
-   font-weight: bold; 
-   display: block; 
+.side-nav-menu > ul,
+.side-nav-menu > ul > li {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
 }
 
 /* The navigation menu links */
@@ -25,9 +26,8 @@
   font-size: 16px;
   color: #818181;
   display: block;
-  text-align: left; 
+  text-align: left;
 }
-
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
@@ -42,35 +42,36 @@
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
-
 
 /* main */
 
 .products {
   position: relative;
-  top: -80px; 
+  top: 20px;
   height: 2600px;
 }
 
 .nav > .dropdown > a {
- color: black; 
+  color: black;
 }
 
 .products > .container {
-  display: flex; 
+  display: flex;
 }
-
-
 
 .inner-side {
   height: 2600px;
   width: 500px;
-  display: grid; 
+  display: grid;
   grid-template-columns: auto auto auto auto;
-  text-align: center; 
+  text-align: center;
   position: relative;
   left: -250px;
   top: -10px;
@@ -79,23 +80,23 @@
 .item-li {
   width: 125px;
   height: 75px;
-  text-align: center; 
+  text-align: center;
 }
 
 .item-li > a {
-  text-align: center; 
-  color: black; 
+  text-align: center;
+  color: black;
 }
 
-.item-li > a >  p {
-  position: relative; 
-  left: 10px; 
-  top: -5px; 
+.item-li > a > p {
+  position: relative;
+  left: 10px;
+  top: -5px;
   margin-bottom: 2px;
 }
 
-.item-li > a >  img {
- image-rendering: pixelated;
+.item-li > a > img {
+  image-rendering: pixelated;
 }
 
 .gel {

@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import CartItem from "./cart_item";
+import Checkout from "./checkout";
 
 class Cart extends React.Component {
   constructor(props) {
     super(props);
 
     this.getQuantity = this.getQuantity.bind(this);
+    this.shipping = this.shipping.bind(this);
+    this.getRecommendations = this.getRecommendations.bind(this);
   }
 
   componentDidMount() {
@@ -15,12 +18,10 @@ class Cart extends React.Component {
   }
 
   shipping() {
-    let that = this;
     let totalAmount = 0;
     this.props.cartItems.forEach(item => {
       let product = this.props.products[item.product_id - 1];
-      // if (product === undefined ) debugger;
-      that;
+
       totalAmount += item.quantity * product.price;
     });
     return totalAmount;
@@ -34,20 +35,49 @@ class Cart extends React.Component {
     return quantity;
   }
 
+  getRecommendations() {
+    let products = this.props.products.map((product, i) => {
+      return (
+        <div key={i}>
+          <Link to={`/products/${product.id}`}>
+            <img src={product.image_url[0]} alt="makeup" />
+            <h6>{product.brand_name}</h6>
+            <p className="dot">{product.name}</p>
+          </Link>
+        </div>
+      );
+    });
+
+    let randomProducts = [];
+
+    while (randomProducts.length < 10) {
+      let random = Math.floor(Math.random() * products.length);
+      randomProducts.push(products[random]);
+    }
+
+    return randomProducts;
+  }
+
   render() {
     let quantity = this.getQuantity();
     let total = this.shipping();
+    let tax = total === 0 ? "TBD" : (total * 0.1).toFixed(2);
     let shipping;
     let price;
+    let estimatedTotal;
+
     if (total > 50) {
       shipping = "You qualify for free shipping.";
       price = "FREE";
-    } else if (total > 0) {
+      estimatedTotal = (Number(total) + Number(tax)).toFixed(2);
+    } else if (total > 0 && total < 50) {
       shipping = `You have $${50 - total} left for free shipping`;
-      price = "TBD";
+      price = 5.99;
+      estimatedTotal = (Number(total) + Number(tax) + Number(price)).toFixed(2);
     } else {
       shipping = "Order $50 or more to qualify for free shipping";
       price = "TBD";
+      estimatedTotal = "TBD";
     }
 
     return (
@@ -57,6 +87,7 @@ class Cart extends React.Component {
           <p id="shipping">{shipping}</p>
           <Link to="/products">Continue Shopping ></Link>
         </div>
+
         <div className="full-box">
           <div className="left-side">
             <div className="divider" />
@@ -70,93 +101,20 @@ class Cart extends React.Component {
 
                 <h5 className="h">Recommended for You</h5>
                 <div className="caro">
-                  <div id="rec-for-u" className=" slider">
-                    <div>
-                      <Link to="/products/1">
-                        <img src="https://www.sephora.com/productimages/sku/s1901008-main-grid.jpg" />
-                        <h6>Tarte</h6>
-                        <p className="dot">12-hr clay blush</p>
-                      </Link>
-                    </div>
-                    <div>
-                      <Link to="/products/9">
-                        <img src="https://www.sephora.com/productimages/sku/s2182111-main-grid.jpg" />
-                        <h6>ANASTASIA</h6>
-                        <p className="gel">DIPBROW gel</p>
-                      </Link>
-                    </div>
-                    <div>
-                      <Link to="/products/6">
-                        <img src="https://www.sephora.com/productimages/sku/s1233147-main-grid.jpg" />
-                        <h6>Viktor&Rolfe</h6>
-                        <p className="gel">Flowerbomb</p>
-                      </Link>
-                    </div>
-                    <div>
-                      <Link to="/products/11">
-                        <img src="https://www.sephora.com/productimages/sku/s2181006-main-grid.jpg" />
-                        <h6>TATCHA</h6>
-                        <p className="gel">Dewy Skin Cream</p>
-                      </Link>
-                    </div>
-                    <div>
-                      <Link to="/products/12">
-                        <img src="https://www.sephora.com/productimages/sku/s2211167-main-grid.jpg" />
-                        <h6>FRESH</h6>
-                        <p className="gel">Sleeping Mask</p>
-                      </Link>
-                    </div>
-                    <div>
-                      <Link to="/products/13">
-                        <img src="https://www.sephora.com/productimages/sku/s1162650-main-grid.jpg" />
-                        <h6>Dior</h6>
-                        <p className="gel">Dior Lip Glow</p>
-                      </Link>
-                    </div>
+                  <div id="rec-for-u" className="slider">
+                    {this.getRecommendations()}
                   </div>
                 </div>
               </div>
             </div>
+
             <div className="right-side">
-              <div className="container">
-                <h6>Order Summary</h6>
-                <div>
-                  <span>Merchandise subtotal</span>
-                  <b>${total}</b>
-                </div>
-                <div>
-                  <span>Shipping & Handling</span>
-                  <p id="shipHandle">{price}</p>
-                </div>
-                <div>
-                  <span>Tax</span>
-                  <b>TBD</b>
-                </div>
-                <div className="mini-divider" />
-                <div className="total">
-                  <span>Estimated total</span>
-                  <b>${total > 50 ? total : total === 0 ? 0 : total}</b>
-                </div>
-                <div className="mini-divider" />
-                <input
-                  className="ckout-input"
-                  type="text"
-                  placeholder="Promo or reward code"
-                />
-                <div className="mini-divider" />
-                <button className="ckout">CHECKOUT</button>
-                <div className="pp">
-                  <a href="https://www.paypal.com/us/home">
-                    <img
-                      className="paypal"
-                      src="https://d12m9erqbesehq.cloudfront.net/wp-content/uploads/2016/10/27151552/paypal-express-checkout-logo-300x125.png"
-                      alt="paypal"
-                      width="225"
-                      height="80"
-                    />
-                  </a>
-                </div>
-              </div>
+              <Checkout
+                total={total}
+                price={price}
+                tax={tax}
+                estimatedTotal={estimatedTotal}
+              />
             </div>
           </div>
         </div>

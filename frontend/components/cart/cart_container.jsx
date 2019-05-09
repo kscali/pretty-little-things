@@ -1,22 +1,20 @@
-import { connect } from 'react-redux';
-import { 
+import { connect } from "react-redux";
+import {
   fetchCartItems,
-  updateCartItem, 
-  deleteCartItem, 
+  updateCartItem,
+  deleteCartItem,
   deleteAllCartItems
-} from './../../actions/cart_actions';
+} from "./../../actions/cart_actions";
 
-import Cart from './cart';
-import { fetchProducts, fetchProduct } from './../../actions/product_actions';
+import Cart from "./cart";
+import { fetchProducts, fetchProduct } from "./../../actions/product_actions";
 
 const mstp = state => {
-  
   let cartItems = Object.values(state.entities.cart);
-  let products = Object.values(state.entities.products)
-  let unwantedItems = Object.values(state.entities.cart);
+  let products = Object.values(state.entities.products);
 
-  return ({ cartItems, products, unwantedItems })
-}
+  return { cartItems, products };
+};
 
 const mdtp = dispatch => ({
   fetchProducts: () => dispatch(fetchProducts()),
@@ -25,6 +23,9 @@ const mdtp = dispatch => ({
   deleteCartItem: id => dispatch(deleteCartItem(id)),
   deleteAllCartItems: () => dispatch(deleteAllCartItems()),
   fetchProduct: id => dispatch(fetchProduct(id))
-})
+});
 
-export default connect(mstp, mdtp)(Cart);
+export default connect(
+  mstp,
+  mdtp
+)(Cart);

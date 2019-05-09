@@ -43,7 +43,6 @@
   position: relative;
   top: 20px;
   // overflow: hidden;
-
 }
 
 .basket-list-items {
@@ -55,11 +54,11 @@
 }
 
 .basket-list-items > h6 {
- margin-top: 5px;
- margin-bottom: 0;
- position: relative;
- top: 10px;
- left: 20px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  position: relative;
+  top: 10px;
+  left: 20px;
 }
 
 .inner-item {
@@ -69,7 +68,6 @@
   position: relative;
   top: 20px;
   left: 8px;
- 
 }
 
 .right-side {
@@ -87,7 +85,7 @@
 
 div.caro {
   top: 300px;
-  height: 200px
+  height: 200px;
 }
 
 h5.h {
@@ -125,19 +123,19 @@ div#rec-for-u.slider {
   position: relative;
 }
 
-.right-side > .container  {
+.right-side > .container {
   position: relative;
   top: 20px;
   left: 20px;
 }
 
 .right-side > .container > div > span {
- position: relative;
- left: -10px; 
- top: 0;
- margin-right: 20px;
- height: 30px;
- width: 100%;
+  position: relative;
+  left: -10px;
+  top: 0;
+  margin-right: 20px;
+  height: 30px;
+  width: 100%;
 }
 
 .right-side > .container > div {
@@ -189,7 +187,7 @@ div#rec-for-u.slider {
 
 .paypal {
   height: 70px;
-  width: 225px;
+  width: 200px;
 }
 
 .pp {
@@ -202,7 +200,7 @@ div#rec-for-u.slider {
 }
 
 p#shipping {
-  font-weight: bold; 
+  font-weight: bold;
   position: relative;
   left: 0px;
   margin-bottom: 0;
@@ -215,12 +213,10 @@ p#shipHandle {
   top: 0px;
 }
 
-
 .items-list > ul {
   display: flex;
   flex-direction: column;
 }
-
 
 .items-list > ul > li > div {
   display: flex;
@@ -239,7 +235,6 @@ p#shipHandle {
   left: -50px;
   height: 130px;
   width: 130px;
-
 }
 
 .div-li > div {
@@ -262,8 +257,6 @@ p#shipHandle {
   width: 100%;
 }
 
-
-
 .remove-btn {
   width: 150px;
   height: 35px;
@@ -278,7 +271,7 @@ p#shipHandle {
 #selector-2 {
   position: relative;
   top: 40px;
-  left: 40px
+  left: 40px;
 }
 
 .quantity {
@@ -294,12 +287,12 @@ p#shipHandle {
 }
 
 .item-border {
- border: 2px solid transparent;
- height: 35px;
- width: 214px;
- position: relative;
- left: 0px;
- top: 0px;
+  border: 2px solid transparent;
+  height: 35px;
+  width: 214px;
+  position: relative;
+  left: 0px;
+  top: 0px;
 }
 
 .item-alert {
@@ -312,7 +305,5 @@ p#shipHandle {
 }
 
 .item-show {
-  display : block;
+  display: block;
 }
-
-

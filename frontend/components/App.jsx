@@ -17,6 +17,7 @@ import SkinContainer from "./../components/categories/skin_container";
 import HairContainer from "./../components/categories/hair_container";
 import CartContainer from "./../components/cart/cart_container";
 import TopNav from "./../components/navbar/topnav";
+import AboutUs from "../components/footer/aboutus";
 
 class App extends React.Component {
   constructor(props) {
@@ -46,6 +47,7 @@ class App extends React.Component {
           <Route exact path="/hair" component={HairContainer} />
           <AuthRoute path="/signup" component={SignupFormContainer} />
           <AuthRoute path="/login" component={LoginFormContainer} />
+          <Route exact path="/aboutus" component={AboutUs} />
           <Route
             render={() => (
               <div className="alert-error">

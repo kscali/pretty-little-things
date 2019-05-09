@@ -1,45 +1,48 @@
 .top {
-   background: black; 
-   height: 35px; 
-   position: relative; 
-   top: -20px; 
- }
+  background: black;
+  height: 35px;
+  position: relative;
+  top: -20px;
+}
 
 .ad {
-  display: block; 
-  margin: auto; 
+  display: block;
+  margin: auto;
 }
 
 .mid-nav {
-  position: relative; 
-  top: -20px; 
+  position: relative;
+  top: -20px;
+  height: 100px;
 }
 
 .right-top-nav {
   display: flex;
   justify-content: space-evenly;
-  color: white;  
+  color: white;
 }
 
 .right-top-nav > a {
-  margin-top: 8px; 
-  color: white; 
+  margin-top: 8px;
+  color: white;
   font-size: 12px;
   height: 10px;
 }
 
-.last-a > p{
-  color: white; 
+.last-a > p {
+  color: white;
   top: -25px;
-  right: -30px; 
+  right: -30px;
 }
 
-.last-a:hover .flag-content {display: block;}
+.last-a:hover .flag-content {
+  display: block;
+}
 
 #span {
   position: relative;
-  margin-top: 8px; 
-  color: white; 
+  margin-top: 8px;
+  color: white;
   font-size: 12px;
   top: -58px;
   right: -55px;
@@ -48,7 +51,7 @@
 .flag-content {
   display: none;
   position: absolute;
-  background-color:black;
+  background-color: black;
   width: 70px;
   height: 70px;
   z-index: 1;
@@ -58,14 +61,14 @@
 }
 .flags {
   position: relative;
-  left: -70px; 
-  top: -2px; 
+  left: -70px;
+  top: -2px;
 }
 
 .flag2 {
   position: relative;
-  left: -70px; 
-  top: -32px; 
+  left: -70px;
+  top: -32px;
 }
 
 .flag-content > li > p {
@@ -73,30 +76,28 @@
   left: -70px;
   height: 10px;
   width: 20px;
-  top: -20px; 
+  top: -20px;
   display: inline;
 }
 
 #engs {
   position: relative;
-  margin-left: 20px; 
+  margin-left: 20px;
 }
 
 #france {
   position: relative;
-  margin-left: 20px; 
+  margin-left: 20px;
   top: -50px;
 }
 
-
-
 .search {
-  color: white; 
-  border: 3px solid red; 
+  color: white;
+  border: 3px solid red;
 }
 
 ul {
-  display: flex; 
+  display: flex;
   position: relative;
   top: -35px;
 }
@@ -104,14 +105,14 @@ ul {
 li {
   position: relative;
   list-style-type: none;
-  margin: 20px 40px; 
+  margin: 20px 40px;
 }
 
- nav > ul > li:hover {
+nav > ul > li:hover {
   text-decoration: underline;
 }
 
-.lnk{
+.lnk {
   position: relative;
   top: 20px;
   right: 95px;
@@ -127,21 +128,21 @@ p {
   font-size: 12px;
   position: relative;
   margin-right: 4px;
-  top: 22px; 
+  top: 22px;
   right: 94px;
 }
 
 .lnk:hover {
-  color: black; 
+  color: black;
 }
 
 .top-mid {
-  display: flex; 
-  justify-content: center; 
+  display: flex;
+  justify-content: center;
 }
 .right-btn {
-  position: relative; 
-  right: -150px; 
+  position: relative;
+  right: -150px;
 }
 
 .nav-line {
@@ -149,13 +150,12 @@ p {
   top: -66px;
 }
 
-   /* Navbar dropdown */
-  .dropdown {
+/* Navbar dropdown */
+.dropdown {
   position: relative;
   display: inline-block;
   font-size: 14px;
   padding-top: 10px;
-
 }
 
 /* .dropdown:hover {
@@ -171,7 +171,7 @@ p {
   position: absolute;
   background-color: white;
   min-width: 200px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 2;
   top: 30px;
   text-align: left;
@@ -188,13 +188,12 @@ p {
 }
 
 ul.dropdown-content > li {
- position: relative;
- font-size: 14px;
- padding-right: 10px;
- left: -50px;
- width: 100%;
- margin: 0 0 0 10px;
- 
+  position: relative;
+  font-size: 14px;
+  padding-right: 10px;
+  left: -50px;
+  width: 100%;
+  margin: 0 0 0 10px;
 }
 
 ul.dropdown-content > li > a {
@@ -202,110 +201,113 @@ ul.dropdown-content > li > a {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {text-decoration: underline;}
+.dropdown-content a:hover {
+  text-decoration: underline;
+}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 .new {
   min-width: 800px;
   left: -150px;
-  height: 400px; 
+  height: 400px;
 }
 
 .new > li > a {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 div.col > img {
   float: left;
-  width: 25%; 
+  width: 25%;
 }
 
-#comm  {
-  position: absolute; 
-  top: 30px; 
+#comm {
+  position: absolute;
+  top: 30px;
   left: -600px;
   /* display: flex;  */
 }
 
 .comm-col {
- display: flex; 
- margin: 0;
- padding: 0; 
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .divs {
- display: flex; 
- margin: 0;
- padding: 0; 
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .divs > a {
- margin: 0;
- padding: 0; 
+  margin: 0;
+  padding: 0;
 }
 
 #img-1 {
-  height: 400px; 
-  margin: 0; 
+  height: 400px;
+  margin: 0;
 }
 
 #img-2 {
-  height: 400px; 
-  margin: 0; 
+  height: 400px;
+  margin: 0;
 }
 
 #img-3 {
-  height: 400px; 
-  margin: 0; 
+  height: 400px;
+  margin: 0;
 }
 
 #img-4 {
-  height: 400px; 
-  margin: 0; 
+  height: 400px;
+  margin: 0;
 }
 
 .new-dd {
-  display: block; 
+  display: block;
   min-width: 30%;
   text-align: left;
   font-size: 12px;
-  left: -80px; 
+  left: -80px;
   top: -10px;
 }
 
 .new-dd li {
-  padding: 0px; 
+  padding: 0px;
 }
 
 img#new-img {
   position: relative;
   top: -400px;
-  left: 200px; 
-  width: 30%; 
+  left: 200px;
+  width: 30%;
 }
 
 #new-imgs > img {
   position: relative;
-  margin: 2px 4px 2px 5px; 
+  margin: 2px 4px 2px 5px;
   left: 200px;
-  top: -402px;  
+  top: -402px;
   display: block;
-  width: 30%; 
-
+  width: 30%;
 }
 img#second-img {
   position: relative;
   left: 20px;
-  top: -240px; 
+  top: -240px;
   margin-left: 5px;
 }
 
 .new2 {
   min-width: 600px;
   left: -150px;
-  height: 380px; 
+  height: 380px;
 }
 
 /* brands drop down */
@@ -313,24 +315,24 @@ img#second-img {
 .new3 {
   min-width: 450px;
   left: -150px;
-  height: 380px; 
+  height: 380px;
 }
 
 img#abh {
   position: relative;
-  width: 190px; 
-  left: 220px; 
-  top: -380px; 
+  width: 190px;
+  left: 220px;
+  top: -380px;
 }
 
 /* gifts dropdown */
 
 .new-dd2 {
-  display: block; 
+  display: block;
   min-width: 30%;
   text-align: left;
   font-size: 12px;
-  left: -80px; 
+  left: -80px;
   top: -10px;
 }
 
@@ -342,7 +344,7 @@ ul.new-dd2 > li {
 .new4 {
   min-width: 510px;
   left: -150px;
-  height: 540px; 
+  height: 540px;
 }
 
 img#gift-f {
@@ -367,24 +369,23 @@ span#carat {
   left: 5px;
   width: 10px;
   height: 10px;
-  color: black; 
+  color: black;
 }
 .logout-menu {
   display: none;
   position: absolute;
   background-color: white;
   width: 100px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   top: 16.5px;
   text-align: left;
   left: -10px;
   height: 30px;
-
 }
 
- .logout-dd:hover .logout-menu {
-  display: block; 
+.logout-dd:hover .logout-menu {
+  display: block;
 }
 
 .icon-container {

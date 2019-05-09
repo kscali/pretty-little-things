@@ -4,7 +4,7 @@
 
 .home-ad {
   position: relative;
-  top: -101px;
+  top: -28px;
 }
 
 .sec-section {
@@ -82,7 +82,7 @@
 .ad-images {
   width: 100%;
 }
-*/ */ .ad-images > a > img {
+.ad-images > a > img {
   width: 100%;
 }
 
@@ -116,13 +116,22 @@
 
 .slick-next,
 .slick-prev {
-  background: gray;
+  padding-top: 2px;
+  background: lightgray;
   border-radius: 50px;
   z-index: 1;
-  padding-top: 1px;
+
+  padding-left: 1px;
+
+  height: 25px;
+  width: 25px;
 }
 
-/ .price {
+button.slick-arrow:hover {
+  background: gray;
+}
+
+.price {
   top: 0;
   right: 0;
   position: relative;
