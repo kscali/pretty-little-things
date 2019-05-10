@@ -9,6 +9,9 @@
 
 .sec-section {
   text-align: center;
+  position: relative;
+  top: 50px;
+  margin-top: 30px;
 }
 
 .third-section {
@@ -116,13 +119,9 @@
 
 .slick-next,
 .slick-prev {
-  padding-top: 2px;
   background: lightgray;
   border-radius: 50px;
   z-index: 1;
-
-  padding-left: 1px;
-
   height: 25px;
   width: 25px;
 }

@@ -61,6 +61,7 @@ const Home = () => {
             </a>
             <a href="https://www.sephora.com/rewards?icid2=homepage_botnav4_reward_bazaar_d_us_040219_image">
               <img
+                className="fourth-ad"
                 src="https://www.sephora.com/contentimages/homepage/MeganavRedesign/2018-03-20-hp-meganav-bi-us-ca-d-slice.jpg"
                 alt="ad"
               />
