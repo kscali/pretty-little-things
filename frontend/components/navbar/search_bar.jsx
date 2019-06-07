@@ -1,11 +1,11 @@
-import React from 'react';
-import { withRouter } from 'react-router-dom';
+import React from "react";
+import { withRouter } from "react-router-dom";
 
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      inputVal: ''
+      inputVal: ""
     };
     this.selectName = this.selectName.bind(this);
     this.handleInput = this.handleInput.bind(this);
@@ -13,32 +13,37 @@ class SearchBar extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchProducts()
+    this.props.fetchProducts();
   }
 
   handleInput(event) {
-    let ul = document.getElementById('input-names');
-    if (this.inputVal === "") ul.style.display = 'none';
-    if (this.inputVal !== "") ul.style.display = 'block';
-    this.setState({ inputVal: event.currentTarget.value });
+    let ul = document.getElementById("input-names");
+
+    this.setState({ inputVal: event.currentTarget.value }, () => {
+      if (this.state.inputVal !== "") ul.style.display = "block";
+    });
+
+    if (this.state.inputVal === "") {
+      debugger;
+      ul.style.display = "none";
+    }
   }
 
   getProduct(e) {
-    let ul = document.getElementById('input-names');
+    let ul = document.getElementById("input-names");
     let input = this.state.inputVal;
     if (e.key === "Enter") {
-      ul.style.display = 'none';
+      ul.style.display = "none";
       this.setState({ inputVal: "" });
       for (let i = 0; i < this.props.products.length; i++) {
         const product = this.props.products[i];
         if (input === product.name) {
-          this.props.history.push(`/products/${product.id}`)
+          this.props.history.push(`/products/${product.id}`);
           return;
         }
       }
     }
   }
-
 
   matches() {
     const matches = [];
@@ -54,7 +59,7 @@ class SearchBar extends React.Component {
     });
 
     if (matches.length === 0) {
-      matches.push('No matches');
+      matches.push("No matches");
     }
 
     return matches;
@@ -63,35 +68,40 @@ class SearchBar extends React.Component {
   selectName(event) {
     const name = event.currentTarget.innerText;
     this.setState({ inputVal: name });
-    let ul = document.getElementById('input-names');
+    let ul = document.getElementById("input-names");
     for (let i = 0; i < this.props.products.length; i++) {
       const product = this.props.products[i];
       const name = event.currentTarget.innerText;
       this.setState({ inputVal: name });
 
       if (this.state.inputVal === product.name) {
-        this.props.history.push(`/products/${product.id}`)
+        this.props.history.push(`/products/${product.id}`);
         return;
       }
-      setTimeout(() => { ul.style.display = 'none'; }, 800)
+      setTimeout(() => {
+        ul.style.display = "none";
+      }, 800);
     }
   }
 
   render() {
     const results = this.matches().map((result, i) => {
       return (
-        <li key={i} onClick={this.selectName}>{result}</li>
+        <li key={i} onClick={this.selectName}>
+          {result}
+        </li>
       );
     });
     return (
       <div>
-        <div className='auto'>
+        <div className="auto">
           <input
             className="search-input"
             onChange={this.handleInput}
             onKeyPress={this.getProduct}
             value={this.state.inputVal}
-            placeholder="&#x1F50D; Search" />
+            placeholder="&#x1F50D; Search"
+          />
           <ul id="input-names" className="matches">
             {results}
           </ul>
@@ -99,6 +109,6 @@ class SearchBar extends React.Component {
       </div>
     );
   }
-};
+}
 
 export default withRouter(SearchBar);

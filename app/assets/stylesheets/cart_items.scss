@@ -5,7 +5,6 @@
 .main-basket {
   height: 900px;
   position: relative;
-  top: -60px;
 }
 
 .main-basket > div > a {
@@ -225,9 +224,11 @@ p#shipHandle {
 }
 
 .items-list {
-  height: auto;
+  max-height: 500px;
   position: relative;
   top: 25px;
+  text-align: center;
+  overflow: scroll;
 }
 
 .div-li > img {
@@ -306,4 +307,8 @@ p#shipHandle {
 
 .item-show {
   display: block;
+}
+
+.sad-cart {
+  width: 300px;
 }

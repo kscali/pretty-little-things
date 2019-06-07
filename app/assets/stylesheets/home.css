@@ -5,6 +5,7 @@
 .home-ad {
   position: relative;
   top: -28px;
+  width: 100%;
 }
 
 .sec-section {
@@ -82,6 +83,10 @@
   font-size: 14px;
 }
 
+.slick-dots {
+  height: 30px;
+}
+
 .ad-images {
   width: 100%;
 }
@@ -143,4 +148,18 @@ button.slick-arrow:hover {
 .last-section {
   position: relative;
   top: -100px;
+}
+
+@media only screen and (max-width: 991px) {
+  .home-ad {
+    top: 50px;
+  }
+
+  .last-sec {
+    display: flex;
+  }
+
+  .fourth-ad {
+    display: none;
+  }
 }

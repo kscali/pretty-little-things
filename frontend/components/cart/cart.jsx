@@ -38,7 +38,7 @@ class Cart extends React.Component {
   getRecommendations() {
     let products = this.props.products.map((product, i) => {
       return (
-        <div key={i}>
+        <div key={product.id}>
           <Link to={`/products/${product.id}`}>
             <img src={product.image_url[0]} alt="makeup" />
             <h6>{product.brand_name}</h6>
@@ -96,7 +96,7 @@ class Cart extends React.Component {
                 <h6>Items in basket ({quantity}) </h6>
 
                 <div className="inner-item">
-                  <CartItem props={this.props} />
+                  <CartItem quantity={quantity} props={this.props} />
                 </div>
 
                 <h5 className="h">Recommended for You</h5>

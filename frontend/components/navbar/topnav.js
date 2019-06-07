@@ -6,7 +6,7 @@ export default function TopNav() {
     <div className="ad-div">
       <img
         className="ad"
-        src="https://www.sephora.com/contentimages/homepage/041619/Homepage/DesktopMweb/2019-04-16-hp-persistent-banner-mday-fragrance-samplebag-SEVENSCENT-us-d-slice.jpg"
+        src="https://ks-plt.s3-us-west-1.amazonaws.com/2019-04-16-hp-persistent-banner-mday-fragrance-samplebag-SEVENSCENT-us-d-slice.webp"
         alt="ad"
       />
       <div className="top">
