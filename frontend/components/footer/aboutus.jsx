@@ -19,7 +19,7 @@ export default function AboutUs() {
         Pretty Little Things is still under construction but please feel free to
         look around. Add items to your cart, click on some products, and visit
         me on <a href="https://github.com/kscali">Github</a> or{" "}
-        <a href="https://www.linkedin.com/in/koychian-saeteurn-98169a167">
+        <a href="https://www.linkedin.com/in/koy-saeteurn-98169a167">
           LinkedIn
         </a>
         .
