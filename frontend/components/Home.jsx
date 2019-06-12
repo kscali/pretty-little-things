@@ -43,13 +43,13 @@ const Home = () => {
           <div className="last-sec">
             <a href="https://www.sephora.com/happening/services/OLR-CD__makeup_deluxe_prom?icid2=homepage_botnav1_color_program_has360_prom_sephora_us_desktop_image_041619">
               <img
-                src="https://ks-plt.s3-us-west-1.amazonaws.com/2019-04-22-hp-botnav-fao-luxe-us-d-slice.webp"
+                src="https://ks-plt.s3-us-west-1.amazonaws.com/2019-04-16-hp-botnav-happening-at-sephora-prom-us-d-slice.webp"
                 alt="ad"
               />
             </a>
             <a href="https://www.sephora.com/shop/face-makeup?icid2=homepage_botnav2_color_program_foundationao360_luxe_us_desktop_image_041619">
               <img
-                src="https://ks-plt.s3-us-west-1.amazonaws.com/2019-04-16-hp-botnav-happening-at-sephora-prom-us-d-slice.webp"
+                src="https://ks-plt.s3-us-west-1.amazonaws.com/2019-04-22-hp-botnav-fao-luxe-us-d-slice.webp"
                 alt="ad"
               />
             </a>
@@ -62,7 +62,7 @@ const Home = () => {
             <a href="https://www.sephora.com/rewards?icid2=homepage_botnav4_reward_bazaar_d_us_040219_image">
               <img
                 className="fourth-ad"
-                src="https://ks-plt.s3-us-west-1.amazonaws.com/2019-04-22-hp-botnav-fao-luxe-us-d-slice.webp"
+                src="https://ks-plt.s3-us-west-1.amazonaws.com/2018-03-20-hp-meganav-bi-us-ca-d-slice.webp"
                 alt="ad"
               />
             </a>
