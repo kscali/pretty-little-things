@@ -32,7 +32,7 @@ Users are able to sign in, sign up, or use the demo user account to browse the s
 User can add/remove product to(from) the basket.
 ![alt text](https://ks-plt.s3-us-west-1.amazonaws.com/Screen+Shot+2019-06-12+at+11.44.54+AM.png "Pretty Little Things")
 
-##Code Snippet
+## Code Snippet
 
 #### face.jsx
 
