@@ -23,10 +23,12 @@ Users are able to sign in, sign up, or use the demo user account to browse the s
 ![alt text](https://ks-plt.s3-us-west-1.amazonaws.com/Screen+Shot+2019-06-12+at+11.36.39+AM.png "Pretty Little Things")
 ![alt text](https://ks-plt.s3-us-west-1.amazonaws.com/Screen+Shot+2019-06-12+at+11.37.15+AM.png "Pretty Little Things")
 
-##Products Listing
+## Products Listing
+
 ![alt text](https://ks-plt.s3-us-west-1.amazonaws.com/Screen+Shot+2019-06-12+at+11.40.09+AM.png "Pretty Little Things")
 
-##Shopping Basket
+## Shopping Basket
+
 User can add/remove product to(from) the basket.
 ![alt text](https://ks-plt.s3-us-west-1.amazonaws.com/Screen+Shot+2019-06-12+at+11.44.54+AM.png "Pretty Little Things")
 
@@ -66,13 +68,13 @@ class Face extends React.Component {
 export default Face;
 ```
 
-###Bonus
+### Bonus
 
 - Filter by Categories
 - Search bar
 - Free Shipping for orders \$50 or more
 
-##Future Todos
+## Future Todos
 
 - Add reviews and product ratings
 - Filter by brand
