@@ -24,7 +24,6 @@ class SearchBar extends React.Component {
     });
 
     if (this.state.inputVal === "") {
-      debugger;
       ul.style.display = "none";
     }
   }
