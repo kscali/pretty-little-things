@@ -16,7 +16,7 @@ class Carousel extends React.Component {
       return (
         <div className="products-div" key={i}>
           <Link to={`/products/${product.id}`}>
-            <img className="carousel-img" src={product.image_url[0]} />
+            <img className="carousel-img" src={product.image_url[1]} />
             <h6>{product.brand_name}</h6>
             <p className="gel">{product.name}</p>
           </Link>

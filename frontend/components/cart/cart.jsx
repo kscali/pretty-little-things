@@ -7,9 +7,18 @@ class Cart extends React.Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      products: null
+    };
+
     this.getQuantity = this.getQuantity.bind(this);
     this.shipping = this.shipping.bind(this);
     this.getRecommendations = this.getRecommendations.bind(this);
+  }
+
+  componentWillMount() {
+    let products = this.getRecommendations();
+    this.setState({ products });
   }
 
   componentDidMount() {
@@ -40,7 +49,11 @@ class Cart extends React.Component {
       return (
         <div key={product.id}>
           <Link to={`/products/${product.id}`}>
-            <img src={product.image_url[0]} alt="makeup" />
+            <img
+              className="random-products"
+              src={product.image_url[1]}
+              alt="makeup"
+            />
             <h6>{product.brand_name}</h6>
             <p className="dot">{product.name}</p>
           </Link>
@@ -102,7 +115,7 @@ class Cart extends React.Component {
                 <h5 className="h">Recommended for You</h5>
                 <div className="caro">
                   <div id="rec-for-u" className="slider">
-                    {this.getRecommendations()}
+                    {this.state.products}
                   </div>
                 </div>
               </div>

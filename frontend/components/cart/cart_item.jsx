@@ -1,5 +1,6 @@
 import React from "react";
-const uuidv4 = require("uuid/v4");
+import { Link } from "react-router-dom";
+// const uuidv4 = require("uuid/v4");
 
 class CartItem extends React.Component {
   constructor(props) {
@@ -33,11 +34,15 @@ class CartItem extends React.Component {
         ) : (
           <ul>
             {this.props.props.cartItems.map((item, i) => {
-              let product = this.props.props.products[item.product_id - 1];
+              let product = this.props.props.products.filter(
+                product => product.id === item.product_id
+              );
               return (
-                <li key={uuidv4()}>
+                <li key={i}>
                   <div className={`div-li div-${i}`}>
-                    <img src={product.image_url[0]} alt="makeup" />
+                    <Link to={`/products/${product.id}`}>
+                      <img src={product.image_url[1]} alt="makeup" />
+                    </Link>
                     <div className="li-div">
                       <h6>{product.brand_name}</h6>
                       <p>{product.name}</p>

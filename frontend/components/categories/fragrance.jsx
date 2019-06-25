@@ -20,7 +20,7 @@ class Fragrance extends React.Component {
             {this.props.fragrances.map((fragrance, i) => (
               <li className="fragrance-li" key={i}>
                 <Link to={`/products/${fragrance.id}`}>
-                  <img src={fragrance.image_url[0]} alt={fragrance.name} />
+                  <img src={fragrance.image_url[1]} alt={fragrance.name} />
                   <h6>{fragrance.brand_name}</h6>
                   <p>{fragrance.name}</p>
                   <p>

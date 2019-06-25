@@ -18,7 +18,7 @@ class Lip extends React.Component {
             {this.props.lips.map((lip, i) => (
               <li className="lips-li" key={i}>
                 <Link to={`/products/${lip.id}`}>
-                  <img src={lip.image_url[0]} alt={lip.name} />
+                  <img src={lip.image_url[1]} alt={lip.name} />
                   <h6>{lip.brand_name}</h6>
                   <p>{lip.name}</p>
                   <p>
