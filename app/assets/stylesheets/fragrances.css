@@ -16,6 +16,10 @@
   margin-bottom: 0;
 }
 
+.fragrance-li > a > img {
+  width: 150px;
+}
+
 .fragrance-li > a > h6 {
   margin-bottom: 3px;
   margin-top: 5px;

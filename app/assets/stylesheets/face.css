@@ -21,6 +21,10 @@
   margin-top: 5px;
 }
 
+.face-li > a > img {
+  width: 150px;
+}
+
 .face-li > a {
   color: black;
 }

@@ -75,12 +75,13 @@
   position: relative;
   left: -250px;
   top: -10px;
+  margin-left: 25px;
 }
 
 .item-li {
   width: 125px;
-  height: 75px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .item-li > a {
@@ -96,11 +97,15 @@
 }
 
 .item-li > a > img {
-  image-rendering: pixelated;
+  width: 150px;
 }
 
 .gel {
   left: 0;
   top: -4px;
   font-size: 14px;
+}
+
+a:active {
+  text-decoration: underline;
 }

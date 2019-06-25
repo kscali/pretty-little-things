@@ -16,6 +16,10 @@
   margin-bottom: 0;
 }
 
+.eyes-li > a > img {
+  width: 150px;
+}
+
 .eyes-li > a > h6 {
   margin-bottom: 3px;
   margin-top: 5px;

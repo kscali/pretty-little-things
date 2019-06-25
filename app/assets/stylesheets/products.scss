@@ -8,46 +8,45 @@
 
 #image-main {
   height: 300px;
-  width: 300px; 
-  image-rendering: pixelated;
+  width: 300px;
 }
 
 .details-2 {
   position: relative;
-  left: 0px; 
+  left: 0px;
 }
 
 .p-details-1 {
-  text-align: left; 
+  text-align: left;
   padding: 0;
   left: 10px;
 }
 
 .p-details-1 > p {
-  text-align: left; 
-  left: 0; 
+  text-align: left;
+  left: 0;
   margin: 0;
   position: relative;
-  top: -10px; 
-  font-size: 16px; 
+  top: -10px;
+  font-size: 16px;
   width: 100%;
 }
 
 .p-details-1 > h6 {
   text-transform: uppercase;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 .p-details-2 {
   position: relative;
-  left: 20px; 
+  left: 20px;
   width: 300px;
   padding: 0;
 }
 
 .p-details-2 > h6 {
   text-transform: uppercase;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 .p-details-2 > p {
@@ -65,36 +64,36 @@
 
 .product-checkbox {
   background: #f2f2f2;
-  font-size: 12px; 
+  font-size: 12px;
   width: 100%;
   margin-bottom: 10px;
-  padding: 5px; 
+  padding: 5px;
 }
 
 select {
-  padding: 10px 15px; 
-  width: 45px; 
+  padding: 10px 15px;
+  width: 45px;
   height: 38px;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 .basket-btn {
-  color: white; 
-  background: red; 
-  font-size: 12px; 
-  padding: 11px 30px; 
-  border-radius: 5px; 
+  color: white;
+  background: red;
+  font-size: 12px;
+  padding: 11px 30px;
+  border-radius: 5px;
 }
 
 .product-info > p {
-  font-size: 14px; 
+  font-size: 14px;
   left: -23px;
   top: 100px;
   text-transform: uppercase;
 }
 
 p.p-color {
-  font-size: 14px; 
+  font-size: 14px;
   left: -23px;
   top: 35px;
   text-transform: uppercase;
@@ -102,12 +101,10 @@ p.p-color {
 
 .product-info > img {
   border: 3px solid transparent;
-  
 }
 
 .product-info > img:hover {
   border: 3px solid black;
-  
 }
 
 .product-info {

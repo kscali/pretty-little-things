@@ -43,3 +43,7 @@
   padding-left: 0;
   margin-top: 20px;
 }
+
+.skin-li > a > img {
+  width: 150px;
+}

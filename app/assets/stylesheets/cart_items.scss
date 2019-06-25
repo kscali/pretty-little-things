@@ -96,6 +96,7 @@ div#rec-for-u.slider {
   width: 600px;
   position: relative;
   top: 100px;
+  height: 250px;
 }
 
 .mini-divider {
@@ -231,11 +232,13 @@ p#shipHandle {
   overflow: scroll;
 }
 
-.div-li > img {
+.div-li > a > img {
   position: relative;
   left: -50px;
   height: 130px;
   width: 130px;
+  top: 15px;
+  cursor: pointer;
 }
 
 .div-li > div {
@@ -280,6 +283,7 @@ p#shipHandle {
   top: 110px;
   left: 30px;
   width: 100%;
+  height: 20px;
 }
 
 .price-li {
@@ -311,4 +315,8 @@ p#shipHandle {
 
 .sad-cart {
   width: 300px;
+}
+
+.random-products {
+  width: 150px;
 }

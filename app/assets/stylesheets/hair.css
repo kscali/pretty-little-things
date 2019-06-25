@@ -43,3 +43,7 @@
   padding-left: 0;
   margin-top: 20px;
 }
+
+.hair-li > a > img {
+  width: 150px;
+}
