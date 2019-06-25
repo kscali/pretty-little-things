@@ -19,28 +19,34 @@ class SearchBar extends React.Component {
   handleInput(event) {
     let ul = document.getElementById("input-names");
 
-    this.setState({ inputVal: event.currentTarget.value }, () => {
-      if (this.state.inputVal !== "") ul.style.display = "block";
-    });
+    this.setState({ inputVal: event.currentTarget.value });
 
-    if (this.state.inputVal === "") {
+    if (event.currentTarget.value === "") {
       ul.style.display = "none";
+    } else {
+      ul.style.display = "block";
     }
   }
 
   getProduct(e) {
     let ul = document.getElementById("input-names");
-    let input = this.state.inputVal;
+
+    let matches = this.matches();
+
     if (e.key === "Enter") {
       ul.style.display = "none";
-      this.setState({ inputVal: "" });
-      for (let i = 0; i < this.props.products.length; i++) {
-        const product = this.props.products[i];
-        if (input === product.name) {
-          this.props.history.push(`/products/${product.id}`);
-          return;
+      this.setState({ inputVal: matches[0] }, () => {
+        for (let i = 0; i < this.props.products.length; i++) {
+          const product = this.props.products[i];
+
+          if (this.state.inputVal === product.name) {
+            console.log("round");
+            this.setState({ inputVal: "" });
+            this.props.history.push(`/products/${product.id}`);
+            return;
+          }
         }
-      }
+      });
     }
   }
 
@@ -70,16 +76,13 @@ class SearchBar extends React.Component {
     let ul = document.getElementById("input-names");
     for (let i = 0; i < this.props.products.length; i++) {
       const product = this.props.products[i];
-      const name = event.currentTarget.innerText;
-      this.setState({ inputVal: name });
 
-      if (this.state.inputVal === product.name) {
+      if (name === product.name) {
+        ul.style.display = "none";
+        this.setState({ inputVal: "" });
         this.props.history.push(`/products/${product.id}`);
         return;
       }
-      setTimeout(() => {
-        ul.style.display = "none";
-      }, 800);
     }
   }
 
