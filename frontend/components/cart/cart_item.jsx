@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// const uuidv4 = require("uuid/v4");
+const uuidv4 = require("uuid/v4");
 
 class CartItem extends React.Component {
   constructor(props) {
@@ -38,16 +38,16 @@ class CartItem extends React.Component {
                 product => product.id === item.product_id
               );
               return (
-                <li key={i}>
+                <li key={uuidv4()}>
                   <div className={`div-li div-${i}`}>
                     <Link to={`/products/${product.id}`}>
-                      <img src={product.image_url[1]} alt="makeup" />
+                      <img src={product[0].image_url[1]} alt="makeup" />
                     </Link>
                     <div className="li-div">
-                      <h6>{product.brand_name}</h6>
-                      <p>{product.name}</p>
-                      <p>{product.size}</p>
-                      <p>COLOR: {product.color[0]}</p>
+                      <h6>{product[0].brand_name}</h6>
+                      <p>{product[0].name}</p>
+                      <p>{product[0].size}</p>
+                      <p>COLOR: {product[0].color[0]}</p>
                     </div>
                     <div className="con-1 container">
                       <select id="selector-2">
@@ -65,7 +65,7 @@ class CartItem extends React.Component {
                       Remove
                     </button>
                     <p className="quantity">quantity: {item.quantity} </p>
-                    <h6 className="price-li">${product.price}</h6>
+                    <h6 className="price-li">${product[0].price}</h6>
                   </div>
                 </li>
               );

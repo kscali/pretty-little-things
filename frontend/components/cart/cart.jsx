@@ -28,10 +28,13 @@ class Cart extends React.Component {
 
   shipping() {
     let totalAmount = 0;
-    this.props.cartItems.forEach(item => {
-      let product = this.props.products[item.product_id - 1];
 
-      totalAmount += item.quantity * product.price;
+    this.props.cartItems.forEach(item => {
+      let product = this.props.products.filter(
+        product => product.id === item.product_id
+      );
+
+      totalAmount += item.quantity * product[0].price;
     });
     return totalAmount;
   }
