@@ -89,9 +89,8 @@
 
 .ad-images {
   width: 100%;
-}
-.ad-images > a > img {
-  width: 100%;
+  text-align: center;
+  margin-top: 35px;
 }
 
 .fourth-sec > h2 {

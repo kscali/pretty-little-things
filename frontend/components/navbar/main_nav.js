@@ -79,24 +79,27 @@ const MainNav = ({ user, logout, products, fetchProducts }) => {
             <Link to="/products">SHOP ALL</Link>
           </li>
           <li className="dropdown">
-            NEW
+            CATEGORIES
             <div className="new2 dropdown-content">
               <div className="col">
                 <ul className="new-dd new">
                   <li>
-                    <Link to="/new-makeup">MAKEUP</Link>
+                    <Link to="/face">FACE</Link>
                   </li>
                   <li>
-                    <Link to="/new-skincare">SKIN CARE</Link>
+                    <Link to="/eye">EYE</Link>
                   </li>
                   <li>
-                    <Link to="/new-tools">TOOLS & BRUSHES</Link>
+                    <Link to="/lip">LIP</Link>
                   </li>
                   <li>
-                    <Link to="/new-hair">FRAGRANCE</Link>
+                    <Link to="/skin">SKIN</Link>
                   </li>
                   <li>
-                    <Link to="/new-hair">BATH & BODY</Link>
+                    <Link to="/fragrance">FRAGRANCE</Link>
+                  </li>
+                  <li>
+                    <Link to="/hair">HAIR</Link>
                   </li>
                 </ul>
               </div>
@@ -122,135 +125,29 @@ const MainNav = ({ user, logout, products, fetchProducts }) => {
           </li>
 
           <li className="dropdown">
-            BRANDS
-            <div className="new3 dropdown-content">
-              <div className="col">
-                <ul className="new-dd">
-                  <li>
-                    <Link to="/patrickta">PATRICK TA</Link>
-                  </li>
-                  <li>
-                    <Link to="/laneige">LANEIGE</Link>
-                  </li>
-                  <li>
-                    <Link to="/fresh">FRESH</Link>
-                  </li>
-                  <li>
-                    <Link to="/stila">STILA</Link>
-                  </li>
-                  <li>
-                    <Link to="/tarte">TARTE</Link>
-                  </li>
-                  <li>
-                    <Link to="/brands">VIEW ALL</Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="col">
-                <img
-                  id="abh"
-                  src="https://www.sephora.com/contentimages/meganav/large/2019-03-07-global-nav-lg-anastasia-dip-brow-gel-us-ca-d-slice.jpg"
-                  alt="brand"
-                />
-              </div>
-            </div>
-          </li>
-          <li className="dropdown">
-            GIFTS
+            HOW TO VIDEOS
             <div className="new4 dropdown-content">
               <div className="col">
                 <ul className="new-dd2">
                   <li>
-                    <Link to="/gift-finder">
-                      <b>GIFT FINDER</b>
-                    </Link>
+                    <Link to="/foundation-tutorial">FOUNDATION TUTORIAL</Link>
                   </li>
                   <li>
-                    <Link to="/gifts">
-                      <b>VIEW ALL GIFTS</b>
-                    </Link>
+                    <Link to="/eyeshadow-tutorial">EYESHADOW TUTORIAL</Link>
                   </li>
                   <li>
-                    <Link to="/price">
-                      <b>BY PRICE</b>
-                    </Link>
+                    <Link to="/eyebrow-tutorial">EYEBROW TUTORIAL</Link>
                   </li>
                   <li>
-                    <Link to="/price-10">$10 and Under</Link>
+                    <Link to="/lip-tutorial">LIP TUTORIAL</Link>
                   </li>
                   <li>
-                    <Link to="/price-25">$25 and Under</Link>
+                    <Link to="/hair-tutorial">HAIR TUTORIAL</Link>
                   </li>
                   <li>
-                    <Link to="/price-50">$50 and Under</Link>
-                  </li>
-                  <li>
-                    <Link to="/price-75">$75 and Under</Link>
-                  </li>
-                  <li>
-                    <Link to="/price-100">$100 and Under</Link>
+                    <Link to="/blush-tutorial">BLUSH TUTORIAL</Link>
                   </li>
                 </ul>
-              </div>
-              <div className="col">
-                <img
-                  id="gift-f"
-                  src="https://www.sephora.com/contentimages/homepage/042418/Meganav/2018-04-19-meganav-lg-button-gift-finder-evergreen-slice.jpg"
-                  alt="gifts"
-                />
-              </div>
-            </div>
-          </li>
-          <li className="dropdown">
-            QUIZZES
-            <div className="new4 dropdown-content">
-              <div className="col">
-                <ul className="new-dd2">
-                  <li>
-                    <a href="#">
-                      <b>Quizzes</b>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.sephora.com/beauty/foundation-finder?icid2=meganav_howto_quizzes_foundationfinder_link">
-                      Foundation Quiz
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.sephora.com/beauty/skin-care-quiz?icid2=meganav_howto_quizzes_skincarefinder_link">
-                      Skincare Quiz
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.sephora.com/beauty/lip-quiz?icid2=meganav_howto_quizzes_lipfinder_link">
-                      Lip Quiz
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.sephora.com/beauty/hair-care-quiz?icid2=meganav_howto_quizzes_haircarefinder_link">
-                      Hair Quiz
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.sephora.com/beauty/fragrance-gift-guide?icid2=meganav_howto_quizzes_fragrancefinder_link">
-                      Fragrance Quiz
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.sephora.com/beauty/best-beauty-products">
-                      View All
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col">
-                <a href="https://www.sephora.com/beauty/foundation-finder?icid2=meganav_howtos_foundationfinder_large_081618_image">
-                  <img
-                    id="quiz"
-                    src="https://www.sephora.com/contentimages/meganav/large/2018-08-09-meganav-lrg-foundation-finder-us-ca-d-slice.jpg"
-                    alt="quizzez"
-                  />
-                </a>
               </div>
             </div>
           </li>

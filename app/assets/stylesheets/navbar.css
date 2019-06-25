@@ -318,14 +318,7 @@ img#second-img {
   height: 380px;
 }
 
-img#abh {
-  position: relative;
-  width: 190px;
-  left: 220px;
-  top: -380px;
-}
-
-/* gifts dropdown */
+/* how to tutorials dropdown */
 
 .new-dd2 {
   display: block;
@@ -339,26 +332,11 @@ img#abh {
 ul.new-dd2 > li {
   margin: 5x 0 0 20px;
   padding: 1px;
+  width: 100%;
 }
 
 .new4 {
-  min-width: 510px;
-  left: -150px;
-  height: 540px;
-}
-
-img#gift-f {
-  width: 250px;
-  position: relative;
-  top: -515px;
-  left: 225px;
-}
-
-img#quiz {
-  width: 250px;
-  position: relative;
-  top: -450px;
-  left: 205px;
+  height: 440px;
 }
 
 /* logout menu */

@@ -3,17 +3,17 @@
   height: 600px;
 }
 
-.skin > h4 {
-  position: relative;
-  top: -80px;
-}
-
 .skin-li > a > p {
   position: relative;
   left: 0;
   top: 0;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.skin-container {
+  display: flex;
+  margin-top: 20px;
 }
 
 .skin-li > a > h6 {
@@ -23,4 +23,23 @@
 
 .skin-li > a {
   color: black;
+}
+
+.side-nav {
+  height: 570px;
+  width: 200px; /* Set the width of the sidebar */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  border-right: 1px solid lightgray; /* Black */
+
+  padding-top: 20px;
+}
+
+.skin-container > ul {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 500px;
+  padding-left: 0;
+  margin-top: 20px;
 }

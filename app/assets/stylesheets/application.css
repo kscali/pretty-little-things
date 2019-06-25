@@ -14,8 +14,6 @@
  *= require_self
  */
 
-
-
 .row {
   margin-top: 20px;
 }
@@ -26,11 +24,11 @@ h4 {
 
 h2 {
   margin-left: 10px;
-  margin-right: 40px; 
+  margin-right: 40px;
   font-weight: bolder;
   font-family: sans-serif;
   width: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
   position: relative;
   right: 25px;
@@ -39,20 +37,19 @@ h2 {
 }
 
 .form-control {
-  width: 250px; 
+  width: 250px;
 }
 
 h6 {
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 #title-ads {
-  color: white; 
+  color: white;
   z-index: 2;
   margin-top: 15px;
-  position: relative; 
-  top: -8px; 
-
+  position: relative;
+  top: -8px;
 }
 
 .title-fade-out {
@@ -68,39 +65,47 @@ h6 {
 }
 
 @keyframes fade-out {
-  from {opacity: 100}
-  to {opacity: 0}
+  from {
+    opacity: 100;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes fade-in {
-  from {opacity: 0}
-  to {opacity: 100}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
 }
 
 input {
-  color: gray; 
+  color: gray;
 }
 
 .login {
-  width: 100%; 
-  margin-bottom: 10px; 
-  padding: 12px; 
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 12px;
 }
 
-input[type="text"]::placeholder { 
+input[type="text"]::placeholder {
   color: gray;
-  opacity: 5; 
+  opacity: 5;
   font-size: 14px;
 }
 
-input[type="password"]::placeholder { 
+input[type="password"]::placeholder {
   color: gray;
-  opacity: 5; 
+  opacity: 5;
   font-size: 14px;
 }
 
 span {
-  position: relative; 
+  position: relative;
   width: 100px;
   height: 100px;
   right: -150px;
@@ -108,7 +113,7 @@ span {
 }
 
 form {
-  width: 100%; 
+  width: 100%;
 }
 
 hr {
@@ -124,23 +129,23 @@ hr {
 
 .rows {
   display: flex;
-  position: relative; 
+  position: relative;
   top: -15px;
   width: 100%;
 }
 
 .cols > input {
-  display: block; 
+  display: block;
   width: 100%;
   padding: 7px;
   margin: 10px 20px 20;
   position: relative;
-  top: 20px; 
+  top: 20px;
 }
 
 .first {
   width: 50%;
-  margin-right: 13px; 
+  margin-right: 13px;
 }
 
 .sec {
@@ -180,64 +185,63 @@ hr {
   color: blue;
 }
 
-
 .terms {
-  position: relative; 
+  position: relative;
   top: 180px;
   width: 90%;
   left: 5px;
 }
 
 #password {
-  margin-top: 15px; 
+  margin-top: 15px;
 }
 
 #heart {
-  width: 50px; 
+  width: 50px;
   height: 40px;
   position: relative;
-  left: 170px; 
-  top: -50px; 
+  left: 170px;
+  top: -50px;
   border-left: 1px solid lightgray;
   padding-left: 10px;
 }
 
 .basket {
-   position: relative;
-   left: 180px;
-   top: -55px;
- }
+  position: relative;
+  left: 180px;
+  top: -55px;
+}
 
 .b-i {
   width: 200px;
   height: 80px;
-  position: relative; 
+  position: relative;
   top: -20px;
   display: block;
 }
 
 input[type="checkbox"] {
-  margin-right: 5px; 
+  margin-right: 5px;
 }
 .checks-box {
-  position: relative; 
+  position: relative;
   top: -40px;
 }
 
 .checks-box > p {
   position: relative;
-  left: 0px; 
+  left: 0px;
   top: 2px;
 }
 
 .register {
-  display: flex; 
+  display: flex;
   position: relative;
   left: 20px;
 }
 
 .greeting {
-  display: flex; 
+  display: flex;
   height: 45px;
   position: relative;
   left: 0px;
@@ -259,8 +263,8 @@ input[type="checkbox"] {
 
 .greeting > h6 {
   position: relative;
-  top: 5px; 
-  margin-right: 5px; 
+  top: 5px;
+  margin-right: 5px;
   left: 25px;
 }
 
@@ -276,7 +280,7 @@ input[type="checkbox"] {
 
 .title-logo:hover {
   color: black;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .form-input {
@@ -287,7 +291,7 @@ input[type="checkbox"] {
 
 .login-btn {
   background: black;
-  color: white; 
+  color: white;
   padding: 4px 15px;
 }
 
@@ -300,7 +304,7 @@ input[type="checkbox"] {
   height: 30px;
 }
 
-.errors > ul  {
+.errors > ul {
   flex-direction: column;
   position: relative;
   bottom: 230px;
@@ -308,10 +312,10 @@ input[type="checkbox"] {
 
 .errors > ul > li {
   position: relative;
-  margin-top: 5px; 
+  margin-top: 5px;
   margin-bottom: 5px;
-  width: 100%; 
-  font-size: 13px; 
+  width: 100%;
+  font-size: 13px;
 }
 
 .errors1 {
@@ -320,23 +324,64 @@ input[type="checkbox"] {
   right: 80px;
   top: 20px;
   display: block;
-  width: 100%; 
+  width: 100%;
 }
 
 div.alert-error {
-  font-size: 50px; 
+  font-size: 50px;
   text-align: center;
   font-weight: bold;
   position: relative;
-  height: 500px; 
+  height: 500px;
 }
 div.alert-error > h1 {
-    margin: 0;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) 
+  margin: 0;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
- 
+.tutorial-video {
+  text-align: center;
+}
+
+.tutorial-video > h3 {
+  margin-bottom: 25px;
+}
+
+.sidenav {
+  height: 800px;
+  width: 200px; /* Set the width of the sidebar */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  margin-right: 20px;
+}
+
+.side-nav-menu > ul,
+.side-nav-menu > ul > li {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+/* The navigation menu links */
+.side-nav-menu > ul > li > a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  text-align: left;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  text-decoration: underline;
+}

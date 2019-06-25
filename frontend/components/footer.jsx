@@ -11,90 +11,6 @@ const Footer = () => {
             <li>
               <Link to="/aboutus">About Us</Link>
             </li>
-            <li>
-              <a href="https://jobs.sephora.com/search/">Careers</a>
-            </li>
-            <li>
-              <a href="https://www.sephorastands.com/">Social Impact</a>
-            </li>
-            <li>
-              <a href="https://www.sephora.com/beauty/affiliates">Affillites</a>
-            </li>
-            <li>
-              <a href="https://www.sephora.com/sitemap/departments/">
-                Site Map
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div className="col">
-          <h6>My Pretty Little Things</h6>
-          <ul>
-            <li>
-              <a href="#">My Account</a>
-            </li>
-            <li>
-              <Link to="/login">Order Status</Link>
-            </li>
-            <li>
-              <a href="https://www.sephora.com/about-beauty-insider">
-                Beauty Insider
-              </a>
-            </li>
-            <li>
-              <a href="https://www.sephora.com/rewards">Rewards Bazaar</a>
-            </li>
-            <li>
-              <a href="https://www.sephora.com/product/sephora-flash-subscription-P379518">
-                Flash Unlimited Shipping
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div className="col">
-          <h6>Helps & FAQs</h6>
-          <ul>
-            <li>
-              <a href="https://www.sephora.com/beauty/order-online">
-                Online Ordering
-              </a>
-            </li>
-            <li>
-              <a href="https://www.sephora.com/beauty/shipping-information">
-                Shipping
-              </a>
-            </li>
-            <li>
-              <a href="https://www.sephora.com/beauty/returns-exchanges">
-                Returns & Exchanges
-              </a>
-            </li>
-            <li>
-              <Link to="/aboutus">Customer Service</Link>
-            </li>
-            <li>
-              <Link to="/aboutus">Contact Us</Link>
-            </li>
-          </ul>
-        </div>
-        <div className="col">
-          <h6>Ways to Shop</h6>
-          <ul>
-            <li>
-              <a href="#">Just Arrived</a>
-            </li>
-            <li>
-              <a href="#">Best Sellers</a>
-            </li>
-            <li>
-              <a href="#">Beauty Offers</a>
-            </li>
-            <li>
-              <a href="#">Gift Cards</a>
-            </li>
-            <li>
-              <a href="#">Store Locations</a>
-            </li>
           </ul>
         </div>
       </div>
@@ -130,9 +46,8 @@ const Footer = () => {
           Copyright © 2019 Pretty Little Things USA, Inc. All rights reserved.
           Terms of Use | Privacy Policy
         </p>
-        <p>
-          Pretty Little Things is a Sephora inspired site. We have links that
-          lead to Sephora's main site.
+        <p className="center">
+          Pretty Little Things is a Sephora inspired site.
         </p>
       </div>
     </div>

@@ -1,42 +1,43 @@
 footer {
   background: black;
-  color: white; 
-  height: 550px;
+  color: white;
+  height: 350px;
 }
 
 .footer > .row > .col > ul {
-  display: block; 
+  display: block;
   text-align: left;
-  padding-left: 0; 
-  top: 20px; 
+  padding-left: 0;
+  top: 20px;
   position: relative;
-  font-size: 12px; 
+  font-size: 12px;
 }
 
 .email-stuff {
-  border-top: 1px solid lightgray; 
+  border-top: 1px solid lightgray;
   position: relative;
-  top: 100px; 
+  top: 100px;
 }
 
 .footer > .row > .col > h6 {
   position: relative;
   top: 20px;
-  left: 40px; 
+  left: 40px;
 }
 
 .footer > .row > .col > ul > li > a {
-  color: white; 
+  color: white;
+}
+
+.footer > .row > .col > ul {
+  display: block;
+  text-align: center;
 }
 
 .footer > .row > .col {
-  display: block; 
-  text-align: left;
-}
-
-.footer > .row > .col {
- position: relative;
- top: 30px; 
+  position: relative;
+  top: 30px;
+  text-align: center;
 }
 
 .github-icon {
@@ -44,7 +45,6 @@ footer {
   width: 30px;
   position: relative;
   margin-right: 10px;
-  
 }
 
 .linkedin-icon {
@@ -54,31 +54,30 @@ footer {
 }
 
 .email-box {
-  display: flex; 
+  display: flex;
 }
 
 .email-box > form > input {
- width: 200px;
- padding: 5px; 
- position: relative;
- left: -40px;
+  width: 200px;
+  padding: 5px;
+  position: relative;
+  left: -40px;
 }
-
 
 .email-box > p {
-  width: 100%; 
+  width: 100%;
   position: relative;
   top: 5px;
-  left: 0px; 
+  left: 0px;
 }
 
- .right-col {
+.right-col {
   text-align: right;
 }
 
 .footer-p {
   color: lightgray;
-  position: relative; 
+  position: relative;
   top: 120px;
-  left: 350px; 
+  text-align: center;
 }

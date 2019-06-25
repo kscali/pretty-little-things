@@ -8,7 +8,6 @@ import Home from "./Home";
 import Footer from "./footer";
 import ProductsIndexContainer from "./products/products_index_container";
 import ProductsDetailContainer from "./products/product_detail_container";
-import BrandsContainer from "./brands/brands_container";
 import FragranceContainer from "./../components/categories/fragrance_container";
 import LipContainer from "./../components/categories/lips_container";
 import FaceContainer from "./../components/categories/face_container";
@@ -18,6 +17,11 @@ import HairContainer from "./../components/categories/hair_container";
 import CartContainer from "./../components/cart/cart_container";
 import TopNav from "./../components/navbar/topnav";
 import AboutUs from "../components/footer/aboutus";
+import Foundation from "../components/howTos/foundation";
+import Eyes from "../components/howTos/Eyes";
+import Eyebrows from "../components/howTos/Eyebrows";
+import Lips from "../components/howTos/Lips";
+import Hair from "../components/howTos/Hair";
 
 class App extends React.Component {
   constructor(props) {
@@ -37,8 +41,13 @@ class App extends React.Component {
             path="/products/:productId"
             component={ProductsDetailContainer}
           />
+
           <Route exact path="/products" component={ProductsIndexContainer} />
-          <Route exact path="/brands" component={BrandsContainer} />
+          <Route exact path="/foundation-tutorial" component={Foundation} />
+          <Route exact path="/eyeshadow-tutorial" component={Eyes} />
+          <Route exact path="/eyebrow-tutorial" component={Eyebrows} />
+          <Route exact path="/lip-tutorial" component={Lips} />
+          <Route exact path="/hair-tutorial" component={Hair} />
           <Route exact path="/fragrance" component={FragranceContainer} />
           <Route exact path="/face" component={FaceContainer} />
           <Route exact path="/lip" component={LipContainer} />
