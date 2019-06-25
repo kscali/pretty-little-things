@@ -1,0 +1,28 @@
+{
+  "name": "pretty-little-things",
+  "version": "1.0.0",
+  "description": "Pretty Little Things is a retail clone inspired by Sephora.",
+  "main": "webpack.config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "webpack": "^4.35.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kscali/pretty-little-things.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kscali/pretty-little-things/issues"
+  },
+  "homepage": "https://github.com/kscali/pretty-little-things#readme"
+}
