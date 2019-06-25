@@ -105,7 +105,7 @@ ul {
 li {
   position: relative;
   list-style-type: none;
-  margin: 20px 40px;
+  margin: 15px 40px;
 }
 
 nav > ul > li:hover {
@@ -336,7 +336,7 @@ ul.new-dd2 > li {
 }
 
 .new4 {
-  height: 440px;
+  height: 400px;
 }
 
 /* logout menu */
