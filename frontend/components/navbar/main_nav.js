@@ -151,43 +151,48 @@ const MainNav = ({ user, logout, products, fetchProducts }) => {
           <li className="dropdown">
             COMMUNITY
             <div id="comm" className=" new dropdown-content">
-              <div className="comm-col">
-                <div className="divs  col">
-                  <a href="https://community.sephora.com/t5/custom/page/page-id/GroupsLandingPage?icid2=meganav_community_groups_041519_image">
-                    <img
-                      id="img-1"
-                      src="https://www.sephora.com/contentimages/meganav/large/2019-03-15-meganav-community-groups-us-ca-d-slice.jpg"
-                      alt="groups"
-                    />
-                  </a>
+              <div className="comm-div">
+                <div className="comm-col">
+                  <div className="divs  col">
+                    <a href="https://community.sephora.com/t5/custom/page/page-id/GroupsLandingPage?icid2=meganav_community_groups_041519_image">
+                      <img
+                        id="img-1"
+                        src="https://www.sephora.com/contentimages/meganav/large/2019-03-15-meganav-community-groups-us-ca-d-slice.jpg"
+                        alt="groups"
+                      />
+                    </a>
+                  </div>
+                  <div className="divs  col">
+                    <a href="https://community.sephora.com/?icid2=meganav_community_evergreen_conversations_041519_image">
+                      <img
+                        id="img-2"
+                        src="https://www.sephora.com/contentimages/meganav/large/2019-03-15-meganav-community-conversations-us-ca-d-slice.jpg"
+                        alt="convos"
+                      />
+                    </a>
+                  </div>
+                  <div className="divs col">
+                    <a href="https://www.sephora.com/community/gallery">
+                      <img
+                        id="img-3"
+                        src="https://www.sephora.com/contentimages/meganav/large/2019-03-15-meganav-community-gallery-us-ca-d-slice.jpg"
+                        alt="gallery"
+                      />
+                    </a>
+                  </div>
+                  <div className="divs col">
+                    <a href="https://community.sephora.com/t5/Exclusive-Events/bd-p/events-tips?icid2=meganav_community_evergreen_events_d_0415_image">
+                      <img
+                        id="img-4"
+                        src="https://www.sephora.com/contentimages/meganav/large/2019-03-15-meganav-community-events-us-ca-d-slice.jpg"
+                        alt="events"
+                      />
+                    </a>
+                  </div>
                 </div>
-                <div className="divs  col">
-                  <a href="https://community.sephora.com/?icid2=meganav_community_evergreen_conversations_041519_image">
-                    <img
-                      id="img-2"
-                      src="https://www.sephora.com/contentimages/meganav/large/2019-03-15-meganav-community-conversations-us-ca-d-slice.jpg"
-                      alt="convos"
-                    />
-                  </a>
-                </div>
-                <div className="divs col">
-                  <a href="https://www.sephora.com/community/gallery">
-                    <img
-                      id="img-3"
-                      src="https://www.sephora.com/contentimages/meganav/large/2019-03-15-meganav-community-gallery-us-ca-d-slice.jpg"
-                      alt="gallery"
-                    />
-                  </a>
-                </div>
-                <div className="divs col">
-                  <a href="https://community.sephora.com/t5/Exclusive-Events/bd-p/events-tips?icid2=meganav_community_evergreen_events_d_0415_image">
-                    <img
-                      id="img-4"
-                      src="https://www.sephora.com/contentimages/meganav/large/2019-03-15-meganav-community-events-us-ca-d-slice.jpg"
-                      alt="events"
-                    />
-                  </a>
-                </div>
+                <p>
+                  Clicking on any of these links will take you to sephora.com
+                </p>
               </div>
             </div>
           </li>

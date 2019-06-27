@@ -206,6 +206,16 @@ ul.dropdown-content > li > a {
 }
 
 /* Show the dropdown menu on hover */
+
+.comm-div {
+  text-align: center;
+}
+
+.comm-div > p {
+  right: 0px;
+  top: 0px;
+}
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -213,7 +223,7 @@ ul.dropdown-content > li > a {
 .new {
   min-width: 800px;
   left: -150px;
-  height: 400px;
+  /* height: 400px; */
 }
 
 .new > li > a {
@@ -284,7 +294,7 @@ div.col > img {
 
 img#new-img {
   position: relative;
-  top: -400px;
+  top: -325px;
   left: 200px;
   width: 30%;
 }
@@ -293,14 +303,14 @@ img#new-img {
   position: relative;
   margin: 2px 4px 2px 5px;
   left: 200px;
-  top: -402px;
+  top: -325px;
   display: block;
   width: 30%;
 }
 img#second-img {
   position: relative;
   left: 20px;
-  top: -240px;
+  top: -170px;
   margin-left: 5px;
 }
 

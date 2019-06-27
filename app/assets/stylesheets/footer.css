@@ -31,13 +31,11 @@ footer {
 
 .footer > .row > .col > ul {
   display: block;
-  text-align: center;
 }
 
 .footer > .row > .col {
   position: relative;
   top: 30px;
-  text-align: center;
 }
 
 .github-icon {
@@ -61,14 +59,13 @@ footer {
   width: 200px;
   padding: 5px;
   position: relative;
-  left: -40px;
 }
 
 .email-box > p {
   width: 100%;
   position: relative;
   top: 5px;
-  left: 0px;
+  left: 15px;
 }
 
 .right-col {
