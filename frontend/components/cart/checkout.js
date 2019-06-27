@@ -12,18 +12,7 @@ class Checkout extends React.Component {
   }
 
   applyCode(e) {
-    if (
-      e.key === "Enter" &&
-      e.currentTarget.value === "SEVENSCENT" &&
-      this.props.estimatedTotal >= 35
-    ) {
-      this.setState({ value: e.currentTarget.value });
-      e.currentTarget.value = "";
-    } else if (
-      e.key === "Enter" &&
-      e.currentTarget.value === "SEVENSCENT" &&
-      this.props.estimatedTotal < 35
-    ) {
+    if (e.key === "Enter" && e.currentTarget.value === "SEVENSCENT") {
       this.setState({ value: e.currentTarget.value });
       e.currentTarget.value = "";
     }
