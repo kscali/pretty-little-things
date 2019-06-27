@@ -54,7 +54,7 @@ class Cart extends React.Component {
           <Link to={`/products/${product.id}`}>
             <img
               className="random-products"
-              src={product.image_url[1]}
+              src={product.image_url[0]}
               alt="makeup"
             />
             <h6>{product.brand_name}</h6>
@@ -68,7 +68,9 @@ class Cart extends React.Component {
 
     while (randomProducts.length < 10) {
       let random = Math.floor(Math.random() * products.length);
-      randomProducts.push(products[random]);
+      if (!randomProducts.includes(products[random])) {
+        randomProducts.push(products[random]);
+      }
     }
 
     return randomProducts;

@@ -1,0 +1,17 @@
+.thank-you {
+  text-align: center;
+}
+
+.thankyou-gif {
+  height: 300px;
+}
+
+.thankyou-gif-div {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.gifs-container {
+  display: flex;
+  overflow-x: hidden;
+}

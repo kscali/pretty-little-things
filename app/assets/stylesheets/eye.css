@@ -18,6 +18,8 @@
 
 .eyes-li > a > img {
   width: 150px;
+  object-fit: contain;
+  height: 150px;
 }
 
 .eyes-li > a > h6 {

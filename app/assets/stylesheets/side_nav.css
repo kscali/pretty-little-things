@@ -55,7 +55,7 @@
 .products {
   position: relative;
   top: 20px;
-  height: 2600px;
+  margin-bottom: 200px;
 }
 
 .nav > .dropdown > a {
@@ -97,7 +97,9 @@
 }
 
 .item-li > a > img {
-  width: 120px;
+  width: 150px;
+  object-fit: contain;
+  height: 150px;
 }
 
 .gel {

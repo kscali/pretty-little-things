@@ -113,7 +113,10 @@
 }
 
 .carousel-img {
-  width: 170px;
+  width: 150px;
+  object-fit: contain;
+  height: 150px;
+  margin-bottom: 10px;
 }
 .products-div > a {
   align-items: center;

@@ -22,6 +22,7 @@ import Eyes from "../components/howTos/Eyes";
 import Eyebrows from "../components/howTos/Eyebrows";
 import Lips from "../components/howTos/Lips";
 import Hair from "../components/howTos/Hair";
+import ThankYou from "../components/cart/ThankYou";
 
 class App extends React.Component {
   constructor(props) {
@@ -41,7 +42,7 @@ class App extends React.Component {
             path="/products/:productId"
             component={ProductsDetailContainer}
           />
-
+          <Route exact path="/thankyou" component={ThankYou} />
           <Route exact path="/products" component={ProductsIndexContainer} />
           <Route exact path="/foundation-tutorial" component={Foundation} />
           <Route exact path="/eyeshadow-tutorial" component={Eyes} />

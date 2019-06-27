@@ -19,7 +19,7 @@ class Face extends React.Component {
             {this.props.faces.map((face, i) => (
               <li className="face-li" key={i}>
                 <Link to={`/products/${face.id}`}>
-                  <img src={face.image_url[1]} alt={face.name} />
+                  <img src={face.image_url[0]} alt={face.name} />
                   <h6>{face.brand_name}</h6>
                   <p>{face.name}</p>
                   <p>

@@ -19,7 +19,7 @@ class Skin extends React.Component {
             {this.props.skin.map((skin, i) => (
               <li className="skin-li" key={i}>
                 <Link to={`/products/${skin.id}`}>
-                  <img src={skin.image_url[1]} alt={skin.name} />
+                  <img src={skin.image_url[0]} alt={skin.name} />
                   <h6>{skin.brand_name}</h6>
                   <p>{skin.name}</p>
                   <p>

@@ -19,7 +19,7 @@ class Eye extends React.Component {
             {this.props.eyes.map((eye, i) => (
               <li className="eyes-li" key={i}>
                 <Link to={`/products/${eye.id}`}>
-                  <img src={eye.image_url[1]} alt={eye.name} />
+                  <img src={eye.image_url[0]} alt={eye.name} />
                   <h6>{eye.brand_name}</h6>
                   <p>{eye.name}</p>
                   <p>

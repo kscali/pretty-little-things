@@ -19,7 +19,7 @@ class Hair extends React.Component {
             {this.props.hair.map((hair, i) => (
               <li className="hair-li" key={i}>
                 <Link to={`/products/${hair.id}`}>
-                  <img src={hair.image_url[1]} alt={hair.name} />
+                  <img src={hair.image_url[0]} alt={hair.name} />
                   <h6>{hair.brand_name}</h6>
                   <p>{hair.name}</p>
                   <p>

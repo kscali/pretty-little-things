@@ -69,7 +69,7 @@ class ProductDetail extends React.Component {
       <div className="main-product container">
         <div className="row">
           <div className="col">
-            <img id="image-main" src={product_img[1]} alt="product-img" />
+            <img id="image-main" src={product_img[0]} alt="product-img" />
           </div>
           <div className="details-2 col">
             <div className="container">
@@ -116,7 +116,7 @@ class ProductDetail extends React.Component {
                 <p>SIZE: {product.size}</p>
                 <img
                   onClick={this.setBorder}
-                  src={product.image_url[2] ? product.image_url[2] : null}
+                  src={product.image_url[1] ? product.image_url[1] : null}
                 />
               </div>
               <div>

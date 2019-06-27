@@ -1,21 +1,20 @@
-
-.tabbed > input{
-  display : none;
+.tabbed > input {
+  display: none;
 }
 
-.tabbed > input:not(:checked) + section > div{
-  display : none;
+.tabbed > input:not(:checked) + section > div {
+  display: none;
 }
 
-.tabbed > section > h5{
-  float : left;
+.tabbed > section > h5 {
+  float: left;
   margin: 0;
 }
 
-.tabbed > section > div{
-  float  : right;
-  width  : 100%;
-  margin : 2.5em 0 0 -100%;
+.tabbed > section > div {
+  float: right;
+  width: 100%;
+  margin: 2.5em 0 0 -100%;
 }
 
 .p-details {
@@ -26,19 +25,19 @@
   width: 90%;
 }
 
-.tabbed{
-  float : left;
-  width : 100%;
+.tabbed {
+  float: left;
+  width: 100%;
   position: relative;
-  top: 150px;
-  left: 0px;
+  top: 100px;
+  left: -5px;
 }
 
-.tabbed > section > h5 > label{
-  cursor              : pointer;
-     -moz-user-select : none;
-      -ms-user-select : none;
-  -webkit-user-select : none;
+.tabbed > section > h5 > label {
+  cursor: pointer;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
   width: 150px;
   text-align: center;
   font-size: 12px;
@@ -46,47 +45,46 @@
   padding-top: 10px;
 }
 
-.tabbed > section > div{
-  box-sizing    : border-box;
-  padding       : 0.5em 0.75em;
-  border        : 1px solid #ddd;
-  border-radius : 4px;
-  box-shadow    : 0 0 0.5em rgba(0,0,0,0.0625);
-  background    : #fff;
+.tabbed > section > div {
+  box-sizing: border-box;
+  padding: 0.5em 0.75em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.0625);
+  background: #fff;
 }
 
-.tabbed > section > h5{
-  box-sizing  : border-box;
-  margin      : 0;
-  overflow    : hidden;
-  font-size   : 1em;
-  font-weight : normal;
+.tabbed > section > h5 {
+  box-sizing: border-box;
+  margin: 0;
+  overflow: hidden;
+  font-size: 1em;
+  font-weight: normal;
 }
 
-.tabbed > section > h5 > label{
-  display                 : block;
-  padding                 : 0.5em 0.75em;
-  border                  : 1px solid #ddd;
-  border-bottom           : none;
-  border-top-left-radius  : 4px;
-  border-top-right-radius : 4px;
-  box-shadow              : 0 0 0.5em rgba(0,0,0,0.0625);
-  background              : #fff;
+.tabbed > section > h5 > label {
+  display: block;
+  padding: 0.5em 0.75em;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.0625);
+  background: #fff;
   margin-bottom: 0;
 }
 
 .tabbed > section > div {
-  position : relative;
-  z-index  : 1;
+  position: relative;
+  z-index: 1;
   width: 700px;
-  height: 400px;
+  min-height: 450px;
   top: -10px;
-
 }
 
-.tabbed > input:checked + section > h5{
-  position : relative;
-  z-index  : 2;
+.tabbed > input:checked + section > h5 {
+  position: relative;
+  z-index: 2;
   border: 3px solid lightblue;
 }
 
@@ -104,8 +102,8 @@
 }
 
 .tab-ul > li {
-   position: relative;
-   left: -25px;
-   margin-left: 15px;
-   top: -20px;
+  position: relative;
+  left: -25px;
+  margin-left: 15px;
+  top: -20px;
 }

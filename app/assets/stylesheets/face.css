@@ -23,6 +23,8 @@
 
 .face-li > a > img {
   width: 150px;
+  object-fit: contain;
+  height: 150px;
 }
 
 .face-li > a {

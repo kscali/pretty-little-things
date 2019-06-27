@@ -144,9 +144,6 @@ const MainNav = ({ user, logout, products, fetchProducts }) => {
                   <li>
                     <Link to="/hair-tutorial">HAIR TUTORIAL</Link>
                   </li>
-                  <li>
-                    <Link to="/blush-tutorial">BLUSH TUTORIAL</Link>
-                  </li>
                 </ul>
               </div>
             </div>

@@ -170,7 +170,6 @@ div#rec-for-u.slider {
   width: 290px;
   align-content: center;
   padding: 10px;
-  color: white;
   background: rgb(236, 4, 15);
   font-size: 14px;
   border-radius: 5px;
@@ -178,6 +177,11 @@ div#rec-for-u.slider {
   margin-bottom: 15px;
   position: relative;
   left: -10px;
+}
+
+.ckout > a {
+  color: white;
+  text-decoration: none;
 }
 
 .ckout:hover {
@@ -225,7 +229,7 @@ p#shipHandle {
 }
 
 .items-list {
-  max-height: 500px;
+  max-height: 400px;
   position: relative;
   top: 25px;
   text-align: center;
@@ -239,6 +243,7 @@ p#shipHandle {
   width: 130px;
   top: 15px;
   cursor: pointer;
+  object-fit: contain;
 }
 
 .div-li > div {
@@ -319,4 +324,6 @@ p#shipHandle {
 
 .random-products {
   width: 150px;
+  height: 150px;
+  object-fit: contain;
 }

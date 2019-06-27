@@ -40,8 +40,8 @@ class CartItem extends React.Component {
               return (
                 <li key={uuidv4()}>
                   <div className={`div-li div-${i}`}>
-                    <Link to={`/products/${product.id}`}>
-                      <img src={product[0].image_url[1]} alt="makeup" />
+                    <Link to={`/products/${product[0].id}`}>
+                      <img src={product[0].image_url[0]} alt="makeup" />
                     </Link>
                     <div className="li-div">
                       <h6>{product[0].brand_name}</h6>

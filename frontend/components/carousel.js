@@ -16,7 +16,7 @@ class Carousel extends React.Component {
       return (
         <div className="products-div" key={i}>
           <Link to={`/products/${product.id}`}>
-            <img className="carousel-img" src={product.image_url[1]} />
+            <img className="carousel-img" src={product.image_url[0]} />
             <h6>{product.brand_name}</h6>
             <p className="gel">{product.name}</p>
           </Link>
@@ -25,10 +25,11 @@ class Carousel extends React.Component {
     });
 
     let random = Math.random() * this.props.products.length;
-    if (random > 10) {
-      return products.slice(0, random);
+    let randomBegin = Math.random() * 8;
+    if (random > 15) {
+      return products.slice(randomBegin, random);
     } else {
-      return products.slice(random, 20);
+      return products.slice(randomBegin, random);
     }
   }
 
