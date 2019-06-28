@@ -22,7 +22,7 @@ const Home = () => {
           <iframe
             width="860"
             height="615"
-            src="https://www.youtube.com/embed/2IT4q6vjN8Q?autoplay=1&loop=1"
+            src="https://www.youtube.com/embed/2IT4q6vjN8Q?autoplay=1&loop=1&mute=1"
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

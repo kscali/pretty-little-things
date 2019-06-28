@@ -114,7 +114,12 @@ class Cart extends React.Component {
                 <h6>Items in basket ({quantity}) </h6>
 
                 <div className="inner-item">
-                  <CartItem quantity={quantity} props={this.props} />
+                  <CartItem
+                    userId={this.state.userId}
+                    quantity={quantity}
+                    props={this.props}
+                    updateCartItem={this.props.updateCartItem}
+                  />
                 </div>
 
                 <h5 className="h">Recommended for You</h5>

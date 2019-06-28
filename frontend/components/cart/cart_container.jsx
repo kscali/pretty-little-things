@@ -12,8 +12,9 @@ import { fetchProducts, fetchProduct } from "./../../actions/product_actions";
 const mstp = state => {
   let cartItems = Object.values(state.entities.cart);
   let products = Object.values(state.entities.products);
+  let userId = state.session.id;
 
-  return { cartItems, products };
+  return { cartItems, products, userId };
 };
 
 const mdtp = dispatch => ({

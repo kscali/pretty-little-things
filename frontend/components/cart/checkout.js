@@ -9,12 +9,26 @@ class Checkout extends React.Component {
     };
 
     this.applyCode = this.applyCode.bind(this);
+    this.applyCodeEnter = this.applyCodeEnter.bind(this);
+  }
+
+  applyCodeEnter(e) {
+    if (
+      e.key === "Enter" &&
+      e.currentTarget.value.toUpperCase() === "SEVENSCENT"
+    ) {
+      this.setState({ value: e.currentTarget.value.toUpperCase() });
+      e.currentTarget.value = "";
+    }
   }
 
   applyCode(e) {
-    if (e.key === "Enter" && e.currentTarget.value === "SEVENSCENT") {
-      this.setState({ value: e.currentTarget.value });
-      e.currentTarget.value = "";
+    e.preventDefault;
+    let inputValue = document.getElementsByClassName("ckout-input")[0];
+    if (inputValue.value.toUpperCase() === "SEVENSCENT") {
+      console.log("this reached me");
+      this.setState({ value: inputValue.value.toUpperCase() });
+      inputValue.value = "";
     }
   }
 
@@ -23,7 +37,7 @@ class Checkout extends React.Component {
 
     let placeholderValue = null;
     if (this.state.value === "SEVENSCENT" && estimatedTotal < 35) {
-      placeholderValue = "Can't apply discount code";
+      placeholderValue = "Can't apply code. Add more items to cart.";
     } else if (this.state.value === "SEVENSCENT" && estimatedTotal >= 35) {
       placeholderValue = "Code SEVENSCENT applied";
     } else {
@@ -52,11 +66,14 @@ class Checkout extends React.Component {
         </div>
         <div className="mini-divider" />
         <input
-          onKeyPress={this.applyCode}
+          onKeyPress={this.applyCodeEnter}
           className="ckout-input"
           type="text"
           placeholder={placeholderValue}
         />
+        <button className="discount-btn" onClick={this.applyCode}>
+          Apply discount code
+        </button>
         <div className="mini-divider" />
         <button className="ckout">
           <Link to="/thankyou">CHECKOUT</Link>

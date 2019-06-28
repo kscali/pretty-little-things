@@ -6,7 +6,15 @@ class CartItem extends React.Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      id: null,
+      user_id: props.userId,
+      product_id: null,
+      quantity: props.quantity
+    };
+
     this.removeProduct = this.removeProduct.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   componentDidMount() {
@@ -14,7 +22,26 @@ class CartItem extends React.Component {
     this.props.props.fetchCartItems();
   }
 
+  // componentDidUpdate() {
+  //   this.props.props.cartItems.forEach(item => {
+  //     document.getElementById("selector-2").value = item.quantity;
+  //   });
+  // }
+
   // This is getting passed into onClick handler Remove button
+  handleChange(item) {
+    return e => {
+      this.setState(
+        {
+          id: item.id,
+          product_id: item.product_id,
+          quantity: e.currentTarget.value
+        },
+        () => this.props.updateCartItem(this.state)
+      );
+    };
+  }
+
   removeProduct(item) {
     return () => {
       //  let amount = +document.getElementById("selector-2").value;
@@ -37,6 +64,7 @@ class CartItem extends React.Component {
               let product = this.props.props.products.filter(
                 product => product.id === item.product_id
               );
+
               return (
                 <li key={uuidv4()}>
                   <div className={`div-li div-${i}`}>
@@ -50,7 +78,12 @@ class CartItem extends React.Component {
                       <p>COLOR: {product[0].color[0]}</p>
                     </div>
                     <div className="con-1 container">
-                      <select id="selector-2">
+                      <p className="quantity">quantity:</p>
+                      <select
+                        id="selector-2"
+                        value={item.quantity}
+                        onChange={this.handleChange(item)}
+                      >
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -58,14 +91,13 @@ class CartItem extends React.Component {
                       </select>
                     </div>
 
+                    <h6 className="price-li">${product[0].price}</h6>
                     <button
                       onClick={this.removeProduct(item)}
                       className="con-2 remove-btn"
                     >
                       Remove
                     </button>
-                    <p className="quantity">quantity: {item.quantity} </p>
-                    <h6 className="price-li">${product[0].price}</h6>
                   </div>
                 </li>
               );

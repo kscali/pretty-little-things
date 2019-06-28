@@ -158,11 +158,12 @@ div#rec-for-u.slider {
 }
 
 .ckout-input {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   padding: 10px;
   width: 295px;
   position: relative;
   left: -10px;
+  outline: none !important;
 }
 
 .ckout {
@@ -274,26 +275,29 @@ p#shipHandle {
   padding: 0;
   border: none;
   position: relative;
-  top: 100px;
+  top: 60px;
 }
 
 #selector-2 {
   position: relative;
-  top: 40px;
-  left: 40px;
+  margin-top: 20px;
+  outline: none !important;
 }
 
 .quantity {
   position: relative;
-  top: 110px;
-  left: 30px;
+  margin-bottom: 10px;
   width: 100%;
   height: 20px;
+  left: 0px;
+  font-size: 14px;
 }
 
 .price-li {
   position: relative;
-  top: 60px;
+  top: 40px;
+  height: 20px;
+  left: 58px;
 }
 
 .item-border {
@@ -326,4 +330,21 @@ p#shipHandle {
   width: 150px;
   height: 150px;
   object-fit: contain;
+}
+
+.discount-btn {
+  color: skyblue;
+  background: white;
+  border-radius: 5px;
+  padding: 5px 15px;
+  border: 2px solid lightblue;
+  left: 15%;
+  position: relative;
+  outline: none !important;
+  margin-bottom: 15px;
+}
+
+.discount-btn:hover {
+  background: lightblue;
+  color: white;
 }
