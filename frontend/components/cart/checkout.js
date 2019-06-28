@@ -79,7 +79,7 @@ class Checkout extends React.Component {
           <Link to="/thankyou">CHECKOUT</Link>
         </button>
         <div className="pp">
-          <a href="https://www.paypal.com/us/home">
+          <a href="https://www.paypal.com/us/home" target="_blank">
             <img
               className="paypal"
               src="https://d12m9erqbesehq.cloudfront.net/wp-content/uploads/2016/10/27151552/paypal-express-checkout-logo-300x125.png"

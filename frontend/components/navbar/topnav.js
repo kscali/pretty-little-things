@@ -19,7 +19,8 @@ export default function TopNav() {
             <div className="right-top-nav col">
               <a href="#">Reorder</a>
               <a href="#">Track Order</a>
-              <Link to="/store">Find a Store</Link>
+              <a href="#">Find a Store</a>
+              {/* <Link to="/store">Find a Store</Link> */}
               <a className="last-a" href="#">
                 <h6 className="flag">🇺🇸</h6>
                 <p>US</p>
