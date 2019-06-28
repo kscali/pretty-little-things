@@ -1,15 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Carousel from "./carousel";
 
 const Home = () => {
   return (
     <div className="homepage">
       <div className="container">
-        <img
-          className="home-ad"
-          src="https://ks-plt.s3-us-west-1.amazonaws.com/2019-04-16-hp-slide-just-arrived-cyoa-us-d-slice.webp"
-          alt="shopping"
-        />
+        <Link to="/products">
+          <img
+            className="home-ad"
+            src="https://ks-plt.s3-us-west-1.amazonaws.com/2019-04-16-hp-slide-just-arrived-cyoa-us-d-slice.webp"
+            alt="shopping"
+          />
+        </Link>
       </div>
       <div className="sec-section container">
         <h2>Just Arrived</h2>

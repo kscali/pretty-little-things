@@ -65,7 +65,7 @@ footer {
   width: 100%;
   position: relative;
   top: 5px;
-  left: 15px;
+  left: 20px;
 }
 
 .right-col {
@@ -77,4 +77,8 @@ footer {
   position: relative;
   top: 120px;
   text-align: center;
+}
+
+.footer-p > p {
+  right: 0px;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Title from "./../title";
 
 export default function TopNav() {
@@ -18,7 +19,7 @@ export default function TopNav() {
             <div className="right-top-nav col">
               <a href="#">Reorder</a>
               <a href="#">Track Order</a>
-              <a href="#">Find a Store</a>
+              <Link to="/store">Find a Store</Link>
               <a className="last-a" href="#">
                 <h6 className="flag">🇺🇸</h6>
                 <p>US</p>
