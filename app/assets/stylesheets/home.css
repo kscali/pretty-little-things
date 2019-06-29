@@ -1,3 +1,19 @@
+/* logo header */
+.title-logo-header {
+  width: 360px;
+  position: relative;
+  left: 40px;
+}
+
+.title-logo {
+  color: black;
+}
+
+.title-logo:hover {
+  color: black;
+  text-decoration: none;
+}
+
 .homepage {
   height: 1900px;
 }
@@ -158,11 +174,78 @@ button.slick-arrow:hover {
     top: 50px;
   }
 
-  .last-sec {
+  /* .auto {
+    text-align: center;
+  } */
+
+  .register {
+    width: 220px;
+    left: 0px;
+  }
+
+  .title-logo-header {
+    left: 0px;
+  }
+
+  .icon-container {
+    top: 0;
+    left: 0;
+  }
+
+  .sec-section > h2 {
+    top: 0;
+  }
+
+  .caro-slick {
+    top: 50px;
+    position: relative;
+  }
+
+  .slick-dots {
+    top: 0;
+  }
+
+  .slick-list {
+    top: 50px;
+  }
+
+  .ad-images {
+    position: relative;
+    top: 80px;
+    margin-bottom: 35px;
     display: flex;
   }
 
-  .fourth-ad {
-    display: none;
+  .third-section {
+    right: 0;
+    top: 0;
+  }
+
+  .third-section > h2 {
+    position: relative;
+    top: 100px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  .register {
+    left: 0;
+  }
+
+  .title-logo-header {
+    left: 0px;
+  }
+
+  .home-ad {
+    top: 15px;
+  }
+
+  .sec-section > h2 {
+    top: -40px;
+  }
+
+  .caro-slick {
+    position: relative;
+    top: 30px;
   }
 }

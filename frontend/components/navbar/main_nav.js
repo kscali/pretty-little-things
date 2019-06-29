@@ -46,14 +46,14 @@ const MainNav = ({ user, logout, products, fetchProducts }) => {
               fetchProducts={fetchProducts}
             />
           </div>
-          <div className="col">
+          <div className="title-logo-header-col col">
             <h2 className="title-logo-header">
               <Link className="title-logo" to="/">
                 Pretty Little Things
               </Link>
             </h2>
           </div>
-          <div className="col">{user ? greeting() : signin()}</div>
+          <div className="register-col col">{user ? greeting() : signin()}</div>
           <div className="icon-container">
             <img
               id="heart"

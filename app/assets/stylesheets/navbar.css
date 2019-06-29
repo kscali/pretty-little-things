@@ -377,3 +377,21 @@ span#carat {
   top: 40px;
   left: -200px;
 }
+
+@media only screen and (max-width: 991px) {
+  .icon-container {
+    top: 0;
+    left: 65%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  .icon-container {
+    top: 0;
+    left: 70%;
+  }
+
+  .title-logo-header-col {
+    width: 360px;
+  }
+}

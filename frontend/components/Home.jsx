@@ -17,7 +17,7 @@ const Home = () => {
       <div className="sec-section container">
         <h2>Just Arrived</h2>
       </div>
-      <div className="container">
+      <div className="caro-slick container">
         <Carousel />
       </div>
       <div className="container">
