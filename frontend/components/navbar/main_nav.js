@@ -157,7 +157,7 @@ const MainNav = ({ user, logout, products, fetchProducts }) => {
                     <a href="https://community.sephora.com/t5/custom/page/page-id/GroupsLandingPage?icid2=meganav_community_groups_041519_image">
                       <img
                         id="img-1"
-                        src="https://www.sephora.com/contentimages/meganav/large/2019-03-15-meganav-community-groups-us-ca-d-slice.jpg"
+                        src="https://ks-plt.s3-us-west-1.amazonaws.com/products/plt-images/groups.png"
                         alt="groups"
                       />
                     </a>
@@ -166,7 +166,7 @@ const MainNav = ({ user, logout, products, fetchProducts }) => {
                     <a href="https://community.sephora.com/?icid2=meganav_community_evergreen_conversations_041519_image">
                       <img
                         id="img-2"
-                        src="https://www.sephora.com/contentimages/meganav/large/2019-03-15-meganav-community-conversations-us-ca-d-slice.jpg"
+                        src="https://ks-plt.s3-us-west-1.amazonaws.com/products/plt-images/community.png"
                         alt="convos"
                       />
                     </a>
@@ -175,7 +175,7 @@ const MainNav = ({ user, logout, products, fetchProducts }) => {
                     <a href="https://www.sephora.com/community/gallery">
                       <img
                         id="img-3"
-                        src="https://www.sephora.com/contentimages/meganav/large/2019-03-15-meganav-community-gallery-us-ca-d-slice.jpg"
+                        src="https://ks-plt.s3-us-west-1.amazonaws.com/products/plt-images/gallery.png"
                         alt="gallery"
                       />
                     </a>
@@ -184,7 +184,7 @@ const MainNav = ({ user, logout, products, fetchProducts }) => {
                     <a href="https://community.sephora.com/t5/Exclusive-Events/bd-p/events-tips?icid2=meganav_community_evergreen_events_d_0415_image">
                       <img
                         id="img-4"
-                        src="https://www.sephora.com/contentimages/meganav/large/2019-03-15-meganav-community-events-us-ca-d-slice.jpg"
+                        src="https://ks-plt.s3-us-west-1.amazonaws.com/products/plt-images/events.png"
                         alt="events"
                       />
                     </a>
