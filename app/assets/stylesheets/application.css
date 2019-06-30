@@ -401,11 +401,20 @@ div.alert-error > h1 {
   .email-box > p {
     width: 300px;
   }
+
+  .about-us {
+    height: 63vh;
+    margin-top: 50px;
+  }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 992px) {
   .email-box > form {
     position: relative;
     left: 50px;
+  }
+
+  .about-us {
+    height: 55vh;
   }
 }
