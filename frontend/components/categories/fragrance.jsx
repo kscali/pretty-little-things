@@ -11,12 +11,12 @@ class Fragrance extends React.Component {
     if (!this.props.fragrances) return null;
 
     return (
-      <div className="fragrances container">
+      <div className="fragrances mobile container">
         <div className="fragrance-container">
           <div className="side-nav">
             <ProductIndexItem />
           </div>
-          <ul>
+          <ul className="mobile-list">
             {this.props.fragrances.map((fragrance, i) => (
               <li className="fragrance-li" key={i}>
                 <Link to={`/products/${fragrance.id}`}>

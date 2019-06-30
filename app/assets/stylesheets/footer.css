@@ -84,7 +84,7 @@ footer {
 }
 
 @media only screen and (max-width: 991px) {
-  form {
+  footer > form {
     position: relative;
     left: 90px;
   }
@@ -95,7 +95,7 @@ footer {
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 992px) {
-  form {
+  footer > form {
     position: relative;
     left: 50px;
   }

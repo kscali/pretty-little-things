@@ -10,12 +10,12 @@ class Hair extends React.Component {
   render() {
     if (!this.props.hair) return null;
     return (
-      <div className="hair container">
+      <div className="hair mobile container">
         <div className="hair-container">
           <div className="side-nav">
             <ProductIndexItem />
           </div>
-          <ul>
+          <ul className="mobile-list">
             {this.props.hair.map((hair, i) => (
               <li className="hair-li" key={i}>
                 <Link to={`/products/${hair.id}`}>

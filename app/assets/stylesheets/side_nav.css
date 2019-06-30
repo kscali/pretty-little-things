@@ -111,3 +111,50 @@
 a:active {
   text-decoration: underline;
 }
+
+@media only screen and (max-width: 991px) {
+  .products {
+    top: 70px;
+    margin-bottom: 300px;
+  }
+
+  .main {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .inner-side {
+    margin-left: 0;
+    left: 0;
+    padding-left: 0;
+    height: 3300px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .side-nav {
+    padding-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1000px) {
+  .side-nav {
+    padding-right: 30px;
+  }
+
+  .inner-side {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    position: relative;
+    height: 3500px;
+    top: -10px;
+    left: 0;
+    padding-left: 0;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+}

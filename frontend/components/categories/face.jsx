@@ -10,12 +10,12 @@ class Face extends React.Component {
   render() {
     if (!this.props.faces) return null;
     return (
-      <div className="face container">
+      <div className="face mobile container">
         <div className="face-container">
           <div className="side-nav">
             <ProductIndexItem />
           </div>
-          <ul>
+          <ul className="mobile-list">
             {this.props.faces.map((face, i) => (
               <li className="face-li" key={i}>
                 <Link to={`/products/${face.id}`}>

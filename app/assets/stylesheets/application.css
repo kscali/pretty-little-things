@@ -345,26 +345,6 @@ div.alert-error > h1 {
   margin-bottom: 25px;
 }
 
-.sidenav {
-  height: 800px;
-  width: 200px; /* Set the width of the sidebar */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
-  margin-right: 20px;
-}
-
-.side-nav-menu > ul,
-.side-nav-menu > ul > li {
-  margin: 10px 0 0 0;
-  padding: 0;
-  font-weight: bold;
-  display: block;
-}
-
 /* The navigation menu links */
 .side-nav-menu > ul > li > a {
   padding: 6px 8px 6px 16px;
@@ -378,4 +358,36 @@ div.alert-error > h1 {
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 991px) {
+  div.mobile {
+    top: 50px;
+    height: 65vh;
+    position: relative;
+  }
+
+  ul.mobile-list {
+    width: 0px;
+    grid-template-columns: auto auto;
+  }
+
+  footer {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .tutorial-video {
+    position: relative;
+    top: 100px;
+    height: 70vh;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .tutorial-video {
+    position: relative;
+    height: 100vh;
+  }
 }

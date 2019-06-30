@@ -10,12 +10,12 @@ class Eye extends React.Component {
   render() {
     if (!this.props.eyes) return null;
     return (
-      <div className="eyes container">
+      <div className="eyes mobile container">
         <div className="eye-container">
           <div className="side-nav">
             <ProductIndexItem />
           </div>
-          <ul>
+          <ul className="mobile-list">
             {this.props.eyes.map((eye, i) => (
               <li className="eyes-li" key={i}>
                 <Link to={`/products/${eye.id}`}>

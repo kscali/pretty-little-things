@@ -9,13 +9,14 @@ class Skin extends React.Component {
   }
   render() {
     if (!this.props.skin) return null;
+
     return (
-      <div className="skin container">
+      <div className="skin mobile container">
         <div className="skin-container">
           <div className="side-nav">
             <ProductIndexItem />
           </div>
-          <ul>
+          <ul className="mobile-list">
             {this.props.skin.map((skin, i) => (
               <li className="skin-li" key={i}>
                 <Link to={`/products/${skin.id}`}>

@@ -9,12 +9,12 @@ class Lip extends React.Component {
   }
   render() {
     return (
-      <div className="lips container">
+      <div className="lips mobile container">
         <div className="lip-container">
           <div className="side-nav">
             <ProductIndexItem />
           </div>
-          <ul>
+          <ul className="mobile-list">
             {this.props.lips.map((lip, i) => (
               <li className="lips-li" key={i}>
                 <Link to={`/products/${lip.id}`}>
