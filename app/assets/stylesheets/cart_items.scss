@@ -348,3 +348,37 @@ p#shipHandle {
   background: lightblue;
   color: white;
 }
+
+@media only screen and (max-width: 991px) {
+  .main-basket {
+    height: 70vh;
+    position: relative;
+    top: 30px;
+  }
+
+  .main-basket-header {
+    position: relative;
+    left: 90px;
+  }
+
+  .right-side {
+    position: relative;
+    top: 600px;
+    left: -500px;
+    margin-left: 0;
+  }
+
+  .main-basket > div > a {
+    left: 430px;
+    top: -5px;
+  }
+
+  .full-box {
+    position: relative;
+    left: 100px;
+  }
+
+  .items-list {
+    max-height: 200px;
+  }
+}

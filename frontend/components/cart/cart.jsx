@@ -100,7 +100,7 @@ class Cart extends React.Component {
 
     return (
       <div className="main-basket container">
-        <div>
+        <div className="main-basket-header">
           <h4>My Basket</h4>
           <p id="shipping">{shipping}</p>
           <Link to="/products">Continue Shopping ></Link>

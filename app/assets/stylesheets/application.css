@@ -391,3 +391,21 @@ div.alert-error > h1 {
     height: 100vh;
   }
 }
+
+@media only screen and (max-width: 991px) {
+  .email-box > form {
+    position: relative;
+    margin-left: 30px;
+  }
+
+  .email-box > p {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  .email-box > form {
+    position: relative;
+    left: 50px;
+  }
+}
