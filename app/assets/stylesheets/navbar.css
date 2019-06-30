@@ -379,10 +379,24 @@ span#carat {
 }
 
 @media only screen and (max-width: 991px) {
-  /* .icon-container {
+  .icon-container {
     top: 0;
-    left: 65%;
-  } */
+    left: 450px;
+  }
+
+  .heart {
+    left: 0;
+    top: 0;
+  }
+
+  .basket {
+    left: 0;
+    top: 0;
+  }
+
+  div.register-col {
+    min-width: 220px;
+  }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 992px) {
