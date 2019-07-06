@@ -165,7 +165,10 @@ const MainNav = ({ user, logout, products, fetchProducts, cartItems }) => {
               <div className="comm-div">
                 <div className="comm-col">
                   <div className="divs  col">
-                    <a href="https://community.sephora.com/t5/custom/page/page-id/GroupsLandingPage?icid2=meganav_community_groups_041519_image">
+                    <a
+                      href="https://community.sephora.com/t5/custom/page/page-id/GroupsLandingPage?icid2=meganav_community_groups_041519_image"
+                      target="_blank"
+                    >
                       <img
                         id="img-1"
                         src="https://ks-plt.s3-us-west-1.amazonaws.com/products/plt-images/groups.png"
@@ -174,7 +177,10 @@ const MainNav = ({ user, logout, products, fetchProducts, cartItems }) => {
                     </a>
                   </div>
                   <div className="divs  col">
-                    <a href="https://community.sephora.com/?icid2=meganav_community_evergreen_conversations_041519_image">
+                    <a
+                      href="https://community.sephora.com/?icid2=meganav_community_evergreen_conversations_041519_image"
+                      target="_blank"
+                    >
                       <img
                         id="img-2"
                         src="https://ks-plt.s3-us-west-1.amazonaws.com/products/plt-images/community.png"
@@ -183,7 +189,10 @@ const MainNav = ({ user, logout, products, fetchProducts, cartItems }) => {
                     </a>
                   </div>
                   <div className="divs col">
-                    <a href="https://www.sephora.com/community/gallery">
+                    <a
+                      href="https://www.sephora.com/community/gallery"
+                      target="_blank"
+                    >
                       <img
                         id="img-3"
                         src="https://ks-plt.s3-us-west-1.amazonaws.com/products/plt-images/gallery.png"
@@ -192,7 +201,10 @@ const MainNav = ({ user, logout, products, fetchProducts, cartItems }) => {
                     </a>
                   </div>
                   <div className="divs col">
-                    <a href="https://community.sephora.com/t5/Exclusive-Events/bd-p/events-tips?icid2=meganav_community_evergreen_events_d_0415_image">
+                    <a
+                      href="https://community.sephora.com/t5/Exclusive-Events/bd-p/events-tips?icid2=meganav_community_evergreen_events_d_0415_image"
+                      target="_blank"
+                    >
                       <img
                         id="img-4"
                         src="https://ks-plt.s3-us-west-1.amazonaws.com/products/plt-images/events.png"
