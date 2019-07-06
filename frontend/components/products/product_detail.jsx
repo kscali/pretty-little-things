@@ -54,7 +54,7 @@ class ProductDetail extends React.Component {
     p.classList.add("item-show");
     setTimeout(() => {
       p.classList.remove("item-show");
-    }, 500);
+    }, 900);
 
     this.props.createCartItem(this.state);
   }
