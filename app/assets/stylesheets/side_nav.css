@@ -113,8 +113,8 @@ a:active {
 }
 
 @media only screen and (max-width: 991px) {
-  .products {
-    top: 70px;
+  section.products {
+    top: 100px;
     margin-bottom: 300px;
   }
 

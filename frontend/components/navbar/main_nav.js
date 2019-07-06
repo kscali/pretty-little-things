@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import SearchBar from "./search_bar";
+import * as basket from "../../assets/images/images.png";
 
-const MainNav = ({ user, logout, products, fetchProducts }) => {
+const MainNav = ({ user, logout, products, fetchProducts, cartItems }) => {
   let names = products.map(product => {
     return product.name;
   });
@@ -35,6 +36,14 @@ const MainNav = ({ user, logout, products, fetchProducts }) => {
     </div>
   );
 
+  const cartItemsTotal = () => {
+    let total = 0;
+    for (let i = 0; i < cartItems.length; i++) {
+      total += cartItems[i].quantity;
+    }
+    return total;
+  };
+
   return (
     <div className="mid-nav">
       <div className="container">
@@ -62,8 +71,10 @@ const MainNav = ({ user, logout, products, fetchProducts }) => {
             />
             <span className="basket">
               <Link to="/cart_items">
+                <span className="notify-badge">{cartItemsTotal()}</span>
                 <img
-                  src="https://previews.123rf.com/images/tkacchuk/tkacchuk1411/tkacchuk141100038/34157112-basket-simple-icon-on-white-background-.jpg"
+                  className="basket-icon"
+                  src={basket}
                   alt="basket"
                   width="70"
                   height="70"

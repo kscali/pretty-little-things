@@ -20,8 +20,9 @@
 
 .home-ad {
   position: relative;
-  top: -28px;
+  top: 3px;
   width: 100%;
+  margin-bottom: 25px;
 }
 
 .sec-section {
@@ -107,7 +108,7 @@
 .ad-images {
   width: 100%;
   text-align: center;
-  margin-top: 35px;
+  margin-top: 55px;
 }
 
 .fourth-sec > h2 {
@@ -171,7 +172,7 @@ button.slick-arrow:hover {
 
 @media only screen and (max-width: 991px) {
   .home-ad {
-    top: 50px;
+    top: 85px;
   }
 
   /* .auto {
@@ -190,6 +191,10 @@ button.slick-arrow:hover {
   .icon-container {
     top: 0;
     left: 0;
+  }
+
+  .basket-icon {
+    position: relative;
   }
 
   .sec-section > h2 {

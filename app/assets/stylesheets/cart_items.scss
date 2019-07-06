@@ -5,6 +5,7 @@
 .main-basket {
   height: 900px;
   position: relative;
+  top: 20px;
 }
 
 .main-basket > div > a {
@@ -351,9 +352,9 @@ p#shipHandle {
 
 @media only screen and (max-width: 991px) {
   .main-basket {
-    height: 70vh;
+    height: 80vh;
     position: relative;
-    top: 30px;
+    top: 100px;
   }
 
   .main-basket-header {

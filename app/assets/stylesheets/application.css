@@ -360,9 +360,19 @@ div.alert-error > h1 {
   text-decoration: underline;
 }
 
+.products {
+  position: relative;
+  top: 40px;
+}
+
+.mobile {
+  position: relative;
+  top: 20px;
+}
+
 @media only screen and (max-width: 991px) {
   div.mobile {
-    top: 50px;
+    top: 100px;
     height: 65vh;
     position: relative;
   }
