@@ -56,9 +56,9 @@ h6 {
 #title-ads {
   color: white;
   z-index: 2;
-  margin-top: 15px;
+  text-align: right;
   position: relative;
-  top: -8px;
+  top: 8px;
 }
 
 .title-fade-out {
