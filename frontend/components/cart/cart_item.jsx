@@ -22,12 +22,6 @@ class CartItem extends React.Component {
     this.props.props.fetchCartItems();
   }
 
-  // componentDidUpdate() {
-  //   this.props.props.cartItems.forEach(item => {
-  //     document.getElementById("selector-2").value = item.quantity;
-  //   });
-  // }
-
   // This is getting passed into onClick handler Remove button
   handleChange(item) {
     return e => {

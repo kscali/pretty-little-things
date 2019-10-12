@@ -3,10 +3,13 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import Carousel from "./carousel";
 import { fetchCartItems } from "../actions/cart_actions";
+import { fetchProducts } from '../actions/product_actions';
+
 
 class Home extends React.Component {
   componentDidMount() {
     this.props.fetchCart();
+    this.props.fetchProducts();
   }
 
   render() {
@@ -52,7 +55,8 @@ class Home extends React.Component {
 }
 
 const mdtp = dispatch => ({
-  fetchCart: () => dispatch(fetchCartItems())
+  fetchCart: () => dispatch(fetchCartItems()),
+  fetchProducts: () => dispatch(fetchProducts())
 });
 
 export default connect(

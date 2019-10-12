@@ -4,16 +4,14 @@ import { withRouter } from "react-router-dom";
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
+    
     this.state = {
       inputVal: ""
     };
+    
     this.selectName = this.selectName.bind(this);
     this.handleInput = this.handleInput.bind(this);
     this.getProduct = this.getProduct.bind(this);
-  }
-
-  componentDidMount() {
-    this.props.fetchProducts();
   }
 
   handleInput(event) {

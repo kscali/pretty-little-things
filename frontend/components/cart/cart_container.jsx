@@ -7,7 +7,7 @@ import {
 } from "./../../actions/cart_actions";
 
 import Cart from "./cart";
-import { fetchProducts, fetchProduct } from "./../../actions/product_actions";
+import { fetchProducts } from "./../../actions/product_actions";
 
 const mstp = state => {
   let cartItems = Object.values(state.entities.cart);
@@ -18,7 +18,6 @@ const mstp = state => {
 };
 
 const mdtp = dispatch => ({
-  fetchProducts: () => dispatch(fetchProducts()),
   fetchCartItems: () => dispatch(fetchCartItems()),
   updateCartItem: item => dispatch(updateCartItem(item)),
   deleteCartItem: id => dispatch(deleteCartItem(id)),

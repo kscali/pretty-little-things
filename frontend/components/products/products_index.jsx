@@ -4,19 +4,13 @@ import AllProducts from './allproducts';
 
 
 class ProductsIndex extends React.Component {
-  constructor(props) {
-    super(props)
-    
-   }
 
-  componentDidMount() {
-    this.props.fetchProducts(); 
-  }
 
   render () {
-    // let style = window.location.href.slice(24);
+
     let products = this.props.products;
     if (!products) return null; 
+    
     return (
     <section className="products">
       <div className="container">

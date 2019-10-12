@@ -3,10 +3,7 @@ import { Link } from "react-router-dom";
 import ProductIndexItem from "../products/product_index_item";
 
 class Lip extends React.Component {
-  componentDidMount() {
-    this.props.fetchProducts();
-    this.props.fetchBrands();
-  }
+ 
   render() {
     return (
       <div className="lips mobile container">

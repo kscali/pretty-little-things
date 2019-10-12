@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Title from "./../title";
 
 export default function TopNav() {
+  
   return (
     <div className="ad-div">
       <img
@@ -11,11 +11,10 @@ export default function TopNav() {
         alt="ad"
       />
       <div className="top">
-      <div className="container">
-       <Title />
+        <div className="container">
+          <Title />
+        </div>
       </div>
-       </div>
-       
     </div>
   );
 }

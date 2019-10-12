@@ -3,10 +3,7 @@ import { Link } from "react-router-dom";
 import ProductIndexItem from "../products/product_index_item";
 
 class Face extends React.Component {
-  componentDidMount() {
-    this.props.fetchProducts();
-    this.props.fetchBrands();
-  }
+  
   render() {
     if (!this.props.faces) return null;
     return (

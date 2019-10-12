@@ -1,14 +1,11 @@
 import React from 'react';
 
 export default class ProductInfo extends React.Component {
-  constructor(props) {
-    super(props);
-
-  }
-
+  
   render() {
 
-    return (<div className="tabbed">
+    return (
+      <div className="tabbed">
     
         <input name="tabbed" id="tabbed1" type="radio" defaultChecked />
         <section>
@@ -28,34 +25,33 @@ export default class ProductInfo extends React.Component {
         </section>
 
       
-          <input name="tabbed" id="tabbed2" type="radio" />
-          <section className="seg-2">
-            <h5>
-              <label htmlFor="tabbed2">How To Use</label>
-            </h5>
-            <div>
-              <p className="sug-use"><b>Suggested Usage: </b></p>
-              <ul className="tab-ul">
-                {this.props.product.how_to_use.map((el, i) => {
-                  return <li key={i}>{el}</li>
-                })}
-              </ul>
-             </div>
-          </section>
+        <input name="tabbed" id="tabbed2" type="radio" />
+        <section className="seg-2">
+          <h5>
+            <label htmlFor="tabbed2">How To Use</label>
+          </h5>
+          <div>
+            <p className="sug-use"><b>Suggested Usage: </b></p>
+            <ul className="tab-ul">
+              {this.props.product.how_to_use.map((el, i) => {
+                return <li key={i}>{el}</li>
+              })}
+            </ul>
+            </div>
+        </section>
 
-      <input name="tabbed" id="tabbed3" type="radio" />
-      <section>
-        <h5>
-          <label htmlFor="tabbed3">Ingredients</label>
-        </h5>
-        <div>
-          <p className="p-details">{this.props.product.ingredients}</p>
-        </div>
-      </section>
+        <input name="tabbed" id="tabbed3" type="radio" />
+        <section>
+          <h5>
+            <label htmlFor="tabbed3">Ingredients</label>
+          </h5>
+          <div>
+            <p className="p-details">{this.props.product.ingredients}</p>
+          </div>
+        </section>
       </div>
-   
     )
-   }
+  }
 }
 
 
