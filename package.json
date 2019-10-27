@@ -10,7 +10,7 @@
     "bootstrap": "^4.3.1",
     "file-loader": "^3.0.1",
     "google-maps-react": "^2.0.2",
-    "jquery": "^1.9.1",
+    "jquery": "^3.4.0",
     "lodash": "^4.17.15",
     "react": "^16.8.6",
     "react-autosuggest": "^9.4.3",
