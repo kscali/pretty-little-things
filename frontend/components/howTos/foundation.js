@@ -2,7 +2,7 @@ import React from "react";
 
 const Foundation = () => {
   return (
-    <div className="tutorial-video">
+    <div className="tutorial-video container">
       <h3>
         How to Apply Foundation and Concealer for Beginners | Perfect Face
         Makeup Tutorial | Step by Step

@@ -2,7 +2,7 @@ import React from "react";
 
 const Hair = () => {
   return (
-    <div className="tutorial-video">
+    <div className="tutorial-video container">
       <h3>
         Easy Hair Style for Long Hair | TOP 26 Amazing Hairstyles Tutorials
         Compilation 2018 #Part 25

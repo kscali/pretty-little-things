@@ -2,7 +2,7 @@ import React from "react";
 
 const Eyes = () => {
   return (
-    <div className="tutorial-video">
+    <div className="tutorial-video container">
       <h2>Warm Copper Smokey Eye | Makeup Tutorial | Jenn Lee</h2>
       <iframe
         width="860"

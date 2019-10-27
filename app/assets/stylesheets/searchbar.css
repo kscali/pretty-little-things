@@ -2,11 +2,11 @@
   display: none; 
 } */
 
-.auto {
+ .auto {
   position: relative;
 }
 
-#input-names {
+.matches {
   display: none; 
   border: 1px solid lightgray;
   background: white; 
@@ -17,7 +17,11 @@
   width: 275px;
 }
 
-#input-names > li {
+.show {
+  display: block;
+}
+
+.matches > li {
   width: 100%;
   margin: 10px 0px;
   position: relative;
@@ -27,4 +31,5 @@
 input.search-input {
   width: 275px;
   padding: 5px; 
-}
+} 
+

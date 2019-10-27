@@ -7,7 +7,8 @@ class LogInForm extends React.Component {
     super(props)
     this.state = {
       email: "",
-      password: ""
+      password: "",
+      className: "modals"
     }
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -16,14 +17,8 @@ class LogInForm extends React.Component {
   }
 
   componentDidMount() {
-    let modal = document.getElementById("myModal");
-    modal.style.height = "500px"
     this.props.clearErrors(this.props.errors);
-  }
-
-  componentDidUpdate() {
-    const main = document.getElementById('main-mod');
-    main.style.display = "block"; 
+    this.setState({className: "modals show"})
   }
 
   updateField(field) {
@@ -44,14 +39,13 @@ class LogInForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.login(this.state)
+    this.props.login({email: this.state.email, password: this.state.password})
   }
 
   closeModal(e) {
     if (e.currentTarget === e.target) {
       e.preventDefault();
-      const main = document.getElementById('main-mod');
-      main.style.display = "none"; 
+      this.setState({className: "modals"})
     }
   }
 
@@ -67,9 +61,9 @@ class LogInForm extends React.Component {
     return (
       <div className="back-modal" >
         <Home />
-      <div onClick={this.closeModal} id="main-mod" className="modals">
+      <div onClick={this.closeModal} id="main-mod" className={this.state.className}>
 
-        <div id="myModal" className="modal-contents">
+        <div id="myModal" className="modal-contents small">
           <span id="sp-btn" onClick={this.closeModal} className="close">&times;</span>
           <h5>Please sign into Pretty Little Things</h5>
           <hr />

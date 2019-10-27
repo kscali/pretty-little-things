@@ -5,45 +5,42 @@ class Checkout extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: ""
+      value: "",
+      placeholderValue: "Please Enter Promo Code",
+      estimatedTotal: this.props.estimatedTotal
     };
 
     this.applyCode = this.applyCode.bind(this);
     this.applyCodeEnter = this.applyCodeEnter.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   applyCodeEnter(e) {
-    if (
-      e.key === "Enter" &&
-      e.currentTarget.value.toUpperCase() === "SEVENSCENT"
-    ) {
-      this.setState({ value: e.currentTarget.value.toUpperCase() });
-      e.currentTarget.value = "";
+   if ( e.key === "Enter" ) {
+      this.applyCode();
     }
   }
 
-  applyCode(e) {
-    e.preventDefault;
-    let inputValue = document.getElementsByClassName("ckout-input")[0];
-    if (inputValue.value.toUpperCase() === "SEVENSCENT") {
-      console.log("this reached me");
-      this.setState({ value: inputValue.value.toUpperCase() });
-      inputValue.value = "";
+  applyCode() {
+  
+    if (this.state.value.toUpperCase() === "SEVENSCENT" && this.state.estimatedTotal < 35) {
+      this.setState({placeholderValue: "Can't apply code. Add more items to cart."});
+    } else if (this.state.value.toUpperCase() === "SEVENSCENT" && this.state.estimatedTotal >= 35) {
+      this.setState({placeholderValue: "Code SEVENSCENT applied"});
+    } else {
+      this.setState({placeholderValue: "Please enter promo code"});
     }
+    this.setState({value: ""});
+   
+  }
+
+  handleChange(e) {
+    this.setState({value: e.currentTarget.value});
   }
 
   render() {
     let { total, price, tax, estimatedTotal } = this.props;
-
-    let placeholderValue = null;
-    if (this.state.value === "SEVENSCENT" && estimatedTotal < 35) {
-      placeholderValue = "Can't apply code. Add more items to cart.";
-    } else if (this.state.value === "SEVENSCENT" && estimatedTotal >= 35) {
-      placeholderValue = "Code SEVENSCENT applied";
-    } else {
-      placeholderValue = "Please enter promo code";
-    }
-
+    
     return (
       <div className="container">
         <h6>Order Summary</h6>
@@ -69,7 +66,9 @@ class Checkout extends React.Component {
           onKeyPress={this.applyCodeEnter}
           className="ckout-input"
           type="text"
-          placeholder={placeholderValue}
+          placeholder={this.state.placeholderValue}
+          value={this.state.value}
+          onChange={this.handleChange}
         />
         <button className="discount-btn" onClick={this.applyCode}>
           Apply discount code

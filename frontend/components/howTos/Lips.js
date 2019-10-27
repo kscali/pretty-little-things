@@ -2,7 +2,7 @@ import React from "react";
 
 const Lips = () => {
   return (
-    <div className="tutorial-video">
+    <div className="tutorial-video container">
       <h3>
         How to Apply Lip Liner & Lipstick | Lip Makeup Tutorial For Beginners |
         Beauty Tips for Perfect Lips

@@ -73,9 +73,9 @@ class Carousel extends React.Component {
     if (products.length === 0) return null;
 
     return (
-      <div>
+      <>
         <Slider {...settings}>{products}</Slider>
-      </div>
+      </>
     );
   }
 }

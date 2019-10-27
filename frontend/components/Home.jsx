@@ -24,7 +24,7 @@ class Home extends React.Component {
             />
           </Link>
         </div>
-        <div className="sec-section container">
+        <div className="sec-section">
           <h2>Just Arrived</h2>
         </div>
         <div className="caro-slick container">

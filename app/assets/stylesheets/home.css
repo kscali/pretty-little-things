@@ -2,7 +2,10 @@
 .title-logo-header {
   width: 360px;
   position: relative;
-  left: 40px;
+  margin-bottom: 0;
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .title-logo {
@@ -27,15 +30,13 @@
 
 .sec-section {
   text-align: center;
-  position: relative;
-  top: 50px;
-  margin-top: 30px;
 }
 
 .third-section {
   text-align: center;
   position: relative;
-  top: 40px;
+  margin-top: 15px;
+ 
 }
 
 .third-section > h2 {
@@ -49,11 +50,9 @@
 }
 
 .sec-section > h2 {
-  position: relative;
-  display: inline-block;
   font-family: georgia;
   font-weight: normal;
-  top: -70px;
+ 
 }
 
 /* carousel 1 */
@@ -99,10 +98,6 @@
   top: -4px;
   font-size: 14px;
   text-align: center;
-}
-
-.slick-dots {
-  height: 30px;
 }
 
 .ad-images {
@@ -162,95 +157,15 @@ button.slick-arrow:hover {
 }
 
 .carousel-container {
-  margin-top: 100px;
+  margin-top: 10px;
 }
 
-.last-section {
-  position: relative;
-  top: -100px;
+div.slick-slider > ul.slick-dots {
+  align-items: flex-end;
+  display: flex !important;
+  justify-content: center;
 }
 
-@media only screen and (max-width: 991px) {
-  .home-ad {
-    top: 85px;
-  }
-
-  /* .auto {
-    text-align: center;
-  } */
-
-  .register {
-    width: 220px;
-    left: 0px;
-  }
-
-  .title-logo-header {
-    left: 0px;
-  }
-
-  .icon-container {
-    top: 0;
-    left: 0;
-  }
-
-  .basket-icon {
-    position: relative;
-  }
-
-  .sec-section > h2 {
-    top: 0;
-  }
-
-  .caro-slick {
-    top: 50px;
-    position: relative;
-  }
-
-  .slick-dots {
-    top: 0;
-  }
-
-  .slick-list {
-    top: 50px;
-  }
-
-  .ad-images {
-    position: relative;
-    top: 80px;
-    margin-bottom: 35px;
-    display: flex;
-  }
-
-  .third-section {
-    right: 0;
-    top: 0;
-  }
-
-  .third-section > h2 {
-    position: relative;
-    top: 100px;
-  }
-}
-
-@media only screen and (max-width: 1200px) and (min-width: 992px) {
-  .register {
-    left: 0;
-  }
-
-  .title-logo-header {
-    left: 0px;
-  }
-
-  .home-ad {
-    top: 15px;
-  }
-
-  .sec-section > h2 {
-    top: -40px;
-  }
-
-  .caro-slick {
-    position: relative;
-    top: 30px;
-  }
+iframe {
+  width: 100%;
 }

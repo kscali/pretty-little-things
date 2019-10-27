@@ -23,9 +23,11 @@ body {
   overflow-x: hidden;
 }
 
-.row {
-  margin-top: 20px;
+nav {
+  display: flex;
+  justify-content: center;
 }
+
 
 h4 {
   margin-bottom: 0px;
@@ -56,9 +58,8 @@ h6 {
 #title-ads {
   color: white;
   z-index: 2;
-  text-align: right;
-  position: relative;
-  top: 8px;
+  margin-bottom: 0px;
+  top: 0px;
 }
 
 .title-fade-out {
@@ -127,6 +128,7 @@ form {
 
 hr {
   color: lightgray;
+  margin: 0;
 }
 
 .required-info {
@@ -209,16 +211,16 @@ hr {
   width: 50px;
   height: 40px;
   position: relative;
-  left: 170px;
-  top: -50px;
   border-left: 1px solid lightgray;
   padding-left: 10px;
 }
 
 .basket {
   position: relative;
-  left: 180px;
-  top: -55px;
+  left: 0;
+  top: 0;
+  right: 0;
+  margin-left: 10px;
 }
 
 .b-i {
@@ -251,9 +253,9 @@ input[type="checkbox"] {
 
 .greeting {
   display: flex;
-  height: 45px;
   position: relative;
   left: 0px;
+  align-items: center;
 }
 
 .btn-nav {
@@ -272,9 +274,7 @@ input[type="checkbox"] {
 
 .greeting > h6 {
   position: relative;
-  top: 5px;
-  margin-right: 5px;
-  left: 25px;
+  margin-bottom: 0;
 }
 
 .form-input {

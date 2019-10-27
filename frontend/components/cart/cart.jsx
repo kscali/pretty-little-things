@@ -47,7 +47,7 @@ class Cart extends React.Component {
   }
 
   getRecommendations() {
-    let products = this.props.products.map((product, i) => {
+    let products = this.props.products.map((product) => {
       return (
         <div key={product.id}>
           <Link to={`/products/${product.id}`}>
@@ -96,7 +96,7 @@ class Cart extends React.Component {
       price = "TBD";
       estimatedTotal = "TBD";
     }
-
+  
     return (
       <div className="main-basket container">
         <div className="main-basket-header">

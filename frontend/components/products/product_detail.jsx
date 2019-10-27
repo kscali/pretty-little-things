@@ -7,7 +7,9 @@ class ProductDetail extends React.Component {
 
     this.state = {
       product_id: "",
-      quantity: 1
+      quantity: 1,
+      border: "transparent",
+      show: "item-alert"
     };
 
     this.setProduct = this.setProduct.bind(this);
@@ -32,16 +34,17 @@ class ProductDetail extends React.Component {
   }
 
   setBorder(e) {
-    if (e.target.style.border === "3px solid black") {
-      e.target.style.border = "3px solid transparent";
+    if (this.state.border === "transparent") {
+      this.setState({border: "showBorder"});
     } else {
-      e.target.style.border = "3px solid black";
+      this.setState({border: "transparent"});
     }
   }
 
-  setProduct() {
+  setProduct(e) {
     let product = this.props.product;
-    let quantity = +document.getElementById("selector").value;
+ 
+    let quantity = e.target.value;
     this.setState({
       product_id: product.id,
       quantity
@@ -50,13 +53,18 @@ class ProductDetail extends React.Component {
 
   addCart(e) {
     e.preventDefault();
-    let p = document.getElementById("item-alert");
-    p.classList.add("item-show");
+    
+    this.setState({show: "item-alert item-show"});
     setTimeout(() => {
-      p.classList.remove("item-show");
+      this.setState({show: "item-alert"});
     }, 900);
 
-    this.props.createCartItem(this.state);
+    const item = {
+      product_id: this.state.product_id,
+      quantity: this.state.quantity,
+    };
+
+    this.props.createCartItem(item);
   }
 
   render() {
@@ -103,7 +111,7 @@ class ProductDetail extends React.Component {
                     ADD TO BASKET
                   </button>
                   <div className="item-border">
-                    <p id="item-alert" className="item-border item-alert">
+                    <p id="item-alert" className={this.state.show}>
                       Item added to basket
                     </p>
                   </div>
@@ -116,6 +124,7 @@ class ProductDetail extends React.Component {
                 <p>SIZE: {product.size}</p>
                 <img
                   onClick={this.setBorder}
+                  className={ this.state.border }
                   src={product.image_url[1] ? product.image_url[1] : null}
                 />
               </div>

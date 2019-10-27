@@ -2,8 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 .main-product {
   height: 900px;
+}
+
+.transparent {
+  border: "3px solid transparent";
+}
+
+.showBorder {
+ border: "3px solid black";
 }
 
 #image-main {

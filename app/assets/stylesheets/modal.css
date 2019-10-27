@@ -1,6 +1,6 @@
 /* The Modal (background) */
 .modals {
-  display: block; /* Hidden by default */
+  display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 0; /* Sit on top */
   left: 0;
@@ -9,6 +9,10 @@
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.show {
+  display: block;
 }
 
 /* Modal Content/Box */
@@ -21,6 +25,10 @@
   height: 800px;
   margin-top: 120px;
   z-index: 5;
+}
+
+.small {
+  height: 500px;
 }
 
 /* The Close Button */

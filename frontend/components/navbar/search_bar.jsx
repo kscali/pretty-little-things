@@ -6,7 +6,8 @@ class SearchBar extends React.Component {
     super(props);
     
     this.state = {
-      inputVal: ""
+      inputVal: "",
+      className: "matches"
     };
     
     this.selectName = this.selectName.bind(this);
@@ -15,30 +16,28 @@ class SearchBar extends React.Component {
   }
 
   handleInput(event) {
-    let ul = document.getElementById("input-names");
 
     this.setState({ inputVal: event.currentTarget.value });
 
     if (event.currentTarget.value === "") {
-      ul.style.display = "none";
+      this.setState({className: "matches"})
     } else {
-      ul.style.display = "block";
+      this.setState({className: "matches show"})
     }
   }
 
   getProduct(e) {
-    let ul = document.getElementById("input-names");
 
     let matches = this.matches();
 
     if (e.key === "Enter") {
-      ul.style.display = "none";
-      this.setState({ inputVal: matches[0] }, () => {
+    
+      this.setState({ inputVal: matches[0], className: "matches" }, () => {
         for (let i = 0; i < this.props.products.length; i++) {
           const product = this.props.products[i];
 
           if (this.state.inputVal === product.name) {
-            console.log("round");
+           
             this.setState({ inputVal: "" });
             this.props.history.push(`/products/${product.id}`);
             return;
@@ -71,13 +70,12 @@ class SearchBar extends React.Component {
   selectName(event) {
     const name = event.currentTarget.innerText;
     this.setState({ inputVal: name });
-    let ul = document.getElementById("input-names");
+    
     for (let i = 0; i < this.props.products.length; i++) {
       const product = this.props.products[i];
 
       if (name === product.name) {
-        ul.style.display = "none";
-        this.setState({ inputVal: "" });
+        this.setState({ inputVal: "", className: "matches" });
         this.props.history.push(`/products/${product.id}`);
         return;
       }
@@ -93,7 +91,7 @@ class SearchBar extends React.Component {
       );
     });
     return (
-      <div>
+      <>
         <div className="auto">
           <input
             className="search-input"
@@ -102,11 +100,11 @@ class SearchBar extends React.Component {
             value={this.state.inputVal}
             placeholder="&#x1F50D; Search"
           />
-          <ul id="input-names" className="matches">
+          <ul className={ this.state.className }>
             {results}
           </ul>
         </div>
-      </div>
+      </>
     );
   }
 }

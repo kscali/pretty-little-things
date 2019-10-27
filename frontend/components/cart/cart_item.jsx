@@ -18,7 +18,6 @@ class CartItem extends React.Component {
   }
 
   componentDidMount() {
-    this.props.props.fetchProducts();
     this.props.props.fetchCartItems();
   }
 
@@ -38,7 +37,6 @@ class CartItem extends React.Component {
 
   removeProduct(item) {
     return () => {
-      //  let amount = +document.getElementById("selector-2").value;
       this.props.props.deleteCartItem(item.id);
     };
   }

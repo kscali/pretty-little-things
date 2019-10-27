@@ -46,23 +46,22 @@ const MainNav = ({ user, logout, products, fetchProducts, cartItems }) => {
 
   return (
     <div className="mid-nav">
-      <div className="container">
-        <div className="row">
-          <div className="col">
+     
+        <div className="app-header">
             <SearchBar
               names={names}
               products={products}
               fetchProducts={fetchProducts}
             />
-          </div>
-          <div className="title-logo-header-col col">
+          
+          <div className="title-logo-header-col">
             <h2 className="title-logo-header">
               <Link className="title-logo" to="/">
                 Pretty Little Things
               </Link>
             </h2>
           </div>
-          <div className="register-col col">{user ? greeting() : signin()}</div>
+          { user ? greeting() : signin() }
           <div className="icon-container">
             <img
               id="heart"
@@ -83,7 +82,7 @@ const MainNav = ({ user, logout, products, fetchProducts, cartItems }) => {
             </span>
           </div>
         </div>
-      </div>
+     
       <nav>
         <ul className="nav justify-content-center">
           <li className="dropdown">
@@ -221,7 +220,7 @@ const MainNav = ({ user, logout, products, fetchProducts, cartItems }) => {
           </li>
         </ul>
       </nav>
-      <hr className="nav-line" />
+      <hr />
     </div>
   );
 };

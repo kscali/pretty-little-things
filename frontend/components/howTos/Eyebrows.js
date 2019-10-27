@@ -2,7 +2,7 @@ import React from "react";
 
 const Eyebrows = () => {
   return (
-    <div className="tutorial-video">
+    <div className="tutorial-video container">
       <h3>Eyebrow Routine | Natural Eyebrow Tutorial | Step By Step</h3>
       <iframe
         width="860"

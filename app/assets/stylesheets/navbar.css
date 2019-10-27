@@ -2,6 +2,9 @@
   background: black;
   height: 35px;
   position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
  
 }
 
@@ -11,9 +14,16 @@
 }
 
 .mid-nav {
-  position: relative;
-  /* top: -20px; */
-  height: 100px;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 15px;
 }
 
 .right-top-nav {
@@ -104,11 +114,6 @@ p {
 .right-btn {
   position: relative;
   right: -150px;
-}
-
-.nav-line {
-  position: relative;
-  top: -20px;
 }
 
 /* Navbar dropdown */
@@ -268,8 +273,8 @@ div.col > img {
 }
 
 img.basket-icon {
-  width: 40px;
-  height: 45px;
+  width: 35px;
+  height: 40px;
   object-fit: cover;
 }
 
@@ -339,6 +344,7 @@ span#carat {
   width: 10px;
   height: 10px;
   color: black;
+  margin-right: 10px;
 }
 .logout-menu {
   display: none;
@@ -359,38 +365,5 @@ span#carat {
 
 .icon-container {
   position: relative;
-  top: 40px;
-  left: -200px;
 }
 
-@media only screen and (max-width: 991px) {
-  .icon-container {
-    top: 0;
-    left: 450px;
-  }
-
-  .heart {
-    left: 0;
-    top: 0;
-  }
-
-  .basket {
-    left: 0;
-    top: 0;
-  }
-
-  div.register-col {
-    min-width: 220px;
-  }
-}
-
-@media only screen and (max-width: 1200px) and (min-width: 992px) {
-  /* .icon-container {
-    top: 0;
-    left: 70%;
-  } */
-
-  .title-logo-header-col {
-    width: 360px;
-  }
-}

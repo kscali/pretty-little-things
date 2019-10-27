@@ -1,6 +1,4 @@
 import React from "react";
-// import linkedin from "../../assets/images/linkedin.png";
-// import github from "../../assets/images/GitHub-Mark.png";
 
 export default function AboutUs() {
   return (
@@ -19,18 +17,11 @@ export default function AboutUs() {
         Pretty Little Things is still under construction but please feel free to
         look around. Add items to your cart, click on some products, and visit
         me on <a href="https://github.com/kscali">Github</a> or{" "}
-        <a href="https://www.linkedin.com/in/koy-saeteurn-98169a167">
+        <a href="https://www.linkedin.com/in/koy-s-98169a167">
           LinkedIn
         </a>
         .
       </h4>
-      <div>{/* <img src= alt="github" /> */}</div>
-      <div>
-        {/* <img
-            src="https://image.flaticon.com/icons/png/512/61/61109.png"
-            alt="linkedin"
-          /> */}
-      </div>
       <h4>
         Feel free to email me{" "}
         <a href="mailto:kosatun@aol.com" target="_top">

@@ -11,9 +11,7 @@ export default function TopNav() {
         alt="ad"
       />
       <div className="top">
-        <div className="container">
           <Title />
-        </div>
       </div>
     </div>
   );

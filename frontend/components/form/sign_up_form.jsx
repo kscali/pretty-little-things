@@ -9,7 +9,8 @@ class SignUpForm extends React.Component {
       first_name: "",
       last_name: "",
       email: "",
-      password: ""
+      password: "",
+      className: "modals"
     }
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -17,24 +18,10 @@ class SignUpForm extends React.Component {
   }
 
   componentDidMount() {
-    // let modal = document.getElementById("myModal");
-    // modal.style.height = "83%";
     this.props.clear(this.props.errors);
-
+    this.setState({className: "modals show"});
   }
 
-  // onEnter(event) {
-  //   if (event.key === '13') {
-  //     console.log("hello");
-  //     this.handleSubmit();
-  //   }
-  // }
-
-  componentDidUpdate() {
-    const main = document.getElementById('main-mod');
-    main.style.display = "block";
-    
-  }
 
   updateField(field) {
     return e => this.setState({[field]: e.target.value })
@@ -42,7 +29,15 @@ class SignUpForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.processForm(this.state);
+    
+    const info = {
+      first_name: this.state.first_name,
+      last_name: this.state.last_name,
+      email: this.state.email,
+      password: this.state.password,
+    }
+   
+    this.props.processForm(info);
   }
 
   renderErrors() {
@@ -59,8 +54,7 @@ class SignUpForm extends React.Component {
   
   closeModal(e) {
     if (e.target === e.currentTarget) {
-      const main = document.getElementById('main-mod');
-      main.style.display = "none";
+     this.setState({className: "modals"})
     }
   }
   
@@ -69,7 +63,7 @@ class SignUpForm extends React.Component {
     return (
       <div className="back-modal" >
       <Home />
-    <div onClick={this.closeModal} id="main-mod" className="modals">
+    <div onClick={this.closeModal} id="main-mod" className={this.state.className}>
         <div id="myModal" className="modal-contents">
           <span id="sp-btn" onClick={this.closeModal} className="close">&times;</span>
           
@@ -81,7 +75,6 @@ class SignUpForm extends React.Component {
             <div className="rows">
                <div className="first cols">
                 <input
-                  // onKeyUp={this.onEnter()}
                   onChange={this.updateField("first_name")}
                   type="text"
                   value={this.state.first_name}
@@ -90,7 +83,6 @@ class SignUpForm extends React.Component {
               </div>
               <div className="sec cols">
                 <input
-                  // onKeyUp={this.onEnter()}
                   onChange={this.updateField("last_name")}
                   type="text"
                   value={this.state.last_name}
@@ -100,7 +92,6 @@ class SignUpForm extends React.Component {
             </div>
               <div className="cols">
                 <input
-                  // onKeyUp={this.onEnter()}
                   onChange={this.updateField("email")}
                   type="text"
                   value={this.state.email}
