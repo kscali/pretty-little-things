@@ -6,39 +6,20 @@ class ProductDetail extends React.Component {
     super(props);
 
     this.state = {
-      product_id: "",
+      product_id: this.props.match.params.productId,
       quantity: 1,
-      border: "transparent",
+      clicked: false,
       show: "item-alert"
     };
 
     this.setProduct = this.setProduct.bind(this);
     this.addCart = this.addCart.bind(this);
+    this.setBorder = this.setBorder.bind(this);
   }
 
   componentDidMount() {
-    this.props.fetchProduct(this.props.match.params.productId);
+    this.props.fetchProduct(this.state.product_id);
     this.props.fetchCartItems();
-
-    setTimeout(() => {
-      this.setState({ product_id: this.props.product.id });
-    }, 1000);
-  }
-
-  componentDidUpdate(prevProps) {
-    if (
-      prevProps.match.params.productId !== this.props.match.params.productId
-    ) {
-      this.props.fetchProduct(this.props.match.params.productId);
-    }
-  }
-
-  setBorder(e) {
-    if (this.state.border === "transparent") {
-      this.setState({border: "showBorder"});
-    } else {
-      this.setState({border: "transparent"});
-    }
   }
 
   setProduct(e) {
@@ -67,11 +48,17 @@ class ProductDetail extends React.Component {
     this.props.createCartItem(item);
   }
 
+  setBorder() {
+    this.state.clicked === false ? this.setState({clicked: true}) : this.setState({clicked: false});
+  }
+
   render() {
     let product = this.props.product;
     if (!product) return null;
 
     let product_img = this.props.product.image_url;
+
+    let border = this.state.clicked ? "showBorder" : "transparent";
 
     return (
       <div className="main-product container">
@@ -97,24 +84,28 @@ class ProductDetail extends React.Component {
                     <input type="checkbox" />
                     Yes, I want <b>FREE 2-Day Shipping</b>
                   </form>
-                  <select onChange={this.setProduct} id="selector">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                  </select>
-                  <button
-                    id="cart-btn"
-                    onClick={this.addCart}
-                    className="basket-btn"
-                  >
-                    ADD TO BASKET
-                  </button>
+                  
                   <div className="item-border">
                     <p id="item-alert" className={this.state.show}>
                       Item added to basket
                     </p>
+                  </div>  
+                  <div className="quantity-selector">
+                    <select onChange={this.setProduct} id="selector">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                    <button
+                      id="cart-btn"
+                      onClick={this.addCart}
+                      className="basket-btn"
+                    >
+                      ADD TO BASKET
+                    </button>
                   </div>
+                 
                 </div>
               </div>
               <div className="product-info container">
@@ -123,8 +114,9 @@ class ProductDetail extends React.Component {
                 </p>
                 <p>SIZE: {product.size}</p>
                 <img
+                  id="el"
+                  className={ border }
                   onClick={this.setBorder}
-                  className={ this.state.border }
                   src={product.image_url[1] ? product.image_url[1] : null}
                 />
               </div>

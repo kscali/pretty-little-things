@@ -197,11 +197,6 @@ ul.dropdown-content > li > a {
   text-decoration: none;
 }
 
-div.col > img {
-  float: left;
-  width: 25%;
-}
-
 #comm {
   position: absolute;
   top: 30px;
