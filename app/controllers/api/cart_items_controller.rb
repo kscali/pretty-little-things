@@ -6,15 +6,13 @@ class Api::CartItemsController < ApplicationController
   end
 
   def create
-   
-    # @cart_item = CartItem.find_by(user_id: current_user.id, product_id: cart_item_params[:product_id])
     
     @cart_item = current_user.cart_items.find_by(product_id: cart_item_params[:product_id])
     
     if @cart_item.nil?
       @cart_item = current_user.cart_items.create!(cart_item_params)
      else
-      new_quantity = @cart_item.quantity + params[:cart_item][:qantity].to_i
+      new_quantity = @cart_item.quantity + params[:cart_item][:quantity].to_i
       @cart_item.update!(quantity: new_quantity)
     end
    

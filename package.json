@@ -6,6 +6,7 @@
     "@babel/plugin-proposal-class-properties": "^7.5.0",
     "@babel/preset-env": "^7.4.3",
     "@babel/preset-react": "^7.0.0",
+    "@brainhubeu/react-carousel": "^1.10.27",
     "babel-loader": "^8.0.5",
     "bootstrap": "^4.3.1",
     "file-loader": "^3.0.1",

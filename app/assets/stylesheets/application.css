@@ -58,7 +58,7 @@ h6 {
 #title-ads {
   color: white;
   z-index: 2;
-  margin-bottom: 0px;
+  margin: 0 200px 0 0;
   top: 0px;
 }
 
@@ -133,16 +133,13 @@ hr {
 
 .required-info {
   color: gray;
-  position: relative;
-  top: 10px;
-  left: 5px;
+  margin: 10px 0;
 }
 
 .rows {
   display: flex;
-  position: relative;
-  top: -15px;
   width: 100%;
+  margin-bottom: 15px;
 }
 
 .cols > input {
@@ -151,7 +148,6 @@ hr {
   padding: 7px;
   margin: 10px 20px 20;
   position: relative;
-  top: 20px;
 }
 
 .first {
@@ -164,8 +160,6 @@ hr {
 }
 
 .btm-input {
-  position: relative;
-  top: 155px;
   background: black;
   color: white;
   text-transform: uppercase;
@@ -176,9 +170,7 @@ hr {
 
 .sign-in-link {
   color: black;
-  position: relative;
-  top: 150px;
-  left: 40px;
+  margin-left: 25px;
 }
 
 .sign-in-link:hover {
@@ -197,10 +189,8 @@ hr {
 }
 
 .terms {
-  position: relative;
-  top: 180px;
-  width: 90%;
-  left: 5px;
+  color: lightgray;
+  font-size: 10px;
 }
 
 #password {
@@ -226,29 +216,28 @@ hr {
 .b-i {
   width: 200px;
   height: 80px;
-  position: relative;
-  top: -20px;
-  display: block;
 }
 
 input[type="checkbox"] {
   margin-right: 5px;
 }
-.checks-box {
-  position: relative;
-  top: -40px;
-}
 
 .checks-box > p {
-  position: relative;
-  left: 0px;
-  top: 2px;
+  margin-top: 5px;
 }
 
 .register {
   display: flex;
   position: relative;
-  left: 20px;
+  flex-direction: column;
+}
+
+.register > div {
+  display: flex;
+}
+
+.register > h6 {
+  margin-bottom: 0;
 }
 
 .greeting {
@@ -260,11 +249,9 @@ input[type="checkbox"] {
 
 .btn-nav {
   position: relative;
-  left: -55px;
   border: 0;
   padding: 0;
   margin: 0;
-  top: -15px;
   background: transparent;
 }
 
@@ -289,19 +276,18 @@ input[type="checkbox"] {
   padding: 4px 15px;
 }
 
+.checks-box {
+  margin-bottom: 25px;
+}
+
 .errors {
   color: gray;
-  position: relative;
-  right: 80px;
   display: flex;
-  top: -100px;
-  height: 30px;
+  margin-top: 25px;
 }
 
 .errors > ul {
   flex-direction: column;
-  position: relative;
-  bottom: 230px;
 }
 
 .errors > ul > li {
@@ -312,14 +298,6 @@ input[type="checkbox"] {
   font-size: 13px;
 }
 
-.errors1 {
-  color: gray;
-  position: relative;
-  right: 80px;
-  top: 20px;
-  display: block;
-  width: 100%;
-}
 
 div.alert-error {
   font-size: 50px;
@@ -355,76 +333,24 @@ div.alert-error > h1 {
   text-align: left;
 }
 
+.sidenav {
+  width: 200px; /* Set the width of the sidebar */
+  z-index: 1; /* Stay on top */
+  border-right: 1px solid lightgray; /* Black */
+  padding-top: 20px;
+}
+
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   text-decoration: underline;
 }
 
-.products {
-  position: relative;
-  top: 40px;
+.email-login {
+  margin-top: 10px;
 }
 
-.mobile {
-  position: relative;
-  top: 20px;
-}
-
-@media only screen and (max-width: 991px) {
-  div.mobile {
-    top: 100px;
-    height: 65vh;
-    position: relative;
-  }
-
-  ul.mobile-list {
-    width: 0px;
-    grid-template-columns: auto auto;
-  }
-
-  footer {
-    margin-top: 50px;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .tutorial-video {
-    position: relative;
-    top: 100px;
-    height: 70vh;
-  }
-}
-
-@media only screen and (min-width: 1201px) {
-  .tutorial-video {
-    position: relative;
-    height: 100vh;
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  .email-box > form {
-    position: relative;
-    margin-left: 30px;
-  }
-
-  .email-box > p {
-    width: 300px;
-  }
-
-  .about-us {
-    height: 63vh;
-    margin-top: 50px;
-  }
-}
-
-@media only screen and (max-width: 1200px) and (min-width: 992px) {
-  .email-box > form {
-    position: relative;
-    left: 50px;
-  }
-
-  .about-us {
-    height: 55vh;
-  }
+.demo-btn {
+  background: pink;
+  border-radius: 5px;
+  padding: 5px 15px;
 }

@@ -10,7 +10,7 @@ class Skin extends React.Component {
     return (
       <div className="skin mobile container">
         <div className="skin-container">
-          <div className="side-nav">
+          <div className="sidenav">
             <ProductIndexItem />
           </div>
           <ul className="mobile-list">

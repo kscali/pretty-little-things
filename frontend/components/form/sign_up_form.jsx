@@ -108,22 +108,28 @@ class SignUpForm extends React.Component {
                 />
             </div>
             <hr />
-            <img className="b-i" src="https://www.sephora.com/img/ufe/bi/logo-beauty-insider.svg" alt="beauty-insider" />
+            <img className="b-i" src="https://ks-plt.s3-us-west-1.amazonaws.com/logo-beauty-insider.svg" alt="beauty-insider" />
             <div className="checks-box">
               <input type="checkbox" name="" id=""/><strong>Yes, join the rewards program and earn points on every purchase.</strong>
-              <p>By joing you agree to <a href="#">Terms $ Conditions</a></p>
+              <p>By joing you agree to <a href="#">Terms & Conditions</a></p>
             </div>  
             
             <input className="btm-input" type="submit" value="Register" />
             <Link className="sign-in-link" to="/login">Sign In</Link>
-           
-            <p className="terms">Pretty Little Things uses Google ReCaptcha 
-            and user's are subject to Google's
-            <a href="https://policies.google.com/privacy?hl=en"> privacy policy </a>
-              & <a href="https://policies.google.com/terms?hl=en">terms.</a></p>
-           
           </form>
-          <div className="errors">{this.renderErrors()}</div>
+          <div className="errors">
+            {this.renderErrors()}
+          </div>
+          <p className="terms">
+            Pretty Little Things uses Google ReCaptcha 
+            and user's are subject to Google's
+            <a href="https://policies.google.com/privacy?hl=en"> 
+             {" "} privacy policy 
+            </a> & 
+            <a href="https://policies.google.com/terms?hl=en">
+              {" "}terms.
+            </a>
+          </p>
         </div>
       </div> 
     </div>

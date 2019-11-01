@@ -92,3 +92,5 @@ export default connect(
   mstp,
   mdtp
 )(Carousel);
+
+

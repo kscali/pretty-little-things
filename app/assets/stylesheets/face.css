@@ -1,11 +1,14 @@
 .face {
   text-align: center;
-  height: 600px;
+  padding-bottom: 20px;
 }
 
 .face-container {
   display: flex;
-  margin-top: 20px;
+}
+
+.face-li {
+  width: 125px;
 }
 
 .face-li > a > p {
@@ -31,21 +34,7 @@
   color: black;
 }
 
-.side-nav {
-  height: 570px;
-  width: 200px; /* Set the width of the sidebar */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  border-right: 1px solid lightgray; /* Black */
-
-  padding-top: 20px;
-}
-
 .face-container > ul {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  width: 500px;
-  padding-left: 0;
-  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;;
 }

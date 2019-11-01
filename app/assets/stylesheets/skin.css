@@ -1,6 +1,6 @@
 .skin {
   text-align: center;
-  height: 600px;
+  padding-bottom: 20px;
 }
 
 .skin-li > a > p {
@@ -13,7 +13,6 @@
 
 .skin-container {
   display: flex;
-  margin-top: 20px;
 }
 
 .skin-li > a > h6 {
@@ -25,23 +24,9 @@
   color: black;
 }
 
-.side-nav {
-  height: 570px;
-  width: 200px; /* Set the width of the sidebar */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  border-right: 1px solid lightgray; /* Black */
-
-  padding-top: 20px;
-}
-
 .skin-container > ul {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  width: 500px;
-  padding-left: 0;
-  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .skin-li > a > img {

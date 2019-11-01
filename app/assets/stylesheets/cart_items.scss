@@ -2,24 +2,29 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 .main-basket {
-  height: 900px;
-  position: relative;
-  top: 20px;
+  margin-bottom: 25px;
+}
+
+.main-basket-header {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .main-basket > div > a {
   color: black;
-  position: relative;
-  left: 820px;
-  top: -10px;
-}
+  display: flex;
+  align-items: center;
+ }
 
 .full-box {
   display: flex;
-  margin-left: -16px;
-  margin-right: -16px;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .divider {
@@ -28,46 +33,18 @@
   margin-bottom: 12px;
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  width: 590px;
-  position: relative;
-  top: 0px;
-  left: 600px;
   height: 5px;
   margin-bottom: 0;
 }
 
-.basket-list {
-  width: 600px;
-  // height: 600px;
-  height: auto;
-  position: relative;
-  top: 20px;
-  // overflow: hidden;
-}
-
-.basket-list-items {
-  // background: rgb(244, 244, 244);;
-  width: 590px;
-  height: 250px;
-  left: 10px;
-  position: relative;
-}
 
 .basket-list-items > h6 {
-  margin-top: 5px;
+  padding-top: 15px;
   margin-bottom: 0;
-  position: relative;
-  top: 10px;
-  left: 20px;
-}
+ }
 
 .inner-item {
   background: white;
-  height: auto;
-  width: 575px;
-  position: relative;
-  top: 20px;
-  left: 8px;
 }
 
 .right-side {
@@ -77,39 +54,20 @@
   margin-left: 50px;
 }
 
-.left-side {
-  display: flex;
-  position: relative;
-  left: -600px;
-}
-
-div.caro {
-  top: 300px;
-  height: 200px;
-}
-
-h5.h {
-  position: relative;
-  top: 80px;
-}
-
 div#rec-for-u.slider {
   width: 600px;
   position: relative;
-  top: 100px;
+  top: 0px;
   height: 250px;
 }
 
 .mini-divider {
-  display: block;
   color: lightgray;
   margin-bottom: 12px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   height: 1px;
-  width: 295px;
   position: relative;
-  left: -10px;
 }
 
 .right-side > .container > div {
@@ -120,19 +78,15 @@ div#rec-for-u.slider {
 
 .right-side > .container > h6 {
   font-size: 18px;
-  left: -10px;
-  position: relative;
 }
 
 .right-side > .container {
-  position: relative;
-  top: 20px;
-  left: 20px;
+  padding: 15px;
 }
 
 .right-side > .container > div > span {
   position: relative;
-  left: -10px;
+  right: 0px;
   top: 0;
   margin-right: 20px;
   height: 30px;
@@ -141,11 +95,6 @@ div#rec-for-u.slider {
 
 .right-side > .container > div {
   margin-bottom: 15px;
-}
-
-.right-side > .container > div > b {
-  position: relative;
-  margin-right: 25px;
 }
 
 .total > span {
@@ -161,15 +110,13 @@ div#rec-for-u.slider {
 .ckout-input {
   margin-bottom: 15px;
   padding: 10px;
-  width: 295px;
-  position: relative;
-  left: -10px;
+  width: 310px;
   outline: none !important;
 }
 
 .ckout {
   display: block;
-  width: 290px;
+  width: 310px;
   align-content: center;
   padding: 10px;
   background: rgb(236, 4, 15);
@@ -177,8 +124,6 @@ div#rec-for-u.slider {
   border-radius: 5px;
   border: 2px solid transparent;
   margin-bottom: 15px;
-  position: relative;
-  left: -10px;
 }
 
 .ckout > a {
@@ -200,9 +145,8 @@ div#rec-for-u.slider {
   border: 1px solid lightgray;
   border-radius: 5px;
   height: 70px;
-  width: 290px;
-  position: relative;
-  left: -10px;
+  width: 310px;
+ 
 }
 
 p#shipping {
@@ -222,28 +166,29 @@ p#shipHandle {
 .items-list > ul {
   display: flex;
   flex-direction: column;
+  padding-left: 0;
+}
+
+.items-list > ul > li {
+  margin: 15px;
 }
 
 .items-list > ul > li > div {
   display: flex;
-  clear: both;
   justify-content: space-evenly;
 }
 
 .items-list {
-  max-height: 400px;
-  position: relative;
-  top: 25px;
+  // max-height: 400px;
+  // position: relative;
+  // top: 25px;
+  // overflow: scroll;
   text-align: center;
-  overflow: scroll;
 }
 
 .div-li > a > img {
-  position: relative;
-  left: -50px;
   height: 130px;
   width: 130px;
-  top: 15px;
   cursor: pointer;
   object-fit: contain;
 }
@@ -251,37 +196,30 @@ p#shipHandle {
 .div-li > div {
   position: relative;
   left: 30px;
+  width: 100px;
 }
 
 .li-div > p {
   margin: 0;
-  position: relative;
-  margin-left: 30px;
-  width: 100%;
+  font-size: 12px;
+ 
 }
 
 .li-div > h6 {
   margin: 0;
-  position: relative;
-  top: 20px;
-  left: -65px;
   width: 100%;
 }
 
 .remove-btn {
-  width: 150px;
   height: 35px;
   background: transparent;
   margin: 0;
   padding: 0;
   border: none;
-  position: relative;
-  top: 60px;
 }
 
 #selector-2 {
   position: relative;
-  margin-top: 20px;
   outline: none !important;
 }
 
@@ -294,13 +232,6 @@ p#shipHandle {
   font-size: 14px;
 }
 
-.price-li {
-  position: relative;
-  top: 40px;
-  height: 20px;
-  left: 58px;
-}
-
 .item-border {
   border: 2px solid transparent;
   height: 35px;
@@ -308,13 +239,12 @@ p#shipHandle {
   position: relative;
   left: 0px;
   top: 0px;
+  text-align: right;
 }
 
 .item-alert {
   display: none;
   position: relative;
-  left: 50px;
-  top: -110px;
   font-size: 15px;
   height: 30px;
 }
@@ -339,8 +269,7 @@ p#shipHandle {
   border-radius: 5px;
   padding: 5px 15px;
   border: 2px solid lightblue;
-  left: 15%;
-  position: relative;
+  width: 310px;
   outline: none !important;
   margin-bottom: 15px;
 }
@@ -350,36 +279,6 @@ p#shipHandle {
   color: white;
 }
 
-@media only screen and (max-width: 991px) {
-  .main-basket {
-    height: 80vh;
-    position: relative;
-    top: 100px;
-  }
-
-  .main-basket-header {
-    position: relative;
-    left: 90px;
-  }
-
-  .right-side {
-    position: relative;
-    top: 600px;
-    left: -500px;
-    margin-left: 0;
-  }
-
-  .main-basket > div > a {
-    left: 430px;
-    top: -5px;
-  }
-
-  .full-box {
-    position: relative;
-    left: 100px;
-  }
-
-  .items-list {
-    max-height: 200px;
-  }
+.price-li {
+  margin-bottom: 0;
 }

@@ -5,8 +5,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
- 
-}
+ }
 
 .ad {
   display: block;
@@ -43,25 +42,6 @@ ul.nav {
   height: 10px;
 }
 
-.last-a > p {
-  color: white;
-  top: -25px;
-  right: -30px;
-}
-
-.last-a:hover .flag-content {
-  display: block;
-}
-
-#span {
-  position: relative;
-  margin-top: 8px;
-  color: white;
-  font-size: 12px;
-  top: -58px;
-  right: -55px;
-}
-
 .search {
   color: white;
   border: 3px solid red;
@@ -69,8 +49,6 @@ ul.nav {
 
 ul {
   display: flex;
-  position: relative;
-  top: -35px;
 }
 
 li {
@@ -85,8 +63,6 @@ nav > ul > li:hover {
 
 .lnk {
   position: relative;
-  top: 20px;
-  right: 95px;
   margin-top: 0;
   margin-right: 4px;
   font-weight: bolder;
@@ -95,12 +71,11 @@ nav > ul > li:hover {
   color: black;
 }
 
-p {
+.register > div > p {
   font-size: 12px;
-  position: relative;
-  margin-right: 4px;
-  top: 22px;
-  right: 94px;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
 }
 
 .lnk:hover {
@@ -110,10 +85,6 @@ p {
 .top-mid {
   display: flex;
   justify-content: center;
-}
-.right-btn {
-  position: relative;
-  right: -150px;
 }
 
 /* Navbar dropdown */
@@ -125,12 +96,6 @@ p {
   cursor: pointer;
 }
 
-/* .dropdown:hover {
-  border: 2px solid lightgray;
-  border-bottom: none; 
-  padding: 10px 10px 0 10px; 
-  z-index: 5;
-} */
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
@@ -140,9 +105,7 @@ p {
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 3;
-  top: 30px;
   text-align: left;
-  left: -15px;
   opacity: 100;
 }
 
@@ -152,19 +115,6 @@ p {
   padding: 12px 20px;
   text-decoration: none;
   display: block;
-}
-
-ul.dropdown-content > li {
-  position: relative;
-  font-size: 14px;
-  padding-right: 10px;
-  left: -50px;
-  width: 100%;
-  margin: 0 0 0 10px;
-}
-
-ul.dropdown-content > li > a {
-  padding: 5px 20px;
 }
 
 /* Change color of dropdown links on hover */
@@ -187,21 +137,10 @@ ul.dropdown-content > li > a {
   display: block;
 }
 
-.new {
-  min-width: 800px;
-  left: -150px;
-  /* height: 400px; */
-}
-
-.new > li > a {
-  text-decoration: none;
-}
 
 #comm {
   position: absolute;
-  top: 30px;
   left: -600px;
-  /* display: flex;  */
 }
 
 .comm-col {
@@ -221,43 +160,21 @@ ul.dropdown-content > li > a {
   padding: 0;
 }
 
-#img-1 {
-  height: 400px;
-  margin: 0;
-}
-
-#img-2 {
-  height: 400px;
-  margin: 0;
-}
-
-#img-3 {
-  height: 400px;
-  margin: 0;
-}
-
-#img-4 {
-  height: 400px;
-  margin: 0;
-}
-
 .new-dd {
   display: block;
-  min-width: 30%;
-  text-align: left;
   font-size: 12px;
-  left: -80px;
-  top: -10px;
+  top: 0px;
+  padding-left: 0px;
 }
+
 
 .notify-badge {
   top: -10px;
   color: white;
-  font-size: 25px;
   font-weight: bolder;
-  left: 20px;
-  background: rgba(245, 19, 19, 0.6);
-  padding: 8px 7px;
+  left: 10px;
+  background: rgba(245, 19, 19, 0.5);
+  padding: 8px;
   border-radius: 50%;
   position: absolute;
   height: 30px;
@@ -275,57 +192,42 @@ img.basket-icon {
 
 .new-dd li {
   padding: 0px;
+  margin-left: 0px;
 }
 
 img#new-img {
-  position: relative;
-  top: -325px;
-  left: 200px;
-  width: 30%;
+  padding: 15px 0;
+}
+
+.align {
+  display: flex;
+}
+
+#new-imgs {
+  display: flex;
+  flex-direction: column;
 }
 
 #new-imgs > img {
   position: relative;
-  margin: 2px 4px 2px 5px;
-  left: 200px;
-  top: -325px;
+  padding: 15px 15px 15px 0;
   display: block;
-  width: 30%;
 }
 img#second-img {
-  position: relative;
-  left: 20px;
-  top: -170px;
-  margin-left: 5px;
+  padding-top: 0;
 }
 
-.new2 {
-  min-width: 600px;
-  left: -150px;
-  height: 380px;
-}
-
-/* brands drop down */
-
-.new3 {
-  min-width: 450px;
-  left: -150px;
-  height: 380px;
-}
 
 /* how to tutorials dropdown */
 
 .new-dd2 {
   display: block;
-  min-width: 30%;
-  text-align: left;
   font-size: 12px;
-  left: -80px;
-  top: -10px;
+  padding-left: 0;
 }
 
 ul.new-dd2 > li {
-  margin: 5x 0 0 20px;
+  margin: 0;
   padding: 1px;
   width: 100%;
 }
@@ -335,23 +237,25 @@ ul.new-dd2 > li {
 span#carat {
   position: relative;
   top: 0px;
-  left: 5px;
+  right: 0px;
   width: 10px;
   height: 10px;
   color: black;
-  margin-right: 10px;
+  margin-left: 10px;
 }
+
 .logout-menu {
   display: none;
   position: absolute;
   background-color: white;
-  width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1000;
-  top: 16.5px;
   text-align: left;
-  left: -10px;
-  height: 30px;
+  padding-left: 0;
+}
+
+.logout-menu > li {
+  margin: 15px 20px;
 }
 
 .logout-dd:hover .logout-menu {

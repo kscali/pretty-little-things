@@ -100,8 +100,10 @@ class Cart extends React.Component {
     return (
       <div className="main-basket container">
         <div className="main-basket-header">
-          <h4>My Basket</h4>
-          <p id="shipping">{shipping}</p>
+          <div>
+            <h4>My Basket</h4>
+            <p id="shipping">{shipping}</p>
+          </div>
           <Link to="/products">Continue Shopping ></Link>
         </div>
 
@@ -129,8 +131,8 @@ class Cart extends React.Component {
                 </div>
               </div>
             </div>
-
-            <div className="right-side">
+        </div>
+        <div className="right-side">
               <Checkout
                 total={total}
                 price={price}
@@ -139,7 +141,6 @@ class Cart extends React.Component {
               />
             </div>
           </div>
-        </div>
       </div>
     );
   }

@@ -8,7 +8,7 @@ class Lip extends React.Component {
     return (
       <div className="lips mobile container">
         <div className="lip-container">
-          <div className="side-nav">
+          <div className="sidenav">
             <ProductIndexItem />
           </div>
           <ul className="mobile-list">

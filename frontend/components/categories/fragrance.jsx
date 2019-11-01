@@ -10,7 +10,7 @@ class Fragrance extends React.Component {
     return (
       <div className="fragrances mobile container">
         <div className="fragrance-container">
-          <div className="side-nav">
+          <div className="sidenav">
             <ProductIndexItem />
           </div>
           <ul className="mobile-list">

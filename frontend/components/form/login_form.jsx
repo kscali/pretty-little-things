@@ -65,10 +65,10 @@ class LogInForm extends React.Component {
 
         <div id="myModal" className="modal-contents small">
           <span id="sp-btn" onClick={this.closeModal} className="close">&times;</span>
-          <h5>Please sign into Pretty Little Things</h5>
+          <h6>Please sign into Pretty Little Things</h6>
           <hr />
           <form onSubmit={this.handleSubmit}>
-            <h6>1.What is your email address?</h6>
+            <h6 className="email-login">1.What is your email address?</h6>
             <input
               className="login"
               onChange={this.updateField("email")}
@@ -87,7 +87,7 @@ class LogInForm extends React.Component {
             />
           <div className="form-input">
             <button type="button" onClick={this.closeModal}>Cancel</button>
-            <button type="button" onClick={this.demoLogin}>Demo Login</button>
+            <button className="demo-btn" type="button" onClick={this.demoLogin}>Demo Login</button>
             <input className="login-btn" type="submit" value="Continue" />
           </div> 
            <Link className="signup-link" to="/signup">Register</Link>

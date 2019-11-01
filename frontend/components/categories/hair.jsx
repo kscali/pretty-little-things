@@ -9,7 +9,7 @@ class Hair extends React.Component {
     return (
       <div className="hair mobile container">
         <div className="hair-container">
-          <div className="side-nav">
+          <div className="sidenav">
             <ProductIndexItem />
           </div>
           <ul className="mobile-list">

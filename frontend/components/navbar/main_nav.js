@@ -26,13 +26,15 @@ const MainNav = ({ user, logout, products, fetchProducts, cartItems }) => {
   const signin = () => (
     <div className="register">
       <h6>Hi, Beautiful</h6>
-      <Link className="lnk" to="/login">
-        Sign In
-      </Link>
-      <p>or</p>
-      <Link className="lnk" to="/signup">
-        Register
-      </Link>
+      <div>
+        <Link className="lnk" to="/login">
+          Sign In
+        </Link>
+        <p>or</p>
+        <Link className="lnk" to="/signup">
+          Register
+        </Link>
+      </div>
     </div>
   );
 
@@ -91,45 +93,47 @@ const MainNav = ({ user, logout, products, fetchProducts, cartItems }) => {
           <li className="dropdown">
             CATEGORIES
             <div className="new2 dropdown-content">
-              <div className="col">
-                <ul className="new-dd new">
-                  <li>
-                    <Link to="/face">FACE</Link>
-                  </li>
-                  <li>
-                    <Link to="/eye">EYE</Link>
-                  </li>
-                  <li>
-                    <Link to="/lip">LIP</Link>
-                  </li>
-                  <li>
-                    <Link to="/skin">SKIN</Link>
-                  </li>
-                  <li>
-                    <Link to="/fragrance">FRAGRANCE</Link>
-                  </li>
-                  <li>
-                    <Link to="/hair">HAIR</Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="col">
-                <img
-                  id="new-img"
-                  src="https://www.sephora.com/contentimages/meganav/large/2019-04-01-global-nav-lg-april-wellness-us-ca-d-slice.jpg"
-                  alt="wellnewss"
-                />
-              </div>
-              <div id="new-imgs" className="col">
-                <img
-                  src="https://www.sephora.com/contentimages/meganav/medium/2018-11-18-global-nav-md-holiday-fragrance-us-ca-d-slice.jpg"
-                  alt="fragrance-gifts"
-                />
-                <img
-                  id="second-img"
-                  src="https://www.sephora.com/contentimages/meganav/medium/2019-01-01-global-nav-play-md-us-d-slice.jpg"
-                  alt="play"
-                />
+              <div className="align">
+                <div className="col">
+                  <ul className="new-dd">
+                    <li>
+                      <Link to="/face">FACE</Link>
+                    </li>
+                    <li>
+                      <Link to="/eye">EYE</Link>
+                    </li>
+                    <li>
+                      <Link to="/lip">LIP</Link>
+                    </li>
+                    <li>
+                      <Link to="/skin">SKIN</Link>
+                    </li>
+                    <li>
+                      <Link to="/fragrance">FRAGRANCE</Link>
+                    </li>
+                    <li>
+                      <Link to="/hair">HAIR</Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col">
+                  <img
+                    id="new-img"
+                    src="https://ks-plt.s3-us-west-1.amazonaws.com/wellness.jpg"
+                    alt="wellness"
+                  />
+                </div>
+                <div id="new-imgs" className="col">
+                  <img
+                    src="https://ks-plt.s3-us-west-1.amazonaws.com/fragrance.jpg"
+                    alt="fragrance-gifts"
+                  />
+                  <img
+                    id="second-img"
+                    src="https://ks-plt.s3-us-west-1.amazonaws.com/play.jpg"
+                    alt="play"
+                  />
+                </div>
               </div>
             </div>
           </li>
@@ -169,7 +173,6 @@ const MainNav = ({ user, logout, products, fetchProducts, cartItems }) => {
                       target="_blank"
                     >
                       <img
-                        id="img-1"
                         src="https://ks-plt.s3-us-west-1.amazonaws.com/products/plt-images/groups.png"
                         alt="groups"
                       />
@@ -181,7 +184,6 @@ const MainNav = ({ user, logout, products, fetchProducts, cartItems }) => {
                       target="_blank"
                     >
                       <img
-                        id="img-2"
                         src="https://ks-plt.s3-us-west-1.amazonaws.com/products/plt-images/community.png"
                         alt="convos"
                       />
@@ -193,7 +195,6 @@ const MainNav = ({ user, logout, products, fetchProducts, cartItems }) => {
                       target="_blank"
                     >
                       <img
-                        id="img-3"
                         src="https://ks-plt.s3-us-west-1.amazonaws.com/products/plt-images/gallery.png"
                         alt="gallery"
                       />
@@ -205,7 +206,6 @@ const MainNav = ({ user, logout, products, fetchProducts, cartItems }) => {
                       target="_blank"
                     >
                       <img
-                        id="img-4"
                         src="https://ks-plt.s3-us-west-1.amazonaws.com/products/plt-images/events.png"
                         alt="events"
                       />

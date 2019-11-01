@@ -18,14 +18,14 @@ const cartReducer = (state = {}, action) => {
         return action.user.cart_items
       }
     case RECEIVE_CART_ITEMS: 
-      newState = merge({}, state, action.items);
+     newState = merge({}, state, action.items);
       return newState;
     case LOGOUT_CURRENT_USER: 
       return {};
     case REMOVE_CART_ITEM:
-       newState = merge({}, state);
-       delete newState[action.id]
-       return newState; 
+      newState = merge({}, state);
+      delete newState[action.id]
+      return newState; 
     case REMOVE_ALL_CART_ITEMS:
       return {};
     default: 

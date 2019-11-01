@@ -9,7 +9,7 @@ class Face extends React.Component {
     return (
       <div className="face mobile container">
         <div className="face-container">
-          <div className="side-nav">
+          <div className="sidenav">
             <ProductIndexItem />
           </div>
           <ul className="mobile-list">

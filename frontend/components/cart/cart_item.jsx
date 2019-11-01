@@ -83,13 +83,15 @@ class CartItem extends React.Component {
                       </select>
                     </div>
 
-                    <h6 className="price-li">${product[0].price}</h6>
-                    <button
-                      onClick={this.removeProduct(item)}
-                      className="con-2 remove-btn"
-                    >
-                      Remove
-                    </button>
+                    <div>
+                      <h6 className="price-li">${product[0].price}</h6>
+                      <button
+                        onClick={this.removeProduct(item)}
+                        className="con-2 remove-btn"
+                      >
+                        Remove
+                      </button>
+                    </div>
                   </div>
                 </li>
               );

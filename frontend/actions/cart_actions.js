@@ -19,10 +19,6 @@ export const removeAllCartIems = () => ({
   type: REMOVE_ALL_CART_ITEMS
 });
 
-// export const receiveCartErrors = (errors) ({
-//   type: RECEIVE_CART_ERRORS,
-//   errors
-// })
 
 export const fetchCartItems = () => dispatch =>
   ApiUtil.fetchCartItems().then(items => dispatch(receiveCartItems(items)));

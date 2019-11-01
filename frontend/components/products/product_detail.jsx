@@ -62,7 +62,6 @@ class ProductDetail extends React.Component {
 
     return (
       <div className="main-product container">
-        <div className="row">
           <div className="product-image-col col">
             <img id="image-main" src={product_img[0]} alt="product-img" />
           </div>
@@ -120,12 +119,9 @@ class ProductDetail extends React.Component {
                   src={product.image_url[1] ? product.image_url[1] : null}
                 />
               </div>
-              <div>
-                <ProductInfo product={product} />
+              <ProductInfo product={product} />
               </div>
-            </div>
           </div>
-        </div>
       </div>
     );
   }

@@ -1,20 +1,15 @@
 /* The sidebar menu */
-.sidenav {
-  height: 800px;
-  width: 200px; /* Set the width of the sidebar */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  border-right: 1px solid lightgray; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
+/* .sidenav {
+  width: 200px; 
+  z-index: 1; 
+  border-right: 1px solid lightgray; 
   padding-top: 20px;
-  margin-right: 20px;
-}
+} */
 
 .side-nav-menu > ul,
 .side-nav-menu > ul > li {
   margin: 10px 0 0 0;
-  padding: 0;
+  padding: 0 20px 0 0;
   font-weight: bold;
   display: block;
 }
@@ -34,29 +29,12 @@
   text-decoration: underline;
 }
 
-/* Style page content */
-.main {
-  margin-left: 160px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
-}
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
-}
+
 
 /* main */
 
-.products {
-  position: relative;
-  top: 20px;
-  margin-bottom: 200px;
-}
 
 .nav > .dropdown > a {
   color: black;
@@ -67,15 +45,8 @@
 }
 
 .inner-side {
-  height: 2600px;
-  width: 500px;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  text-align: center;
-  position: relative;
-  left: -250px;
-  top: -10px;
-  margin-left: 25px;
+ display: flex;
+ flex-wrap: wrap;
 }
 
 .item-li {
@@ -112,49 +83,3 @@ a:active {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 991px) {
-  section.products {
-    top: 100px;
-    margin-bottom: 300px;
-  }
-
-  .main {
-    margin-left: 0;
-    width: 100%;
-  }
-
-  .inner-side {
-    margin-left: 0;
-    left: 0;
-    padding-left: 0;
-    height: 3300px;
-    width: 500px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-
-  .side-nav {
-    padding-right: 50px;
-  }
-}
-
-@media only screen and (max-width: 1200px) and (min-width: 1000px) {
-  .side-nav {
-    padding-right: 30px;
-  }
-
-  .inner-side {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    text-align: center;
-    position: relative;
-    height: 3500px;
-    top: -10px;
-    left: 0;
-    padding-left: 0;
-  }
-
-  .main {
-    margin-left: 0;
-  }
-}

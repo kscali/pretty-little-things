@@ -25,14 +25,6 @@
   width: 90%;
 }
 
-.tabbed {
-  float: left;
-  width: 100%;
-  position: relative;
-  top: 100px;
-  left: -5px;
-}
-
 .tabbed > section > h5 > label {
   cursor: pointer;
   -moz-user-select: none;
@@ -43,15 +35,6 @@
   font-size: 12px;
   font-weight: bold;
   padding-top: 10px;
-}
-
-.tabbed > section > div {
-  box-sizing: border-box;
-  padding: 0.5em 0.75em;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.0625);
-  background: #fff;
 }
 
 .tabbed > section > h5 {
@@ -74,7 +57,16 @@
   margin-bottom: 0;
 }
 
+
 .tabbed > section > div {
+  box-sizing: border-box;
+  padding: 0.5em 0.75em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.0625);
+  background: #fff;
+  text-align: left;
+  margin-bottom: 25px;
   position: relative;
   z-index: 1;
   width: 700px;
@@ -108,5 +100,3 @@
   top: -20px;
 }
 
-@media only screen and (max-width: 1200px) and (min-width: 1000px) {
-}
