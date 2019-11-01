@@ -25,10 +25,11 @@ class Home extends React.Component {
             />
           </Link>
         </div>
-        <div className="sec-section">
+        <div className="sec-section container">
           <h2>Just Arrived</h2>
+          <hr />
         </div>
-        <div className="caro-slick container">
+        <div className="carousel-container container">
           <Carousel />
         </div>
         <div className="container">
@@ -46,7 +47,9 @@ class Home extends React.Component {
 
         <div className="third-section container">
           <h2>Recommended For You</h2>
+          <hr />
         </div>
+      
         <div className="container carousel-container">
           <Carousel />
         </div>
